@@ -35,20 +35,31 @@
   <body>
    <div class="container-fluid">
 
-    <!-- First div -->
-    <div class="row">
-     <div id="first" class="col-xs-12">
-      <!-- first div same at desktop and mobile, different menus-->
-      <div class="first-div">
+    <!-- First div --><!-- same picture / different menu -->
+    <div class="row home">
+     <div id="home" class="col-xs-12">
+       <!--logo picture-->
        <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+
+        <!--menu for desktop-->
+        <div class="hidden-xs">
+
         <a href="#about">
-         <img id="menu" src="images/menu.png" class="img-responsive">
+         <img id="menu-button" src="images/menu.png" class="img-responsive">
         </a>
 
-      </div>
+        </div>
+
+        <!--menu for mobile-->
+        <div class="hidden-sm hidden-md hidden-lg">
+        
+
+        </div>
+
      </div>
     </div>
 
+     <!-- 3D menu -->
     <div class="meny">
      <h2>Gravity of Thoughts</h2>
       <ul>
@@ -69,7 +80,7 @@
     <div class="contents">
 
     <!-- About -->
-    <div id="about" class="row">
+    <div id="about" class="row about">
      <div class="col-md-4">
       <img src="images/x.png" alt="X" class="img-responsive center-block" >
      </div>
@@ -86,7 +97,7 @@
     </div>
 
     <!--Theme-->
-    <div id="theme" class="row">
+    <div id="theme" class="row theme">
      <div class="col-md-8">
       <span>Gravity of Thoughts</span>
        <p>Gravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of Thoughts</p>
@@ -97,8 +108,10 @@
 
     </div>
 
-    <!--end of contents and container--
->    </div>
+
+
+    <!--end of contents and container-->    
+    </div>
    </div>
 
 
