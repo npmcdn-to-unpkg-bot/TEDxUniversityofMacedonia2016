@@ -17,12 +17,21 @@
 	
 	  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--css file for 3D menu-->
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
-
     <!--scripts for smooth scrolling-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/smooth_scroll.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!--<script src="js/smooth_scroll.js"></script>-->
+
+    <!--includes for mmenu | mobile menu -->
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>-->
+    <script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('nav#menu').mmenu();
+      });
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,9 +42,51 @@
   </head>
   
   <body>
-   <div class="container-fluid">
 
-    <!-- First div --><!-- same picture / different menu -->
+    <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -->
+    <div class="hidden-sm hidden-md hidden-lg">
+
+    <div class="container-fluid">
+
+      <div id="my-page">
+       <div class="header">
+         <a href="#menu"></a>
+          Menu
+       </div>
+
+      <div class="content">
+
+        <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+      
+      </div>
+
+       <nav id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about/address">Theme</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+       </nav>
+      </div>
+
+    </div>
+
+    <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
+    <div class="hidden-xs hidden-lg">
+
+    </div>
+
+    <!--LARGE DEVICES VERSION. LG CLASS ONLY!! 1200px and up -->
+    <div class="hidden-xs hidden-sm hidden-md">
+
+    </div>
+
+
+
+<!--auta pou eixame prin -->
+
+<!-- First div --><!-- same picture / different menu -->
     <div class="row home">
      <div id="home" class="col-xs-12">
        <!--logo picture-->
@@ -59,25 +110,7 @@
      </div>
     </div>
 
-     <!-- 3D menu -->
-    <div class="meny">
-     <h2>Gravity of Thoughts</h2>
-      <ul>
-       <li>Home</li>
-       <li>About</li>
-       <li>Theme</li>
-       <li>Speakers</li>
-       <li>Performers</li>
-       <li>Partners</li>
-       <li>Team</li>
-       <li>Blog</li>
-       <li>Contact</li>
-      </ul>
-    </div>
-    <div class="meny-arrow"></div>
-
-    <!--contents is what is inside 3D transformation-->
-    <div class="contents">
+     
 
     <!-- About -->
     <div id="about" class="row about">
@@ -108,20 +141,12 @@
 
     </div>
 
+    
 
-
-    <!--end of contents and container-->    
-    </div>
-   </div>
-
-
-   <!--script for 3D menu-->
-    <script src="js/meny.js"></script>
-    <script src="js/instance.js"></script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--EDW GINETAI MALAKIA -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
