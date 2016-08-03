@@ -18,18 +18,18 @@
 	  <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--scripts for smooth scrolling-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <!--<script src="js/smooth_scroll.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/smooth_scroll.js"></script>
 
-    <!--includes for mmenu | mobile menu -->
-    <link type="text/css" rel="stylesheet" href="css/demo.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>-->
-    <script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('nav#menu').mmenu();
+    <!--script for mobile menu -->
+    <script>$(document).ready(function() {   
+      var sideslider = $('[data-toggle=collapse-side]');
+      var sel = sideslider.attr('data-target');
+      var sel2 = sideslider.attr('data-target-2');
+      sideslider.click(function(event){
+      $(sel).toggleClass('in');
+      $(sel2).toggleClass('out');
+       });
       });
     </script>
 
@@ -46,31 +46,27 @@
     <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -->
     <div class="hidden-sm hidden-md hidden-lg">
 
-    <div class="container-fluid">
-
-      <div id="my-page">
-       <div class="header">
-         <a href="#menu"></a>
-          Menu
-       </div>
-
-      <div class="content">
-
-        <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
-      
+    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-inverse side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Places</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-
-       <nav id="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#about/address">Theme</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-       </nav>
-      </div>
+    </header>
 
     </div>
+
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
     <div class="hidden-xs hidden-lg">
@@ -146,7 +142,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--EDW GINETAI MALAKIA -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
