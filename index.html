@@ -33,6 +33,22 @@
       });
     </script>
 
+    <!--script for Creative Morphing Menu with jQuery and CSS3 -->
+    <script> $(document).ready(function() {
+     $(document).delegate('.open', 'click', function(event){
+     $(this).addClass('oppenned');
+     event.stopPropagation();
+     })
+     $(document).delegate('body', 'click', function(event) {
+     $('.open').removeClass('oppenned');
+     })
+     $(document).delegate('.cls', 'click', function(event){
+     $('.open').removeClass('oppenned');
+     event.stopPropagation();
+     });
+     });
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,13 +81,120 @@
       </div>
     </header>
 
+    <div class="container-fluid">
+
+     <div class="row home">
+      <div id="home" class="col-xs-12">
+       <!--logo picture-->
+       <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+      </div>
+     </div>
+
+    </div>
+    <!--last </div> for mobile-->
     </div>
 
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
-    <div class="hidden-xs hidden-lg">
+    <div class="hidden-xs">
+     <div class="container-fluid">
 
-    </div>
+       <div class="row home">
+         <div id="home" class="col-xs-12">
+         <!--logo picture-->
+         <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+
+         <!--menu for desktop-->
+         <a href="#about">
+          <img id="menu-button" src="images/menu.png" class="img-responsive">
+         </a>
+
+        </div>
+       </div>
+
+       <!--menu for the 2nd+ div -->
+       <script type="text/javascript">
+         $(window).on('scroll', function() {
+          var y_scroll_pos = window.pageYOffset;
+          var scroll_pos_test = $(window).height();  /* if the user has scrolled more than window height*/
+          var flag=0;
+          if(y_scroll_pos > scroll_pos_test) {
+            flag=1;
+          }
+          if (flag==1){
+            $('.open').css("display", "block");
+          }
+         });
+       </script>
+      
+       <div class="open"> 
+        <span class="cls"></span> 
+         <span>
+          <ul class="sub-menu ">
+          <li> <a href="#">Home</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Theme</a> </li>
+          <li> <a href="#">Speakers</a> </li>
+          <li> <a href="#">Performers</a> </li>
+          <li> <a href="#">Partners</a> </li>
+          <li> <a href="#">Team</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Contact</a> </li>
+         </ul>
+         </span> 
+        <span class="cls"></span> 
+       </div>
+
+      <!-- About -->
+      <div id="about" class="row about">
+       <div class="col-md-4">
+        <img src="images/x.png" alt="X" class="img-responsive center-block" >
+       </div>
+       <div class="col-md-8">
+       <span>TED</span>
+       <p>Το TED είναι ένας μη κερδοσκοπικός οργανισμός αφιερωμένος σε ιδέες που αξίζει να διαδοθούν μέσα από μικρές, δυναμικές ομιλίες (18 λεπτά ή λιγότερο). Το TED ξεκίνησε το 1984 στην Καλιφόρνια ως ένα συνέδριο με κεντρικό άξονα την Τεχνολογία, την Ψυχαγωγία και το Design. Σήμερα καλύπτει πλέον όλα τα πεδία – από την επιστήμη και την τέχνη, μέχρι την επιχειρηματικότητα και τα παγκόσμια ζητήματα- σε περισσότερες από 100 γλώσσες. Το ετήσιο συνέδριο TED προσκαλεί κορυφαίους στοχαστές και οραματιστές του κόσμου να μιλήσουν για 18 λεπτά κατάγράφοντας τις ομιλίες τους με σκοπό τη δωρεάν διάθεσή τους στο TED.com. Στους TED ομιλητές περιλαμβάνονται οι Bill Gates, Al Gore, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende και ο πρώην Πρωθυπουργός της Βρετανίας Gordon Brown. </p>
+
+       <span>TEDx</span>
+       <p>Στο πνεύμα της αποστολής του TED, "ιδέες που αξίζει να διαδοθούν", το TEDx αποτελεί ένα πρόγραμμα τοπικών, ανεξάρτητων εκδηλώσεων που φέρνει ανθρώπους μαζί για να μοιραστούν μια TEDx εμπειρία. Σε μια TED εκδήλωση, οι ομιλητές έχουν στόχο να συνδέσουν το κοινό μέσα από συζήτηση. Αυτές οι τοπικές ανεξάρτητες εκδηλώσεις φέρουν την επωνυμία TEDx, όπου το x αντιπροσωπεύει τον ανεξάρτητο χαρακτήρα της οργάνωσης της εκδήλωσης.</p>
+       </div>
+       <div class="col-sm-12">
+       <span>TEDxUniversityofMacedonia</span>
+       <p>Το TEDxUniversityofMacedonia είναι ένας θεσμός του Πανεπιστημίου Μακεδονίας που έχει ως σκοπό να προσφέρει βήμα σε ιδέες που αξίζει να ακουστούν και να αποτελέσει έναυσμα για αλλαγή και δράση σε όλη τη φοιτητική κοινότητα και ευρύτερα στο νεανικό κοινό της Θεσσαλονίκης. Ιδρύθηκε το 2013 με θέμα το“dare”ή αλλιώς “τολμώ”. Ακολούθησε το δεύτερο συνέδριο TEDx στις 15 Νοεμβρίου 2014 με θέμα “ITHACAS”, εμπνευσμένο από το ομώνυμο ποίημα του Καβάφη, που καλούσε τη νέα γενιά να αναρωτηθεί για την δική της Ιθάκη. Με τη σειρά του, το Blind Spot ως τρίτο event μας έκανε να δούμε το θέμα από μια άλλη οπτική γωνία, αυτή που συνήθως μας είναι κρυφή. Φέτος το TEDxUniversityofMacedonia 2016 επιστρέφει για τέταρτη φορά και αυτή τη φορά με ακόμα μεγαλύτερες φιλοδοξίες διαδίδοντας νέες, μοναδικές και καινοτόμες ιδέες.</p>
+       </div>
+      </div>
+
+      <!--Theme -->
+      <div id="theme" class="row theme">
+       <div class="col-md-8">
+        <span>Gravity of Thoughts</span>
+         <p>Gravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of Thoughts</p>
+       </div>
+       <div class="col-m-4">
+        <img src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Logo">
+       </div>
+      </div>
+
+      <!--Speakers-->
+      <div id="speakers" class="row speakers">
+      
+       <div class="col-sm-3">
+        <img src="images/speaker.jpg" class="img-responsive img-circle">
+       </div>
+       <div class="col-sm-3">
+        <img src="images/speaker.jpg" class="img-responsive img-circle">
+       </div>
+       <div class="col-sm-3">
+        <img src="images/speaker.jpg" class="img-responsive img-circle">
+       </div>
+      </div>
+
+      <!--
+
+
+
+
+     </div><!--closing container-->
+    </div><!--closing hidden-xs-->
 
     <!--LARGE DEVICES VERSION. LG CLASS ONLY!! 1200px and up -->
     <div class="hidden-xs hidden-sm hidden-md">
@@ -80,67 +203,8 @@
 
 
 
-<!--auta pou eixame prin -->
 
-<!-- First div --><!-- same picture / different menu -->
-    <div class="row home">
-     <div id="home" class="col-xs-12">
-       <!--logo picture-->
-       <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
-
-        <!--menu for desktop-->
-        <div class="hidden-xs">
-
-        <a href="#about">
-         <img id="menu-button" src="images/menu.png" class="img-responsive">
-        </a>
-
-        </div>
-
-        <!--menu for mobile-->
-        <div class="hidden-sm hidden-md hidden-lg">
-        
-
-        </div>
-
-     </div>
-    </div>
-
-     
-
-    <!-- About -->
-    <div id="about" class="row about">
-     <div class="col-md-4">
-      <img src="images/x.png" alt="X" class="img-responsive center-block" >
-     </div>
-     <div class="col-md-8">
-      <span>TED</span>
-       <p>Το TED είναι ένας μη κερδοσκοπικός οργανισμός αφιερωμένος σε ιδέες που αξίζει να διαδοθούν μέσα από μικρές, δυναμικές ομιλίες (18 λεπτά ή λιγότερο). Το TED ξεκίνησε το 1984 στην Καλιφόρνια ως ένα συνέδριο με κεντρικό άξονα την Τεχνολογία, την Ψυχαγωγία και το Design. Σήμερα καλύπτει πλέον όλα τα πεδία – από την επιστήμη και την τέχνη, μέχρι την επιχειρηματικότητα και τα παγκόσμια ζητήματα- σε περισσότερες από 100 γλώσσες. Το ετήσιο συνέδριο TED προσκαλεί κορυφαίους στοχαστές και οραματιστές του κόσμου να μιλήσουν για 18 λεπτά κατάγράφοντας τις ομιλίες τους με σκοπό τη δωρεάν διάθεσή τους στο TED.com. Στους TED ομιλητές περιλαμβάνονται οι Bill Gates, Al Gore, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende και ο πρώην Πρωθυπουργός της Βρετανίας Gordon Brown. </p>
-
-       <span>TEDx</span>
-       <p>Στο πνεύμα της αποστολής του TED, "ιδέες που αξίζει να διαδοθούν", το TEDx αποτελεί ένα πρόγραμμα τοπικών, ανεξάρτητων εκδηλώσεων που φέρνει ανθρώπους μαζί για να μοιραστούν μια TEDx εμπειρία. Σε μια TED εκδήλωση, οι ομιλητές έχουν στόχο να συνδέσουν το κοινό μέσα από συζήτηση. Αυτές οι τοπικές ανεξάρτητες εκδηλώσεις φέρουν την επωνυμία TEDx, όπου το x αντιπροσωπεύει τον ανεξάρτητο χαρακτήρα της οργάνωσης της εκδήλωσης.</p>
-
-       <span>TEDxUniversityofMacedonia</span>
-       <p>Το TEDxUniversityofMacedonia είναι ένας θεσμός του Πανεπιστημίου Μακεδονίας που έχει ως σκοπό να προσφέρει βήμα σε ιδέες που αξίζει να ακουστούν και να αποτελέσει έναυσμα για αλλαγή και δράση σε όλη τη φοιτητική κοινότητα και ευρύτερα στο νεανικό κοινό της Θεσσαλονίκης. Ιδρύθηκε το 2013 με θέμα το“dare”ή αλλιώς “τολμώ”. Ακολούθησε το δεύτερο συνέδριο TEDx στις 15 Νοεμβρίου 2014 με θέμα “ITHACAS”, εμπνευσμένο από το ομώνυμο ποίημα του Καβάφη, που καλούσε τη νέα γενιά να αναρωτηθεί για την δική της Ιθάκη. Με τη σειρά του, το Blind Spot ως τρίτο event μας έκανε να δούμε το θέμα από μια άλλη οπτική γωνία, αυτή που συνήθως μας είναι κρυφή. Φέτος το TEDxUniversityofMacedonia 2016 επιστρέφει για τέταρτη φορά και αυτή τη φορά με ακόμα μεγαλύτερες φιλοδοξίες διαδίδοντας νέες, μοναδικές και καινοτόμες ιδέες.</p>
-     </div>
-    </div>
-
-    <!--Theme-->
-    <div id="theme" class="row theme">
-     <div class="col-md-8">
-      <span>Gravity of Thoughts</span>
-       <p>Gravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of ThoughtsGravity of Thoughts</p>
-     </div>
-     <div class="col-m-4">
-      <img src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Logo">
-     </div>
-
-    </div>
-
-    
-
-
-
+  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -31,40 +31,165 @@ body {
 	right: 50%;
 }
 
+.about{
+	padding-top: 5%;
+}
 .theme{ /*Theme div*/
 	background-color: #e62b1e;
+	padding-top: 5%;
 }
 
+.speakers{/*speakers div*/
+	background-color: #000000;
+	padding-top: 5%;
+}
+
+.speakers img:hover{
+	display:none;/*here is where we set the hover effect for all speakers*/
+}
 /*mmenu - mobile menu ################################################################## */
-body {
-          padding-top: 50px;
-          position: relative;
-      }
       
-      pre {
-          tab-size: 8;
-      }
-      
-      @media screen and (max-width: 768px) {
-          .side-collapse-container{
-              width:100%;
-              position:relative;
-              left:0;
-              transition:left .4s;
-          }
-          .side-collapse-container.out{
-              left:200px;
-          }
-          .side-collapse {
-              top:50px;
-              bottom:0;
-              left:0;
-              width:200px;
-              position:fixed;
-              overflow:hidden;
-              transition:width .4s;
-          }
-          .side-collapse.in {
-              width:0;
-          }
-      }
+@media screen and (max-width: 768px) {
+  .side-collapse-container{
+     width:100%;
+     position:relative;
+     left:0;
+     transition:left .4s;
+   }
+   .side-collapse-container.out{
+     left:200px;
+   }
+   .side-collapse {
+     top:50px;
+     bottom:0;
+     left:0;
+     width:75%;
+     position:fixed;
+     overflow:hidden;
+     transition:width .4s;
+    }
+    .side-collapse.in {
+     width:0;
+    }
+}
+
+ /*desktop menu ###########################################################*/
+
+ .open {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+  z-index: 10;
+}
+
+.open:hover { opacity: 0.8; }
+
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 4px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: green;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) {
+  margin-top: 10px;
+  z-index: 9;
+}
+
+.open span:nth-child(2) { margin-top: 25px; }
+
+.open span:nth-child(3) { margin-top: 40px; }
+
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0, 1, 1, .02);
+  height: 0;
+  width: 50%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: purple;
+  border-radius: 50%;
+  z-index: 18;
+  overflow: hidden;
+}
+
+.sub-menu li {
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -200px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li:nth-child(6) { -webkit-transition-delay: 0.30s; }
+
+.sub-menu li:nth-child(7) { -webkit-transition-delay: 0.35s; }
+
+.sub-menu li:nth-child(8) { -webkit-transition-delay: 0.40s; }
+
+.sub-menu li:nth-child(9) { -webkit-transition-delay: 0.45s; }
+
+.sub-menu li a {
+  color: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+}
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 180%;/*kai auta allazoume gia to mwv!! */
+  width: 180%;
+}
+
+.oppenned span:nth-child(2) { overflow: visible; }
+
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+  z-index: 100;
+  transform: rotate(45deg);
+}
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
+
+.oppenned span:nth-child(2) {
+  height: 400px;
+  width: 400px;
+  right: -160px; /*Ama allaksoume auta, allazei to pou emfanizetai o kyklos*/
+  top: -160px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+
+.oppenned li { margin-right: 168px; }
