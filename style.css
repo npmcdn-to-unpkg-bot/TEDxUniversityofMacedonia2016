@@ -44,9 +44,22 @@ body {
 	padding-top: 5%;
 }
 
-.speakers img:hover{
-	display:none;/*here is where we set the hover effect for all speakers*/
+.sponsors img{
+	padding-top: 5%;
+	margin: 0 auto; /*to bring the image in the center */
 }
+
+.team{
+	padding-top: 5%;
+	background-color: yellow;
+}
+.team img{
+	margin: 0 auto; /*to bring the image in the center */
+}
+
+
+
+
 /*mmenu - mobile menu ################################################################## */
       
 @media screen and (max-width: 768px) {
@@ -193,3 +206,7 @@ body {
 .oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
 
 .oppenned li { margin-right: 168px; }
+
+/*speakers images*/
+
+
