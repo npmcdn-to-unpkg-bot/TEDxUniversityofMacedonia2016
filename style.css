@@ -60,48 +60,6 @@ body {
 	margin: 0 auto; /*to bring the image in the center */
 }
 
-
-
-
-/*menu - mobile menu ################################################################## */
-      
-@media screen and (max-width: 768px) {
-  .side-collapse-container{
-     width:100%;
-     position:relative;
-     left:0;
-     transition:left .4s;
-   }
-   .side-collapse-container.out{
-     left:200px;
-   }
-   .side-collapse {
-     top:50px;
-     bottom:0;
-     left:0;
-     width:50%;
-     position:fixed;
-     overflow:auto;
-     transition:width .4s;
-     background: rgba(0,0,0,0.7)
-        
-    }
-    .side-collapse.in {
-     width:0;
-    }
-    .navbar{
-      background-color: transparent;
-      border: none;
-    }
-    .navbar-toggle{
-    	background-color:rgba(0,0,0,0.3);
-    }
-    .navbar-collapse{
-    	     border: none;
-
-    }
-}
-
  /*desktop menu ###########################################################*/
 
  .open {
