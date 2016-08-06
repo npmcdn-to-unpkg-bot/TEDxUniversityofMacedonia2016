@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14,8 +14,12 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
+      
+	 <link href="css/XmpMEp.less.css" rel="stylesheet">
+       <link href="css/XmpMEp.css" rel="stylesheet">
+      
 	  <link rel="stylesheet" type="text/css" href="style.css">
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
 
     <!--scripts for smooth scrolling-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -32,6 +36,8 @@
        });
       });
     </script>
+      
+     
 
     <!--script for Creative Morphing Menu with jQuery and CSS3 -->
     <script> $(document).ready(function() {
@@ -48,6 +54,8 @@
      });
      });
     </script>
+      
+      
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,43 +69,75 @@
 
     <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -->
     <div class="hidden-sm hidden-md hidden-lg">
-
-    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
-           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-          <span id="head-title">TEDxUniversityofMacedonia is presenting..<br>Gravity of Thoughts</span>
-        </div>
-        <div class="navbar-inverse side-collapse in">
-          <nav role="navigation" class="navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Theme</a></li>
-              <li><a href="#">Speakers</a></li>
-              <li><a href="#">Performers</a></li>
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="http://blog.tedxuniversityofmacedonia.com">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+       <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Bootstrap 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+                </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+        </nav>
+        <!-- /#sidebar-wrapper -->
 
-    <div class="container-fluid">
+    <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
 
     <!--Home mobile-->
-     <div class="row home">
-      <div id="home" class="col-xs-12">
+     <div class="row home container-fluid padding-0">
+      <div id="home" class="row">
        <!--logo picture-->
        <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
       </div>
      </div>
 
+        <!-- About-->
+        <div class="About container-fluid padding-0">
+        <div id="About" class="row ">
+            <img id="about" src="images/12239416_525537290934889_4991121095022807571_o.png" class="img-responsive" alt="about">
+            </div>
+        </div>
+        
+        
      <!--Speakers mobile -->
      <div class="row speakers">
 
@@ -182,14 +222,18 @@
    <!--other div-->
    <div class="row ">
 
-</div>
-   </div>
-    <!--last </div> for mobile-->
+    </div>
+       </div>
+        </div>
+        
+                
+            
+     <!--last </div> for mobile-->
     </div>
 
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
-    <div class="hidden-xs">
+    <div class="hidden-xs hidden-lg">
      <div class="container-fluid">
 
        <div class="row home">
@@ -361,7 +405,163 @@
 
     <!--LARGE DEVICES VERSION. LG CLASS ONLY!! 1200px and up -->
     <div class="hidden-xs hidden-sm hidden-md">
+       <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Bootstrap 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
 
+    <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+
+    <!--Home mobile-->
+     <div class="row home container-fluid padding-0">
+      <div id="home" class="row">
+       <!--logo picture-->
+       <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+      </div>
+     </div>
+
+        <!-- About-->
+        <div class="About container-fluid padding-0">
+        <div id="About" class="row ">
+            <img id="about" src="images/12239416_525537290934889_4991121095022807571_o.png" class="img-responsive" alt="about">
+            </div>
+        </div>
+        
+        
+     <!--Speakers mobile -->
+     <div class="row speakers">
+
+      <div class="col-xs-12">
+
+        <div id="myCarousel" class="carousel slide" >
+        <!-- Indicators -->
+        <!--
+        <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+         <li data-target="#myCarousel" data-slide-to="4"></li>
+         <li data-target="#myCarousel" data-slide-to="5"></li>
+         <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+        -->
+       <!-- Wrapper for slides -->
+       <div class="carousel-inner" role="listbox">
+        <div class="item active">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+        </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+       <div class="item">
+         <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+       </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+     </a>
+     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+     </a>
+     </div>
+
+    </div>
+
+   </div>
+
+   <!--other div-->
+   <div class="row ">
+
+    </div>
+       </div>
+        </div>
+        
     </div>
 
 

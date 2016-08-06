@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+.padding-0{
+    padding: 0;
+}
 html{
   height: 100%;
 }
@@ -80,11 +83,8 @@ body {
      position:fixed;
      overflow:auto;
      transition:width .4s;
-     background: red; /* For browsers that do not support gradients */
-     background: -webkit-linear-gradient(left, red , transparent); /* For Safari 5.1 to 6.0 */
-     background: -o-linear-gradient(right, red, transparent); /* For Opera 11.1 to 12.0 */
-     background: -moz-linear-gradient(right, red, transparent); /* For Firefox 3.6 to 15 */
-     background: linear-gradient(to right, red , transparent); /* Standard syntax */
+     background: rgba(0,0,0,0.7)
+        
     }
     .side-collapse.in {
      width:0;
@@ -94,7 +94,7 @@ body {
       border: none;
     }
     .navbar-toggle{
-    	background-color:red;
+    	background-color:rgba(0,0,0,0.3);
     }
     .navbar-collapse{
     	     border: none;
@@ -223,6 +223,7 @@ body {
 
 .oppenned li { margin-right: 168px; }
 
-/*speakers images*/
+/******* New menu :D **************************************************************************************/
+
 
 
