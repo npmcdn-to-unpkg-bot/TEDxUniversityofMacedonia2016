@@ -16,10 +16,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
       
 	 <link href="css/XmpMEp.less.css" rel="stylesheet">
-       <link href="css/XmpMEp.css" rel="stylesheet">
+   <link href="css/XmpMEp.css" rel="stylesheet">
       
 	  <link rel="stylesheet" type="text/css" href="style.css">
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
 
     <!--scripts for smooth scrolling-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -37,8 +37,6 @@
       });
     </script>
       
-     
-
     <!--script for Creative Morphing Menu with jQuery and CSS3 -->
     <script> $(document).ready(function() {
      $(document).delegate('.open', 'click', function(event){
@@ -54,9 +52,6 @@
      });
      });
     </script>
-      
-      
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -68,7 +63,7 @@
   <body>
 
     <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -->
-    <div class="hidden-sm hidden-md hidden-lg">
+    <div class="hidden-lg">
        <div id="wrapper">
         <div class="overlay"></div>
         <!-- Sidebar -->
@@ -76,46 +71,58 @@
             <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                       Bootstrap 3
+                       Gravity of Thoughts
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="#about-m"><i class="fa fa-fw fa-home"></i> About</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
+                    <a href="#theme-m"><i class="fa fa-fw fa-folder"></i> Theme</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+                    <a href="#speakers-m"><i class="fa fa-fw fa-file-o"></i> Speakers</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+                    <a href="#performers-m"><i class="fa fa-fw fa-cog"></i> Performers</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+                    <a href="#partners-m"><i class="fa fa-fw fa-cog"></i> Partners</a>
+                </li>                
+                <li>
+                    <a href="#team-m"><i class="fa fa-fw fa-bank"></i> Team</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-dropbox"></i> Blog</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+                    <a href="#contact-m"><i class="fa fa-fw fa-twitter"></i> Contact</a>
+                </li>
+                <!--Social Icons-->
+                <li class="social">
+                    <a href="face"><i class="fa fa-fw fa-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="insta"><i class="fa fa-fw fa-instagram"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#"><i class="fa fa-fw fa-youtube"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i></a>
                 </li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
 
     <div id="page-content-wrapper">
+     <div class="container-fluid">
           <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
@@ -123,27 +130,68 @@
           </button>
 
     <!--Home mobile-->
-     <div class="row home container-fluid padding-0">
-      <div id="home" class="row">
+     <div id="home-m" class="row">
        <!--logo picture-->
-       <img id="logo" src="images/gravityofthoughts.jpg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+      <img src="images/logo.png" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+     </div> 
+
+    <!-- About mobile-->
+      <div id="about-m" class="row ">
+        <img id="bg" src="images/about.png" class="img-responsive center-block" alt="About">
+        <!--use the image as a button to appear the hidden div-->
+        <script type="text/javascript">
+          function hiddenAbout() {
+           if (document.getElementById("hidden-about").style.display=="none"){
+             document.getElementById("hidden-about").style.display = "";
+           }
+           else{
+             document.getElementById("hidden-about").style.display = "none";
+           }
+          }
+        </script>
+        <a href="javascript:hiddenAbout();">
+          <img id="more-about" src="images/more.svg" class="img-responsive" alt="more..">
+        </a>  
       </div>
-     </div>
+      <!--this div appears on click of #more image and hides on the next click-->
+      <div id="hidden-about" style="display:none;">
+          <h3>About TED</h3>
+          <p>Το TED είναι ένας μη κερδοσκοπικός οργανισμός αφιερωμένος σε ιδέες που αξίζει να διαδοθούν μέσα από μικρές, δυναμικές ομιλίες (18 λεπτά ή λιγότερο). Το TED ξεκίνησε το 1984 στην Καλιφόρνια ως ένα συνέδριο με κεντρικό άξονα την Τεχνολογία, την Ψυχαγωγία και το Design. Σήμερα καλύπτει πλέον όλα τα πεδία – από την επιστήμη και την τέχνη, μέχρι την επιχειρηματικότητα και τα παγκόσμια ζητήματα- σε περισσότερες από 100 γλώσσες. Το ετήσιο συνέδριο TED προσκαλεί κορυφαίους στοχαστές και οραματιστές του κόσμου να μιλήσουν για 18 λεπτά κατάγράφοντας τις ομιλίες τους με σκοπό τη δωρεάν διάθεσή τους στο TED.com. Στους TED ομιλητές περιλαμβάνονται οι Bill Gates, Al Gore, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende και ο πρώην Πρωθυπουργός της Βρετανίας Gordon Brown.</p>
+          <h3>About TEDx</h3>
+          <p> Στο πνεύμα της αποστολής του TED, "ιδέες που αξίζει να διαδοθούν", το TEDx αποτελεί ένα πρόγραμμα τοπικών, ανεξάρτητων εκδηλώσεων που φέρνει ανθρώπους μαζί για να μοιραστούν μια TEDx εμπειρία. Σε μια TED εκδήλωση, οι ομιλητές έχουν στόχο να συνδέσουν το κοινό μέσα από συζήτηση. Αυτές οι τοπικές ανεξάρτητες εκδηλώσεις φέρουν την επωνυμία TEDx, όπου το x αντιπροσωπεύει τον ανεξάρτητο χαρακτήρα της οργάνωσης της εκδήλωσης.</p>
+          <h3>About TEDx<wbr>University<wbr>of<wbr>Macedonia</h3>
+          <p>Το TEDxUniversityofMacedonia είναι ένας θεσμός του Πανεπιστημίου Μακεδονίας που έχει ως σκοπό να προσφέρει βήμα σε ιδέες που αξίζει να ακουστούν και να αποτελέσει έναυσμα για αλλαγή και δράση σε όλη τη φοιτητική κοινότητα και ευρύτερα στο νεανικό κοινό της Θεσσαλονίκης. Ιδρύθηκε το 2013 με θέμα το“dare”ή αλλιώς “τολμώ”. Ακολούθησε το δεύτερο συνέδριο TEDx στις 15 Νοεμβρίου 2014 με θέμα “ITHACAS”, εμπνευσμένο από το ομώνυμο ποίημα του Καβάφη, που καλούσε τη νέα γενιά να αναρωτηθεί για την δική της Ιθάκη. Με τη σειρά του, το Blind Spot ως τρίτο event μας έκανε να δούμε το θέμα από μια άλλη οπτική γωνία, αυτή που συνήθως μας είναι κρυφή. Φέτος το TEDxUniversityofMacedonia 2016 επιστρέφει για τέταρτη φορά και αυτή τη φορά με ακόμα μεγαλύτερες φιλοδοξίες διαδίδοντας νέες, μοναδικές και καινοτόμες ιδέες.</p>
+      </div>
 
-        <!-- About-->
-        <div class="About container-fluid padding-0">
-        <div id="About" class="row ">
-            <img id="about" src="images/12239416_525537290934889_4991121095022807571_o.png" class="img-responsive" alt="about">
-            </div>
-        </div>
-        
-        
+      <!-- Theme mobile-->
+      <div id="theme-m" class="row ">
+        <img id="bg" src="images/about.png" class="img-responsive center-block" alt="Theme">
+        <!--use the image as a button to appear the hidden div-->
+        <script type="text/javascript">
+          function hiddenTheme() {
+           if (document.getElementById("hidden-theme").style.display=="none"){
+             document.getElementById("hidden-theme").style.display = "";
+           }
+           else{
+             document.getElementById("hidden-theme").style.display = "none";
+           }
+          }
+        </script>
+        <a href="javascript:hiddenTheme();">
+          <img id="more-theme" src="images/more.svg" class="img-responsive" alt="more..">
+        </a>  
+      </div>
+      <!--this div appears on click of #more image and hides on the next click-->
+      <div id="hidden-theme" style="display:none;">
+          <h3>Gravity of Thoughts</h3>
+          <p>Έχετε αναρωτηθεί ποτέ ότι πίσω από τα πιο μικρά και ασήμαντα της καθημερινότητας μπορεί να κρύβονται ευκαιρίες και επιλογές, που ποτέ δεν είχατε παρατηρήσει; Έχετε σκεφτεί πόσες διαφορετικές όψεις θα δείτε αν ξεκινήσετε να βλέπετε ένα αντικείμενο πέρα από όσα η οπτική γωνία σας σας επιτρέπει; Από πόσες διαφορετικές οπτικές μπορείτε να δείτε ένα είδωλο στον καθρέπτη?</p>
+      </div>
+
      <!--Speakers mobile -->
-     <div class="row speakers">
-
+     <div id="speakers-m" class="row">
       <div class="col-xs-12">
-
-        <div id="myCarousel" class="carousel slide" >
+        <span> Speakers </span>
+        <div id="myCarousel-speakers" class="carousel slide" >
         <!-- Indicators -->
         <!--
         <ol class="carousel-indicators">
@@ -205,26 +253,94 @@
       </div>
 
       <!-- Left and right controls -->
-     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+     <a class="left carousel-control" href="#myCarousel-speakers" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
      </a>
-     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+     <a class="right carousel-control" href="#myCarousel-speakers" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
      </a>
-     </div>
+     </div><!-- /.carousel .slide -->
+    </div><!-- ./col-xs-12-->
+   </div><!-- /.speakers-m -->
 
-    </div>
+   <!--Performers mobile -->
+     <div id="performers-m" class="row">
+      <div class="col-xs-12">
+      <span> Performers </span>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <img src="images/performer.jpg" class="img-responsive center-block img-circle">
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <img src="images/performer.jpg" class="img-responsive center-block img-circle">
+      </div>
+      <div class="col-xs-offset-3 col-xs-6 col-sm-4">
+        <img src="images/performer.jpg" class="img-responsive center-block img-circle">
+      </div>
+        
+    </div><!-- ./col-xs-12-->
+   </div><!-- /.performers-m -->
 
-   </div>
+   <!-- Sponsors mobile-->
+      <div id="sponsors-m" class="row ">
+        <img src="images/about.png" class="img-responsive center-block" alt="Sponsors">
+        <!--use the image as a button to appear the hidden div-->
+        <script type="text/javascript">
+          function hiddenSponsors() {
+           if (document.getElementById("hidden-sponsors").style.display=="none"){
+             document.getElementById("hidden-sponsors").style.display = "";
+           }
+           else{
+             document.getElementById("hidden-sponsors").style.display = "none";
+           }
+          }
+        </script>
+        <a href="javascript:hiddenSponsors();">
+          <img id="more-sponsors" src="images/more.svg" class="img-responsive" alt="more..">
+        </a>  
+      </div>
+      <!--this div appears on click of #more image and hides on the next click-->
+      <div id="hidden-sponsors" style="display:none;">
+       <!--Golden Sponsors-->
+        <h3> Golden Sponsors</h3>
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="#">
+              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-thumbnail">
+            </a>
+          </div>
+          <div class="col-xs-6">
+           <a href="#">
+             <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-circle">
+           </a>
+          </div>
+        </div> 
+        <!--Bronze Sponsors-->
+        <h3> Bronze Sponsors</h3>
+         <div class="row">
+          <div class="col-xs-6">
+            <a href="#">
+              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-circle">
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <a href="#">
+              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-thumbnail">
+            </a>
+          </div>
+         </div> 
+         </div>
+         <!--Etc. -->
+         <h3>Etc.</h3>
 
-   <!--other div-->
-   <div class="row ">
 
-    </div>
-       </div>
-        </div>
+
+
+    </div><!-- /.container-fluid -->
+    </div><!-- /.page-content-wrapper-->
+    </div><!-- /.wrapper-->
         
                 
             
@@ -233,7 +349,7 @@
 
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
-    <div class="hidden-xs">
+    <div class="hidden-xs hidden-sm hidden-md">
      <div class="container-fluid">
 
        <div class="row home">
