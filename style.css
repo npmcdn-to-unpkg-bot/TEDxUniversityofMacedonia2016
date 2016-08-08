@@ -2,50 +2,95 @@
 	margin: 0;
 	padding: 0;
 }
-
-.padding-0{
-    padding: 0;
-}
 html{
   height: 100%;
+  background-color: #f2f2f2;
 }
-
 body {
   min-height: 100%;
 }
-
-#home{
-	/*background-image: url('images/gravityofthoughts.jpg') no-repeat;*/
-	height: 100%;
-	background-color: red;
-	/*max-width: 100vw;*/
+body p{
+  color:#000000;
+}
+body h3{
+  text-align:center;
+  color:#6e3e8f;
+}
+body span{
+  color:#6e3e8f;
+  font-weight: bold;
+}
+/*Mobile customization*/
+/*Home mobile*/
+/*make the first div be as large as is the viewport of the visitor*/
+#home-m{
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+#home-m img{
+  height:inherit;
 }
 
-#logo{
-	z-index: 1;
-	height: 100vh;
-	/*width: 100vw;*/
+/*About mobile*/
+#about-m{
+  position: relative;
+}
+#bg{/*all images as a background, such as about.png to be full width*/
+  width: 100vw;
+}
+#more-about{
+  height: 25%;
+  position: absolute;
+  top: 60%;
+  left: 80%;
 }
 
-#menu-button{
-	z-index: 2;
-	position: absolute;
-	top: 25%;
-	right: 50%;
+/*Theme mobile*/
+#theme-m{
+  position: relative;
+}
+#more-theme{
+  height: 25%;
+  position: absolute;
+  top: 60%;
+  left: 80%;
 }
 
-.about{
-	padding-top: 5%;
+/*Speakers mobile*/
+#speakers-m{
+  background-color: #f2f2f2;
 }
-.theme{ /*Theme div*/
-	background-color: #e62b1e;
-	padding-top: 5%;
+.carousel-inner{
+  width: 100%;
+  height: auto;
+  margin: 5% 0 5%; 0;
+}
+/*to remove that gradient */
+.carousel-control.right{
+  background-image: none;
+}
+.carousel-control.left{
+  background-image: none;
+}
+.carousel-control{
+  width: auto;
+  background: transparent;
 }
 
-.speakers{/*speakers div*/
-	background-color: #000000;
-	padding-top: 5%;
+/*Sponsors mobile*/
+#sponsors-m{
+  position: relative;
 }
+#more-sponsors{
+  height: 25%;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+}
+#hidden-sponsors h3{
+   text-align:center;
+}
+
 
 .sponsors img{
 	padding-top: 5%;
@@ -60,7 +105,45 @@ body {
 	margin: 0 auto; /*to bring the image in the center */
 }
 
- /*desktop menu ###########################################################*/
+/*Social icons in the menu */
+.sidebar-nav .social {
+  list-style: none;
+  margin: 0;
+  padding-left: -10%;
+  position: relative;
+  top: 20px;
+  width: 25%;
+}
+/*svinw to mwv apo panw*/
+#page-content-wrapper{
+  padding-top: 0;
+}
+/*Edw allazei to xrwma apo to hamburger - symvolo gia to menu */
+.hamburger.is-closed .hamb-top {
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+  background-color: #25b3c7;
+}
+.hamburger.is-closed .hamb-middle {
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+  background-color: #25b3c7;
+}
+.hamburger.is-closed .hamb-bottom {
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+  background-color: #25b3c7;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION */
+ /*desktop menu */
 
  .open {
   position: fixed;
@@ -181,7 +264,36 @@ body {
 
 .oppenned li { margin-right: 168px; }
 
-/******* New menu :D **************************************************************************************/
+/*DESKTOP CUSTOMIZATION*/
+#menu-button{
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  right: 50%;
+}
 
+.about{
+  padding-top: 5%;
+}
+.theme{ /*Theme div*/
+  background-color: #e62b1e;
+  padding-top: 5%;
+}
 
+.speakers{/*speakers div*/
+  background-color: #000000;
+  padding-top: 5%;
+}
 
+.sponsors img{
+  padding-top: 5%;
+  margin: 0 auto; /*to bring the image in the center */
+}
+
+.team{
+  padding-top: 5%;
+  background-color: yellow;
+}
+.team img{
+  margin: 0 auto; /*to bring the image in the center */
+}
