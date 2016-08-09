@@ -120,6 +120,12 @@ html {
 .sidebar-nav li:nth-child(9):before {
   background-color: #987dbf;
 }
+.sidebar-nav li:nth-child(10):before {
+  background-color: #987dbe;
+}
+.sidebar-nav li:nth-child(11):before {
+  background-color: #987db4;
+}
 .sidebar-nav li:hover:before {
   -webkit-transition: width 0.2s ease-in;
   transition: width 0.2s ease-in;
@@ -128,7 +134,7 @@ html {
 .sidebar-nav li a {
   color: #dddddd;
   display: block;
-  padding: 10px 15px 10px 30px;
+  padding: 10px 15px 0px 30px;
   text-decoration: none;
 }
 .sidebar-nav li.open:hover before {
@@ -288,6 +294,7 @@ html {
   z-index: 1;
 }
 /* SOME DEMO STYLES - NOT REQUIRED */
+/*
 body,
 html {
   background-color: #583e7e;
@@ -309,3 +316,4 @@ body a {
 body a:hover {
   color: #fff;
 }
+*/
