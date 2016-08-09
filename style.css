@@ -76,34 +76,96 @@ body span{
   width: auto;
   background: transparent;
 }
+/*to make the right and left control bigger*/
+.glyphicon.glyphicon-chevron-right{
+  font-size: 200%;
+}
+.glyphicon.glyphicon-chevron-left{
+  font-size: 200%;
+}
 
-/*Sponsors mobile*/
-#sponsors-m{
+/*partners mobile*/
+#partners-m{
   position: relative;
 }
-#more-sponsors{
+#more-partners{
   height: 25%;
   position: absolute;
   top: 60%;
   left: 80%;
 }
-#hidden-sponsors h3{
+#hidden-partners h3{
    text-align:center;
 }
 
-
-.sponsors img{
-	padding-top: 5%;
-	margin: 0 auto; /*to bring the image in the center */
+/*Team mobile*/
+#team-m{
+ position: relative;
+}/*
+#team-m img{
+  width: auto;
+  max-width: 100%;
+  height: 370px;
+  position: relative;
+}*/
+#more-team{
+  height: 25%;
+  position: absolute;
+  top: 70%;
+  left: 70%;
 }
 
-.team{
-	padding-top: 5%;
-	background-color: yellow;
+/*Contact mobile*/
+#send{
+  background-color: #25b3c7;
 }
-.team img{
-	margin: 0 auto; /*to bring the image in the center */
+
+/*slider hover caption*/
+.item{
+  overflow: hidden;
+  position: relative;
 }
+.item:hover .caption{
+  opacity: 1;
+   transform: translateY(-180px);
+  -webkit-transform:translateY(-180px);
+   -moz-transform:translateY(-180px);
+   -ms-transform:translateY(-180px);
+   -o-transform:translateY(-180px);
+}
+.item img{
+   z-index: 4;
+}
+.item .caption{
+  position: absolute;
+  top:50%;
+  -webkit-transition:all 0.3s ease-in-out; 
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  width: 100%;
+}
+.item .blur{
+  background-color: red;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+}
+.item .caption-text{
+  z-index: 10;
+  color: #6e3e8f;
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  top:100%;
+  width: 100%;
+}
+#more{
+  font-size:150%;
+}
+/*end of hover effect for mobile*/
 
 /*Social icons in the menu */
 .sidebar-nav .social {
@@ -111,14 +173,17 @@ body span{
   margin: 0;
   padding-left: -10%;
   position: relative;
-  top: 20px;
+  top: 10px;
   width: 25%;
+}
+.sidebar-nav{
+  min-height: 100vh;
 }
 /*svinw to mwv apo panw*/
 #page-content-wrapper{
   padding-top: 0;
 }
-/*Edw allazei to xrwma apo to hamburger - symvolo gia to menu */
+/*Edw allazei to xrwma apo to hamburger*/
 .hamburger.is-closed .hamb-top {
   /*background-color: rgba(255, 255, 255, 0.7);*/
   background-color: #25b3c7;
@@ -285,7 +350,7 @@ body span{
   padding-top: 5%;
 }
 
-.sponsors img{
+.partners img{
   padding-top: 5%;
   margin: 0 auto; /*to bring the image in the center */
 }

@@ -52,6 +52,9 @@
      });
      });
     </script>
+    <!--reCaptcha script-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -75,28 +78,34 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#about-m"><i class="fa fa-fw fa-home"></i> About</a>
+                    <a href="#home-m"><i class="fa fa-fw fa-home"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#theme-m"><i class="fa fa-fw fa-folder"></i> Theme</a>
+                    <a href="#about-m"><i class="fa fa-fw fa-times"></i> About</a>
                 </li>
                 <li>
-                    <a href="#speakers-m"><i class="fa fa-fw fa-file-o"></i> Speakers</a>
+                    <a href="#theme-m"><i class="fa fa-fw fa-cloud"></i> Theme</a>
                 </li>
                 <li>
-                    <a href="#performers-m"><i class="fa fa-fw fa-cog"></i> Performers</a>
+                    <a href="#speakers-m"><i class="fa fa-fw fa-microphone"></i> Speakers</a>
                 </li>
                 <li>
-                    <a href="#partners-m"><i class="fa fa-fw fa-cog"></i> Partners</a>
+                    <a href="#performers-m"><i class="fa fa-fw fa-fire"></i> Performers</a>
+                </li>
+                <li>
+                    <a href="#venue-m"><i class="fa fa-fw fa-map-marker"></i> Venue</a>
+                </li>
+                <li>
+                    <a href="#partners-m"><i class="fa fa-fw fa-life-ring"></i> Partners</a>
                 </li>                
                 <li>
-                    <a href="#team-m"><i class="fa fa-fw fa-bank"></i> Team</a>
+                    <a href="#team-m"><i class="fa fa-fw fa-users"></i> Team</a>
                 </li>
                 <li>
-                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-dropbox"></i> Blog</a>
+                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-lightbulb-o"></i> Blog</a>
                 </li>
                 <li>
-                    <a href="#contact-m"><i class="fa fa-fw fa-twitter"></i> Contact</a>
+                    <a href="#contact-m"><i class="fa fa-fw fa-envelope-o"></i> Contact</a>
                 </li>
                 <!--Social Icons-->
                 <li class="social">
@@ -122,13 +131,13 @@
         <!-- /#sidebar-wrapper -->
 
     <div id="page-content-wrapper">
-     <div class="container-fluid">
+     
           <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
           </button>
-
+    <div class="container-fluid">
     <!--Home mobile-->
      <div id="home-m" class="row">
        <!--logo picture-->
@@ -190,7 +199,7 @@
      <!--Speakers mobile -->
      <div id="speakers-m" class="row">
       <div class="col-xs-12">
-        <span> Speakers </span>
+        <h3> Speakers </h3>
         <div id="myCarousel-speakers" class="carousel slide" >
         <!-- Indicators -->
         <!--
@@ -208,6 +217,14 @@
        <div class="carousel-inner" role="listbox">
         <div class="item active">
          <img src="images/speaker.jpg" alt="Speaker1" class="img-responsive img-circle center-block">
+          <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <a href="#" style="text-decoration:none;"><h3>Κώστας Καρπούζης</h3></a>
+                <p>Ερευνητής στο Ινστιτούτο Επικοινωνίας και Υπολογιστικών Συστημάτων (ICCS), Εθνικό Μετσόβιο Πολυτεχνείο</p>
+                <a id="more" class=" btn btn-link" href="#"><span class="fa fa-info-circle"></span></a>
+              </div>
+            </div>
         </div>
 
        <div class="item">
@@ -268,7 +285,7 @@
    <!--Performers mobile -->
      <div id="performers-m" class="row">
       <div class="col-xs-12">
-      <span> Performers </span>
+      <h3> Performers </h3>
       </div>
       <div class="col-xs-6 col-sm-4">
         <img src="images/performer.jpg" class="img-responsive center-block img-circle">
@@ -276,39 +293,39 @@
       <div class="col-xs-6 col-sm-4">
         <img src="images/performer.jpg" class="img-responsive center-block img-circle">
       </div>
-      <div class="col-xs-offset-3 col-xs-6 col-sm-4">
+      <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-4">
         <img src="images/performer.jpg" class="img-responsive center-block img-circle">
       </div>
         
     </div><!-- ./col-xs-12-->
    </div><!-- /.performers-m -->
 
-   <!-- Sponsors mobile-->
-      <div id="sponsors-m" class="row ">
-        <img src="images/about.png" class="img-responsive center-block" alt="Sponsors">
+   <!-- partners mobile-->
+      <div id="partners-m" class="row ">
+        <img id="bg" src="images/about.png" class="img-responsive center-block" alt="partners">
         <!--use the image as a button to appear the hidden div-->
         <script type="text/javascript">
-          function hiddenSponsors() {
-           if (document.getElementById("hidden-sponsors").style.display=="none"){
-             document.getElementById("hidden-sponsors").style.display = "";
+          function hiddenpartners() {
+           if (document.getElementById("hidden-partners").style.display=="none"){
+             document.getElementById("hidden-partners").style.display = "";
            }
            else{
-             document.getElementById("hidden-sponsors").style.display = "none";
+             document.getElementById("hidden-partners").style.display = "none";
            }
           }
         </script>
-        <a href="javascript:hiddenSponsors();">
-          <img id="more-sponsors" src="images/more.svg" class="img-responsive" alt="more..">
+        <a href="javascript:hiddenpartners();">
+          <img id="more-partners" src="images/more.svg" class="img-responsive" alt="more..">
         </a>  
       </div>
       <!--this div appears on click of #more image and hides on the next click-->
-      <div id="hidden-sponsors" style="display:none;">
-       <!--Golden Sponsors-->
-        <h3> Golden Sponsors</h3>
+      <div id="hidden-partners" style="display:none;">
+       <!--Golden partners-->
+        <h3> Golden partners</h3>
         <div class="row">
           <div class="col-xs-6">
             <a href="#">
-              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-thumbnail">
+              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-circle">
             </a>
           </div>
           <div class="col-xs-6">
@@ -317,8 +334,8 @@
            </a>
           </div>
         </div> 
-        <!--Bronze Sponsors-->
-        <h3> Bronze Sponsors</h3>
+        <!--Bronze partners-->
+        <h3> Bronze partners</h3>
          <div class="row">
           <div class="col-xs-6">
             <a href="#">
@@ -327,14 +344,182 @@
           </div>
           <div class="col-xs-6">
             <a href="#">
-              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-thumbnail">
+              <img src="images/sponsor.jpg" alt="Sponsor" class="img-responsive center-block img-circle">
             </a>
           </div>
          </div> 
          </div>
-         <!--Etc. -->
-         <h3>Etc.</h3>
 
+         <!--Team mobile -->
+         <div id="team-m" class="row">
+           <img id="bg" src="images/team.gif" class="img-responsive center-block">
+           <!--use the image as a button to appear the hidden div-->
+        <script type="text/javascript">
+          function hiddenTeam() {
+           if (document.getElementById("hidden-team").style.display=="none"){
+             document.getElementById("hidden-team").style.display = "";
+           }
+           else{
+             document.getElementById("hidden-team").style.display = "none";
+           }
+          }
+        </script>
+        <a href="javascript:hiddenTeam();">
+          <img id="more-team" src="images/more.svg" class="img-responsive" alt="more..">
+        </a> 
+         </div>
+         <div id="hidden-team" style="display:none;">
+           <div class="col-xs-12">
+            <div id="myCarousel-team" class="carousel slide" >
+            <!-- Indicators -->
+           <!--
+           <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+           </ol>
+           -->
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox">
+         <div class="item active">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+         <div class="item">
+          <img src="images/team.jpg" alt="Team1" class="img-responsive img-circle center-block">
+         </div>
+
+       </div> <!--/.carousel-inner-->
+
+       <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel-team" role="button" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel-team" role="button" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+       <span class="sr-only">Next</span>
+      </a>
+      </div><!-- /.carousel .slide -->
+     </div><!-- ./col-xs-12-->
+    </div><!-- /.hidden-team-->
+
+    <!--Contact mobile-->
+    <div id="contact-m" class="row">
+      <div class="col-xs-offset-2 col-xs-8">
+      <script type="text/javascript" scr="js/contact.js"></script>
+       <h3> Contact </h3>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+         <div class="messages"></div>
+          <div class="controls">
+           <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="g-recaptcha" data-sitekey="6LeLFycTAAAAAIIG3lmLuz4gq0hyEcCuNExkA-vO"></div>
+                <input id="send" type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+          </div>
+         <div class="row">
+            <div class="col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+         </div>
+       </div>
+      </form>
+     </div>
+    </div><!-- /#contact-m -->
 
 
 
@@ -343,9 +528,7 @@
     </div><!-- /.wrapper-->
         
                 
-            
-     <!--last </div> for mobile-->
-    </div>
+    </div><!--last </div> for mobile-->
 
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up -->
@@ -480,14 +663,14 @@
 
       </div>
 
-      <!--Sponsors-->
-      <div id="sponsors" class="row sponsors">
+      <!--partners-->
+      <div id="partners" class="row partners">
         <div class="col-sm-12">
-        <span>SPONSORS</span>
+        <span>partners</span>
         </div>
         <div class="col-sm-12">
-          <a href="sponsors.html">
-            <img src="images/x.png" alt="sponsors" class="img-responsive ">
+          <a href="partners.html">
+            <img src="images/x.png" alt="partners" class="img-responsive ">
           </a>
         </div>
       </div>
