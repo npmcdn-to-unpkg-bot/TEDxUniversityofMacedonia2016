@@ -39,7 +39,7 @@ body span{
   width: 100vw;
 }
 #more-about{
-  height: 25%;
+  height: auto;
   position: absolute;
   top: 60%;
   left: 80%;
@@ -50,7 +50,7 @@ body span{
   position: relative;
 }
 #more-theme{
-  height: 25%;
+  height: auto;
   position: absolute;
   top: 60%;
   left: 80%;
@@ -61,12 +61,33 @@ body span{
   background-color: #f2f2f2;
 }
 
+/*performers mobile*/
+#performers-m{
+  max-width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+/*venue mobile*/
+#venue-m{
+  position: relative;
+}
+#more-venue{
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+}
+#hidden-venue h3{
+   text-align:center;
+}
+
 /*partners mobile*/
 #partners-m{
   position: relative;
 }
 #more-partners{
-  height: 25%;
+  height: auto;
   position: absolute;
   top: 60%;
   left: 80%;
@@ -86,7 +107,7 @@ body span{
   position: relative;
 }*/
 #more-team{
-  height: 25%;
+  height: auto;
   position: absolute;
   top: 70%;
   left: 70%;
