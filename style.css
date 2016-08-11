@@ -113,9 +113,40 @@ body span{
   left: 70%;
 }
 
+#cd-team {
+  background-color: transparent;
+}
+
+#cd-team .cd-member-info {
+  background: #ffffff;
+}
+
+#cd-team .cd-img-overlay { /*change the hover color */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#cd-team .cd-img-overlay .ted-team{
+  position: relative;
+  width: 25%;
+  height: 25%;
+  top:50%;
+  left: 40%;
+}
+#cd-team .cd-img-overlay .linkedin-team{
+  position: relative;
+  width: 25%;
+  height: 25%;
+  top:30%;
+  left: 70%;
+}
+
+
 /*Contact mobile*/
 #send{
   background-color: #25b3c7;
+}
+#contact-m{
+  position: relative;
 }
 
 

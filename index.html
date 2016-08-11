@@ -36,7 +36,7 @@
        });
       });
     </script>
-      
+
     <!--script for Creative Morphing Menu with jQuery and CSS3 -->
     <script> $(document).ready(function() {
      $(document).delegate('.open', 'click', function(event){
@@ -60,6 +60,9 @@
 
     <!--ihover effects-->
     <link href="css/ihover.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -435,10 +438,44 @@
         </script> 
         <button id="more-team" type="button" class="btn btn-default" onclick="hiddenTeam()">More</button> 
          </div>
-         <div id="hidden-team" style="display:none;">
-           <div class="col-xs-12">
+
+         <div id="hidden-team" class="row" style="background:url(images/x.png);">
+
+          <div class="col-xs-12">
+
+          <section id="cd-team" class="cd-section">
+            <div class="cd-container">
+              <ul style="list-style:none;">
+                <li>
+                  <figure>
+                    <img src="images/borat.jpg" class="img-responsive img-rounded center-block">
+                    <div class="cd-img-overlay"><a href="#"><img src="images/ted.png" class="ted-team"></a><a href="#"><img src="images/linkedin.png" class="linkedin-team"></a></div>
+                  </figure>
+
+                  <div class="cd-member-info">
+                    John Snow<span>CEO</span>
+                  </div>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="images/borat.jpg" class="img-responsive img-rounded center-block">
+                    <div class="cd-img-overlay"><span>Social</span></div>
+                  </figure>
+
+                  <div class="cd-member-info">
+                    John Snow<span>CEO</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+        </section>
+
+        </div>
+        
+           
             
-           </div><!-- ./col-xs-12-->
          </div><!-- /.hidden-team-->
 
     <!--Contact mobile-->
