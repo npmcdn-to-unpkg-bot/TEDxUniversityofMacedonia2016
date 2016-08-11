@@ -112,6 +112,15 @@ body span{
   top: 70%;
   left: 70%;
 }
+#more-aboutsm{
+     height: auto;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+    
+}
+
+
 
 /*Contact mobile*/
 #send{
@@ -425,6 +434,7 @@ body span{
 .speakers{/*speakers div*/
   background-color: #000000;
   padding-top: 5%;
+    height:100vh;
 }
 
 .partners img{
