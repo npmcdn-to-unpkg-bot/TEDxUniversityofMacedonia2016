@@ -25,7 +25,6 @@
     <!--scripts for smooth scrolling-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/smooth_scroll.js"></script>
-       <script src="js/fd.js"></script>
 
     <!--script for mobile menu -->
     <script>$(document).ready(function() {   
@@ -508,7 +507,7 @@
 
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up ---------------------------------------------------------------------------------------->
     <div class="hidden-xs hidden-lg ">
-        
+
         <div class="hero-nav">
     <div class="hero-nav__inner">
         <h1>Gravity Of Thoughts</h1>
@@ -517,6 +516,37 @@
         </div>
     </div>
     </div>
+    <script>
+  var heroShinker = function() {
+    var hero = $('.hero-nav'),
+        heroHeight = $('.hero-nav').outerHeight(true);
+        $(hero).parent().css('padding-top', heroHeight);
+    $(window).scroll(function() {
+        var scrollOffset = $(window).scrollTop();
+        if (scrollOffset < heroHeight) {
+            $(hero).css('height', (heroHeight - scrollOffset));
+        }
+        if (scrollOffset > (heroHeight - 215)) {
+            hero.addClass('fixme');
+        } else {
+            hero.removeClass('fixme');
+        };
+    });
+
+ $(window).scroll(function() {
+        var scrollOffset = $(window).scrollTop();
+        if (scrollOffset < heroHeight) {
+            $('.hero-nav__inner h1').css('display', 'none');
+        }
+        else{
+          $('.hero-nav__inner h1').css('display', 'block');
+        }
+    });
+}
+
+heroShinker();
+
+</script>
   <div class="page-content">
     <p >Τι ειναι το Gravity of thoughts? Ελα μου ντε!</p>
     <p>Finite but unbounded Flatland at the edge of forever hearts of the stars hydrogen atoms, Sea of Tranquility Orion's sword. Dispassionate extraterrestrial observer, preserve and cherish that pale blue dot the carbon in our apple pies Apollonius of
