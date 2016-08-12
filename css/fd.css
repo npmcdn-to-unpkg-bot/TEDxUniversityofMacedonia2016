@@ -56,7 +56,9 @@ body, html {
 }
 
 .page-content {
-  width: 48.541019em;
+  width: 64.72135954999vw;
+    margin-left: 10px;
+     margin-right: 10px;
   margin: 0 auto;
   line-height: 1.625;
 }
