@@ -112,11 +112,14 @@ body span{
   top: 70%;
   left: 70%;
 }
+#aboutsm{
+    position: relative;
+}
 #more-aboutsm{
-     height: auto;
+ height: auto;
   position: absolute;
-  top: 120%;
-  left: 70%;
+  top: 80%;
+  left: 80%;
     
 }
 
