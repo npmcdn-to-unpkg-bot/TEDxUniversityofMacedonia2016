@@ -588,42 +588,33 @@ heroShinker();
         <span class="cls"></span> 
        </div>
 
-  <div id="timer" class="row wrap">
+  <div id="timer" class="row">
           
+  <div class="wrap">  
   <h1>TEDx <strong>UniversityofMacedonia</strong></h1>
   <h2>Gravity  <strong>of Thoughts</strong></a></h2>
 
   <div class="countdown">
-    <div class="bloc-time hours" data-init-value="24">
-      <span class="count-title">Hours</span>
+    <div class="bloc-time hours" data-init-value="">
+    <script>
+      function setDays() {
+       var event = new Date("November 05, 2016 00:09:00");
+       var now = new Date();
+       var timeDiff = event.getTime() - now.getTime();
+       var seconds = Math.floor(timeDiff / 1000);
+       var minutes = Math.floor(seconds / 60);
+       var hours = Math.floor(minutes / 60);
+       var days = Math.floor(hours / 24);
+       hours %= 24;
+        minutes %= 60;
+        seconds %= 60;
+      document.getElementsByClassName("hours")[0].setAttribute("data-init-value",days);
+    var timer = setTimeout('setDays()',1000);
+}
+</script>
+      <span class="count-title">Days</span>
 
       <div class="figure hours hours-1">
-        <span class="top">2</span>
-        <span class="top-back">
-          <span>2</span>
-        </span>
-        <span class="bottom">2</span>
-        <span class="bottom-back">
-          <span>2</span>
-        </span>
-      </div>
-
-      <div class="figure hours hours-2">
-        <span class="top">4</span>
-        <span class="top-back">
-          <span>4</span>
-        </span>
-        <span class="bottom">4</span>
-        <span class="bottom-back">
-          <span>4</span>
-        </span>
-      </div>
-    </div>
-
-    <div class="bloc-time min" data-init-value="0">
-      <span class="count-title">Minutes</span>
-
-      <div class="figure min min-1">
         <span class="top">0</span>
         <span class="top-back">
           <span>0</span>
@@ -631,6 +622,48 @@ heroShinker();
         <span class="bottom">0</span>
         <span class="bottom-back">
           <span>0</span>
+        </span>
+      </div>
+
+      <div class="figure hours hours-2">
+        <span class="top">5</span>
+        <span class="top-back">
+          <span>5</span>
+        </span>
+        <span class="bottom">5</span>
+        <span class="bottom-back">
+          <span>5</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="bloc-time min" data-init-value="">
+    <script>
+      function setHours() {
+       var event = new Date("November 05, 2016 00:09:00");
+       var now = new Date();
+       var timeDiff = event.getTime() - now.getTime();
+       var seconds = Math.floor(timeDiff / 1000);
+       var minutes = Math.floor(seconds / 60);
+       var hours = Math.floor(minutes / 60);
+       var days = Math.floor(hours / 24);
+       hours %= 24;
+        minutes %= 60;
+        seconds %= 60;
+      document.getElementsByClassName("min")[0].setAttribute("data-init-value",hours);
+    var timer = setTimeout('setHours()',1000);
+}
+</script>
+      <span class="count-title">Hours</span>
+
+      <div class="figure min min-1">
+        <span class="top">1</span>
+        <span class="top-back">
+          <span>1</span>
+        </span>
+        <span class="bottom">1</span>
+        <span class="bottom-back">
+          <span>1</span>
         </span>        
       </div>
 
@@ -646,37 +679,58 @@ heroShinker();
       </div>
     </div>
 
-    <div class="bloc-time sec" data-init-value="0">
-      <span class="count-title">Seconds</span>
+    <div class="bloc-time sec" data-init-value="">
+    <script>
+      function setMins() {
+       var event = new Date("November 05, 2016 00:09:00");
+       var now = new Date();
+       var timeDiff = event.getTime() - now.getTime();
+       var seconds = Math.floor(timeDiff / 1000);
+       var minutes = Math.floor(seconds / 60);
+       var hours = Math.floor(minutes / 60);
+       var days = Math.floor(hours / 24);
+       hours %= 24;
+        minutes %= 60;
+        seconds %= 60;
+      document.getElementsByClassName("sec")[0].setAttribute("data-init-value",minutes);
+    var timer = setTimeout('setMins()',1000);
+}
+</script>
+      <span class="count-title">Minutes</span>
 
         <div class="figure sec sec-1">
-        <span class="top">0</span>
+        <span class="top">1</span>
         <span class="top-back">
-          <span>0</span>
+          <span>1</span>
         </span>
-        <span class="bottom">0</span>
+        <span class="bottom">1</span>
         <span class="bottom-back">
-          <span>0</span>
+          <span>1</span>
         </span>          
       </div>
 
       <div class="figure sec sec-2">
-        <span class="top">0</span>
+        <span class="top">6</span>
         <span class="top-back">
-          <span>0</span>
+          <span>6</span>
         </span>
-        <span class="bottom">0</span>
+        <span class="bottom">6</span>
         <span class="bottom-back">
-          <span>0</span>
+          <span>6</span>
         </span>
       </div>
     </div>
   </div>
- </div>
- <!--Iniate the countdown script-->
- <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
- <script src="js/countdown.js"></script>
+</div>
+  <script>setDays();</script>
+  <script>setHours();</script>
+  <script>setMins();</script>
 
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+
+        <script src="js/countdown.js"></script>
+</div>
 
       <!-- About ------------------------>
       

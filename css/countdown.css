@@ -1,14 +1,11 @@
-
 .wrap {
   position: relative;
-  bottom: 0;
+  bottom: 5;
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
-  height: 100%;
-  margin-bottom: 3%;
-
+  height: 200px;
 }
 
 a {
@@ -17,7 +14,7 @@ a {
 }
 
 h1 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
   font: 300 3.23607em "Lato";
 }
@@ -27,7 +24,7 @@ h1 strong {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   text-align: center;
   font: 300 0.7em "Lato";
   text-transform: uppercase;

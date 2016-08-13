@@ -26,7 +26,9 @@ var Countdown = {
     };
     
     // Initialize total seconds
-    this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
+    //make it show total minutes NOT SECONDS
+    this.total_seconds = this.values.hours * 24*60 + (this.values.minutes * 60) + this.values.seconds;
+    console.log(this.total_seconds);
 
     // Animate countdown to the end 
     this.count();    
@@ -42,11 +44,11 @@ var Countdown = {
         $sec_1  = this.$.seconds.eq(0),
         $sec_2  = this.$.seconds.eq(1);
     
-        this.countdown_interval = setInterval(function() {
+        function count() {
 
         if(that.total_seconds > 0) {
 
-            --that.values.seconds;              
+            --that.values.seconds;        
 
             if(that.values.minutes >= 0 && that.values.seconds < 0) {
 
@@ -56,7 +58,7 @@ var Countdown = {
 
             if(that.values.hours >= 0 && that.values.minutes < 0) {
 
-                that.values.minutes = 59;
+                that.values.minutes = 23;
                 --that.values.hours;
             }
 
@@ -75,7 +77,9 @@ var Countdown = {
         else {
             clearInterval(that.countdown_interval);
         }
-    }, 1000);    
+    }
+    this.countdown_interval=count();
+    this.countdown_interval=setInterval(count,60*1000);    
   },
   
   animateFigure: function($el, value) {
