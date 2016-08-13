@@ -39,11 +39,6 @@
       });
     </script>
       
-      <!---- files for countdown timer ------->
-      
-      <link href="css/counter.css" rel="stylesheet">
-      <link href="js/timer.scss" rel="stylesheet">
-      
       
     <!--script for Creative Morphing Menu with jQuery and CSS3 -->
     <script> $(document).ready(function() {
@@ -68,6 +63,9 @@
 
     <!--ihover effects-->
     <link href="css/ihover.css" rel="stylesheet">
+
+    <!--Countdown timer -->
+    <link rel="stylesheet" href="css/countdown.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -535,8 +533,10 @@
         }
         if (scrollOffset > (heroHeight - 215)) {
             hero.addClass('fixme');
+            $(".open").css("display", "block"); /* display sm+ menu with the fixed bar*/ 
         } else {
             hero.removeClass('fixme');
+            $(".open").css("display", "none");
         };
     });
 
@@ -569,22 +569,6 @@ heroShinker();
         
      <div class="container-fluid">
 
-       
-
-       <!--menu for the 2nd+ div -->
-       <script type="text/javascript">
-         $(window).on('scroll', function() {
-          var y_scroll_pos = window.pageYOffset;
-          var scroll_pos_test = $(window).height();  /* if the user has scrolled more than window height*/
-          var flag=0;
-          if(y_scroll_pos > scroll_pos_test) {
-            flag=1;
-          }
-          if (flag==1){
-            $('.open').css("display", "block");
-          }
-         });
-       </script>
       
        <div class="open"> 
         <span class="cls"></span> 
@@ -604,8 +588,7 @@ heroShinker();
         <span class="cls"></span> 
        </div>
 
-       <div id="timer" class="row">
- <script src="js/timer.js"></script>
+  <div id="timer" class="row wrap">
           
   <h1>TEDx <strong>UniversityofMacedonia</strong></h1>
   <h2>Gravity  <strong>of Thoughts</strong></a></h2>
@@ -689,9 +672,11 @@ heroShinker();
       </div>
     </div>
   </div>
+ </div>
+ <!--Iniate the countdown script-->
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+ <script src="js/countdown.js"></script>
 
-
-       </div>
 
       <!-- About ------------------------>
       
@@ -825,12 +810,12 @@ heroShinker();
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     
-     <!---- to reload and go to top --->
+     <!-- to reload and go to top -->
       <script>
          window.onload = function() {
  setTimeout (function () {
   scrollTo(0,0);
- }, 20); //100ms for example
+ }, 1); //100ms for example
 }
     </script>
  

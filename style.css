@@ -294,14 +294,17 @@ body span{
 /*End of hover for speakers*/
 
 
-
+/*SM MD CUSTOMIZATION*/
+#aboutsm{
+  position: relative;
+}
 
 /*DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION DESKTOP CUSTOMIZATION */
  /*desktop menu */
 
  .open {
   position: fixed;
-  top: 40px;
+  top: 0;
   right: 40px;
   width: 50px;
   height: 50px;
@@ -333,9 +336,9 @@ body span{
   z-index: 9;
 }
 
-.open span:nth-child(2) { margin-top: 25px; }
+.open span:nth-child(2) { margin-top: 22px; }
 
-.open span:nth-child(3) { margin-top: 40px; }
+.open span:nth-child(3) { margin-top: 35px; }
 
 .sub-menu {
   transition: all 0.8s cubic-bezier(0, 1, 1, .02);

@@ -24,11 +24,12 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  min-height: 105px;
+  min-height: 9%;         /*change the height of the fixed bar */
   background-image: url(about.png);
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  z-index: 5;/*make it on top of everything*/
 }
 .hero-nav .hero-nav__inner {
   z-index: 1;
