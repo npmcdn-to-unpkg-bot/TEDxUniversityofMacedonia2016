@@ -591,14 +591,15 @@ heroShinker();
   <div id="timer" class="row">
           
   <div class="wrap">  
-  <h1>TEDx <strong>UniversityofMacedonia</strong></h1>
-  <h2>Gravity  <strong>of Thoughts</strong></a></h2>
+  <h2>TEDx <strong>UniversityofMacedonia</strong></h2>
+  <h4><strong>Gravity of Thoughts</strong></h4>
+  <h4> Saturday, 5th of November 2016 at NOESIS </h4>
 
   <div class="countdown">
     <div class="bloc-time hours" data-init-value="">
     <script>
       function setDays() {
-       var event = new Date("November 05, 2016 00:09:00");
+       var event = new Date("November 05, 2016 09:00:00");
        var now = new Date();
        var timeDiff = event.getTime() - now.getTime();
        var seconds = Math.floor(timeDiff / 1000);
@@ -606,6 +607,7 @@ heroShinker();
        var hours = Math.floor(minutes / 60);
        var days = Math.floor(hours / 24);
        hours %= 24;
+       hours -= 1;
         minutes %= 60;
         seconds %= 60;
       document.getElementsByClassName("hours")[0].setAttribute("data-init-value",days);
@@ -640,7 +642,7 @@ heroShinker();
     <div class="bloc-time min" data-init-value="">
     <script>
       function setHours() {
-       var event = new Date("November 05, 2016 00:09:00");
+       var event = new Date("November 05, 2016 09:00:00");
        var now = new Date();
        var timeDiff = event.getTime() - now.getTime();
        var seconds = Math.floor(timeDiff / 1000);
@@ -648,6 +650,7 @@ heroShinker();
        var hours = Math.floor(minutes / 60);
        var days = Math.floor(hours / 24);
        hours %= 24;
+       hours -= 1;
         minutes %= 60;
         seconds %= 60;
       document.getElementsByClassName("min")[0].setAttribute("data-init-value",hours);
@@ -682,7 +685,7 @@ heroShinker();
     <div class="bloc-time sec" data-init-value="">
     <script>
       function setMins() {
-       var event = new Date("November 05, 2016 00:09:00");
+       var event = new Date("November 05, 2016 09:00:00");
        var now = new Date();
        var timeDiff = event.getTime() - now.getTime();
        var seconds = Math.floor(timeDiff / 1000);
@@ -690,6 +693,7 @@ heroShinker();
        var hours = Math.floor(minutes / 60);
        var days = Math.floor(hours / 24);
        hours %= 24;
+       hours -= 1;
         minutes %= 60;
         seconds %= 60;
       document.getElementsByClassName("sec")[0].setAttribute("data-init-value",minutes);
