@@ -2,10 +2,6 @@
 http://flickity.metafizzy.co
 ---------------------------------------------- */
 /*I have customized it, it's not the official .css file from the website*/
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .gallery{
   width: 100%;

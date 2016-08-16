@@ -1,10 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .hero-nav {
   position: fixed;
   top: 0;
