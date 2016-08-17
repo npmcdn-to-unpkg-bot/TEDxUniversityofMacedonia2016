@@ -1,0 +1,15 @@
+.container-fluid {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -2em;
+}
+.footer, .push {
+   height: 0em;
+}
+
+#head-img{
+	width: 120vw;
+	height: 100px;
+	position: relative;
+}
