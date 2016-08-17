@@ -70,6 +70,75 @@
     <!--Countdown timer -->
     <link rel="stylesheet" href="css/countdown.css">
 
+    <!--MENU ANIMATION FOR SM MD LG -->
+    <script>    
+$(document).ready(function(){
+    $("#stable").one("click", function(){
+        $("#tabs").fadeOut();
+        /*$("#stable").removeClass("zIndex2");*/
+
+        $("#fr7").animate({
+          /*top:"+=220",*/
+          right:"-32vw",
+          left: "-10vw"
+        },2000);
+
+        $("#fr6").animate({
+          /*top:"+=170",*/
+          right:"-30vw",
+          left: "-5vw"
+        },2000);
+
+        $("#fr5").animate({
+          /*top:"+=120",*/
+          left: "+3vw",
+          right: "-28vw"
+        },2000);
+
+        $("#fr4").animate({
+          /*top:"+2vh",*/
+          left:"+42vw",
+          right:"17vw"
+        },2000);
+
+        $("#fr3").animate({
+          /*top:"-8vh",*/
+          left:"+26vw",
+          right: "-10vw"
+         },2000);
+
+        $("#fr1").animate({
+          /*top:"-20vh",*/
+          left: "",
+          right: "50vw"
+        },2000);
+
+         $("#fr2").animate({
+          /*top: "-17vh",*/
+          left: "-15vw",
+          right:"35vw"
+        },2000);
+       
+        $("#fr8").animate({
+          /*top:"-20vh",*/
+          left: "-21vw",
+          right: "30vw"
+        },2000);
+
+        $("#fr10").animate({
+          /*top:"-15vh",*/
+          left:"-31vw",
+          right: "19vw"
+        },2000);
+
+        $("#fr9").animate({
+          /*top:"-10vh",*/
+          left:"-37vw",
+          right:"10vw"
+        },2000);
+    });
+}); 
+</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -517,11 +586,30 @@
     <div class="hidden-xs hidden-lg ">
 
         <div class="hero-nav">
+        <div class="fullmenu">
+
+     <img id="stable" class="zIndex2" src="menu/stable.svg">
+     <img id="tabs" src="menu/front.svg">
+
+     <img id="fr7" src="menu/fr7.svg">
+     <img id="fr6" src="menu/fr6.svg">
+     <img id="fr5" src="menu/fr5.svg">
+     <img id="fr4" src="menu/fr4.svg">
+     <img id="fr3" src="menu/fr3.svg">
+     <img id="fr1" src="menu/fr1.svg">
+     <img id="fr2" src="menu/fr2.svg">
+     <img id="fr8" src="menu/fr8.svg">
+     <img id="fr10" src="menu/fr10.svg">
+     <img id="fr9" src="menu/fr9.svg">
+     </div>
     <div class="hero-nav__inner">
+      
+
         <h1>Gravity Of Thoughts</h1>
-        <div class="hero-nav__button">
+
+        <!--<div class="hero-nav__button">
             <a href="#" class="btn"></a>
-        </div>
+        </div>-->
     </div>
     </div>
     <script>

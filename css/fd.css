@@ -18,7 +18,7 @@
           align-items: center;
   height: 100vh;
   min-height: 9%;         /*change the height of the fixed bar */
-  background-image: url(about.png);
+  /*background-image: url(about.png);*/
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -41,9 +41,9 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;/*
   -webkit-transition: background 400ms;
-  transition: background 400ms;
+  transition: background 400ms;*/
 }
 .hero-nav.fixme:before {
   background: rgba(0, 0, 0, 0.8);
