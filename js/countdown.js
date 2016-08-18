@@ -28,7 +28,6 @@ var Countdown = {
     // Initialize total seconds
     //make it show total minutes NOT SECONDS
     this.total_seconds = this.values.hours * 24*60 + (this.values.minutes * 60) + this.values.seconds;
-    console.log(this.total_seconds);
 
     // Animate countdown to the end 
     this.count();    

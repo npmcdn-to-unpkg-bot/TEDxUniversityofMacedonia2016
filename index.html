@@ -67,6 +67,9 @@
     <!--ihover effects-->
     <link href="css/ihover.css" rel="stylesheet">
 
+     <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
     <!--Countdown timer -->
     <link rel="stylesheet" href="css/countdown.css">
 
@@ -225,8 +228,59 @@ $(document).ready(function(){
     <!--Home mobile-->
      <div id="home-m" class="row">
        <!--logo picture-->
-      <img src="images/logo.png" class="img-responsive center-block" alt="Gravity of Thoughts logo">
-     </div> 
+      <img src="images/logo.svg" class="img-responsive center-block" alt="Gravity of Thoughts logo">
+
+      <div class="wrap">
+  <div class="countdown" id="countdownmob">
+    <div class="bloc-time hours" data-init-value="">
+    <script>
+      function setDays() {
+       var event = new Date("November 05, 2016 09:00:00");
+       var now = new Date();
+       var timeDiff = event.getTime() - now.getTime();
+       var seconds = Math.floor(timeDiff / 1000);
+       var minutes = Math.floor(seconds / 60);
+       var hours = Math.floor(minutes / 60);
+       var days = Math.floor(hours / 24);
+       hours %= 24;
+       hours -= 1;
+        minutes %= 60;
+        seconds %= 60;
+      document.getElementsByClassName("hours")[0].setAttribute("data-init-value",days);
+    var timer = setTimeout('setDays()',1000);
+}
+</script>
+      <span class="count-title">Days left</span>
+
+      <div class="figure hours hours-1">
+        <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>
+      </div>
+
+      <div class="figure hours hours-2">
+        <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>
+      </div>
+    </div>
+  </div>
+      <h4 style="text-align:center;"> Saturday,<br> 5th of November <br>at NOESIS </h4>  
+
+</div>
+  <script>setDays();</script>
+     </div>  <!-- /#home-m .row  --> 
+
 
     <!-- About mobile-->
       <div id="about-m" class="row ">
@@ -447,6 +501,7 @@ $(document).ready(function(){
           – Νέους, που έχουν ενδιαφέρον για τις Φυσικές Επιστήμες και την Τεχνολογία
           – Εκπαιδευτικούς, για επιμόρφωση και υποβοήθηση του έργου τους
           – Κάθε ενδιαφερόμενο, για πληροφόρηση, επιμόρφωση και παροχή υπηρεσιών.</p>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12123.898247902856!2d22.995719!3d40.564239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63769c7c4a5a9ef3!2sNoesis+Thessaloniki+Science+Center+%26+Technology+Museum!5e0!3m2!1sen!2sgr!4v1471480599776" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
    <!-- partners mobile-->
@@ -463,7 +518,7 @@ $(document).ready(function(){
            }
           }
         </script>
-        <button id="more-about" type="button" class="btn btn-default" onclick="hiddenPartners()">More</button> 
+        <button id="more-partners" type="button" class="btn btn-default" onclick="hiddenPartners()">More</button> 
       </div>
       <!--this div appears on click of #more button and hides on the next click-->
       <div id="hidden-partners" style="display:none;">
@@ -498,7 +553,7 @@ $(document).ready(function(){
          </div>
 
          <!--Team mobile -->
-         <div id="team-m" class="row">
+         <div id="team-m" class="row" style="display:none;">
            <img id="bg" src="images/team.gif" class="img-responsive center-block">
            <!--use the image as a button to appear the hidden div-->
         <script type="text/javascript">
@@ -513,10 +568,44 @@ $(document).ready(function(){
         </script> 
         <button id="more-team" type="button" class="btn btn-default" onclick="hiddenTeam()">More</button> 
          </div>
-         <div id="hidden-team" style="display:none;">
-           <div class="col-xs-12">
+
+         <div id="hidden-team" class="row" style="background:url(images/x.png);">
+
+          <div class="col-xs-12">
+
+          <section id="cd-team" class="cd-section">
+            <div class="cd-container">
+              <ul style="list-style:none;">
+                <li>
+                  <figure>
+                    <img src="images/borat.jpg" class="img-responsive img-rounded center-block">
+                    <div class="cd-img-overlay"><a href="#"><img src="images/ted.png" class="ted-team"></a><a href="#"><img src="images/linkedin.png" class="linkedin-team"></a></div>
+                  </figure>
+
+                  <div class="cd-member-info">
+                    John Snow<span>CEO</span>
+                  </div>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="images/borat.jpg" class="img-responsive img-rounded center-block">
+                    <div class="cd-img-overlay"><span>Social</span></div>
+                  </figure>
+
+                  <div class="cd-member-info">
+                    John Snow<span>CEO</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+        </section>
+
+        </div>
+        
+           
             
-           </div><!-- ./col-xs-12-->
          </div><!-- /.hidden-team-->
 
     <!--Contact mobile-->

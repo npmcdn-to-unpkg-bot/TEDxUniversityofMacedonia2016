@@ -7,6 +7,10 @@
   margin: auto;
   height: 100%;
 }
+#countdownmob{
+  float: center;
+  text-align: right;
+}
 
 #timer{
   padding-bottom: 3%;
@@ -37,7 +41,7 @@ h2 strong {
   font-weight: 400; 
 }*/
 
-/*kept original hont weights. changed h1 -> h1, h2-> h4*/
+/*kept original font weights. changed h1 -> h1, h2-> h4*/
 h2 {
   margin-bottom: 0;
   text-align: center;
