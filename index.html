@@ -74,73 +74,9 @@
     <link rel="stylesheet" href="css/countdown.css">
 
     <!--MENU ANIMATION FOR SM MD LG -->
-    <script>    
-$(document).ready(function(){
-    $("#stable").one("click", function(){
-        $("#tabs").fadeOut();
-        /*$("#stable").removeClass("zIndex2");*/
 
-        $("#fr7").animate({
-          /*top:"+=220",*/
-          right:"-32vw",
-          left: "-10vw"
-        },2000);
+    <script>  
 
-        $("#fr6").animate({
-          /*top:"+=170",*/
-          right:"-30vw",
-          left: "-5vw"
-        },2000);
-
-        $("#fr5").animate({
-          /*top:"+=120",*/
-          left: "+3vw",
-          right: "-28vw"
-        },2000);
-
-        $("#fr4").animate({
-          /*top:"+2vh",*/
-          left:"+42vw",
-          right:"17vw"
-        },2000);
-
-        $("#fr3").animate({
-          /*top:"-8vh",*/
-          left:"+26vw",
-          right: "-10vw"
-         },2000);
-
-        $("#fr1").animate({
-          /*top:"-20vh",*/
-          left: "",
-          right: "50vw"
-        },2000);
-
-         $("#fr2").animate({
-          /*top: "-17vh",*/
-          left: "-15vw",
-          right:"35vw"
-        },2000);
-       
-        $("#fr8").animate({
-          /*top:"-20vh",*/
-          left: "-21vw",
-          right: "30vw"
-        },2000);
-
-        $("#fr10").animate({
-          /*top:"-15vh",*/
-          left:"-31vw",
-          right: "19vw"
-        },2000);
-
-        $("#fr9").animate({
-          /*top:"-10vh",*/
-          left:"-37vw",
-          right:"10vw"
-        },2000);
-    });
-}); 
 </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -675,6 +611,179 @@ $(document).ready(function(){
     <div class="hidden-xs hidden-lg ">
 
         <div class="hero-nav">
+            <script>
+      var BrowserDetect = {
+        init: function () {
+            this.browser = this.searchString(this.dataBrowser) || "Other";
+            this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "Unknown";
+        },
+        searchString: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                var dataString = data[i].string;
+                this.versionSearchString = data[i].subString;
+
+                if (dataString.indexOf(data[i].subString) !== -1) {
+                    return data[i].identity;
+                }
+            }
+        },
+        searchVersion: function (dataString) {
+            var index = dataString.indexOf(this.versionSearchString);
+            if (index === -1) {
+                return;
+            }
+
+            var rv = dataString.indexOf("rv:");
+            if (this.versionSearchString === "Trident" && rv !== -1) {
+                return parseFloat(dataString.substring(rv + 3));
+            } else {
+                return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
+            }
+        },
+
+        dataBrowser: [
+            {string: navigator.userAgent, subString: "Edge", identity: "MS Edge"},
+            {string: navigator.userAgent, subString: "MSIE", identity: "Explorer"},
+            {string: navigator.userAgent, subString: "Trident", identity: "Explorer"},
+            {string: navigator.userAgent, subString: "Firefox", identity: "Firefox"},
+            {string: navigator.userAgent, subString: "Opera", identity: "Opera"},  
+            {string: navigator.userAgent, subString: "OPR", identity: "Opera"},  
+
+            {string: navigator.userAgent, subString: "Chrome", identity: "Chrome"}, 
+            {string: navigator.userAgent, subString: "Safari", identity: "Safari"}       
+        ]
+    };
+    
+    BrowserDetect.init();
+
+    if (BrowserDetect.browser == 'Firefox'){
+$(document).ready(function(){
+    $("#stable").one("click", function(){
+        $("#tabs").fadeOut();
+        /*$("#stable").removeClass("zIndex2");*/
+
+        $("#fr7").animate({
+          /*top:"+=220",*/
+          right:"-32vw",
+          left: "-10vw"
+        },2000);
+
+        $("#fr6").animate({
+          /*top:"+=170",*/
+          right:"-30vw",
+          left: "-5vw"
+        },2000);
+
+        $("#fr5").animate({
+          /*top:"+=120",*/
+          left: "+3vw",
+          right: "-28vw"
+        },2000);
+
+        $("#fr4").animate({
+          /*top:"+2vh",*/
+          left:"+42vw",
+          right:"17vw"
+        },2000);
+
+        $("#fr3").animate({
+          /*top:"-8vh",*/
+          left:"+26vw",
+          right: "-10vw"
+         },2000);
+
+        $("#fr1").animate({
+          /*top:"-20vh",*/
+          left: "",
+          right: "50vw"
+        },2000);
+
+         $("#fr2").animate({
+          /*top: "-17vh",*/
+          left: "-15vw",
+          right:"35vw"
+        },2000);
+       
+        $("#fr8").animate({
+          /*top:"-20vh",*/
+          left: "-21vw",
+          right: "30vw"
+        },2000);
+
+        $("#fr10").animate({
+          /*top:"-15vh",*/
+          left:"-31vw",
+          right: "19vw"
+        },2000);
+
+        $("#fr9").animate({
+          /*top:"-10vh",*/
+          left:"-37vw",
+          right:"10vw"
+        },2000);
+    });
+}); 
+}
+else{
+  $(document).ready(function(){
+    $("#stable").one("click", function(){
+        $("#tabs").fadeOut();
+        /*$("#stable").removeClass("zIndex2");*/
+
+        $("#fr7").animate({
+          top:"+20vh",
+          left: "+14vw"
+        },2000);
+
+        $("#fr6").animate({
+          top:"+13vh",
+          left: "+16vw"
+        },2000);
+
+        $("#fr5").animate({
+          top:"+7vh",
+          left: "+17vw",
+        },2000);
+
+        $("#fr4").animate({
+          top:"-4vh",
+          left:"+15vw",
+        },2000);
+
+        $("#fr3").animate({
+          top:"-14vh",
+          left:"14vw",
+         },2000);
+
+        $("#fr1").animate({
+          top:"-15vh",
+          left: "-22vw",
+        },2000);
+
+         $("#fr2").animate({
+          top: "-7vh",
+          left: "-23vw",
+        },2000);
+       
+        $("#fr8").animate({
+          top:"-5vh",
+          left: "-25vw",
+        },2000);
+
+        $("#fr10").animate({
+          top:"+7vh",
+          left:"-25vw",
+        },2000);
+
+        $("#fr9").animate({
+          top:"+14vh",
+          left:"-24vw",
+        },2000);
+    });
+}); 
+
+}
+    </script>
         <div class="fullmenu">
 
      <img id="stable" class="zIndex2" src="menu/stable.svg">
