@@ -118,6 +118,7 @@ body span{
   top: 70%;
   left: 70%;
 }
+/*TO THE OTHER FILE. CSS/STYLE.CSS */
 #cd-team {
   background-color: transparent;
 }
@@ -127,23 +128,24 @@ body span{
 }
 
 #cd-team .cd-img-overlay { /*change the hover color */
-  background: rgba(0, 0, 0, 0.7);
+  background: #000;
+  height: 50%;
 }
 
 #cd-team .cd-img-overlay .ted-team{
-  position: relative;
-  width: 25%;
-  height: 25%;
-  top:50%;
-  left: 40%;
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  bottom: 0;
+  left: 0;
 }
 #cd-team .cd-img-overlay .linkedin-team{
-  position: relative;
-  width: 25%;
-  height: 25%;
-  top:30%;
-  left: 70%;
-}
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+} 
 
 #aboutsm{
     position: relative;
