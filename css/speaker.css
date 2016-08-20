@@ -84,6 +84,6 @@
 
 .d2 {
   left: 0%;
-  position: relative;
+  position: absolute;
   top: 80px;
 }

@@ -551,10 +551,13 @@ body span{
   padding-top: 5%;
     height:100vh;
 }
-
+.partners{
+  position: absolute;
+}
 .partners img{
   padding-top: 5%;
   margin: 0 auto; /*to bring the image in the center */
+  position: relative;
 }
 
 .team{
