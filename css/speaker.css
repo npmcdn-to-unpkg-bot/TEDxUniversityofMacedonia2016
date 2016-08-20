@@ -1,6 +1,6 @@
 .diagonals {
-  position: fixed;
-  height: 200%;
+  position: absolute;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -moz-box;

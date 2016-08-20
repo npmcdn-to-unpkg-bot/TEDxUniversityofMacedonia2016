@@ -8,16 +8,16 @@ $color-teal: #60B99A;
 $color-purple: #5B527F;
 $color-gray: #555555;
 $color-black: #000000;
-.diagonals1 {
-    position: fixed;
-    height: 200%;
+.diagonals {
+    position: absolute;
+    height: 100%;
     width: 100%;
     @include display(flex);
     @include align-items(stretch);
     background: #555555;
 }
 
-.diagonal1 {
+.diagonal {
     height: 100%;
     background: $color-coral;
     @include flex(1);
@@ -44,7 +44,7 @@ $color-black: #000000;
     }
 }
 
-.fill1 {
+.fill {
     display: flex;
     overflow: hidden;
 }
