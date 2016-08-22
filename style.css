@@ -567,3 +567,17 @@ body span{
 .team img{
   margin: 0 auto; /*to bring the image in the center */
 }
+.noesis{
+    height: 40.45084971874vh;
+}
+.koko{
+    width: 35vw;
+    height: 400px;
+}
+.koko1{
+     width: 30vw;
+    height: 400px;
+}
+.papa{
+    padding: 0;
+}
