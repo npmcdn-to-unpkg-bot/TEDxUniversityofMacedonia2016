@@ -341,70 +341,20 @@ body span{
 .zIndex2{
   z-index: 2;
 }
-#fullmenu{
-  position: relative;
-}
-
 #stable{
   position: absolute;
   top:0;
   left:0;
 }
-#tabs{
+.fr{
   position: absolute;
-  top:0;
-  left:0;
+  top:30%;
+  left:45%;
+  width: 10%;
+  height: auto;
+  opacity: 0;
 }
-#fr7{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr6{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr5{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr4{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr3{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr1{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr2{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr8{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr10{
-  position: absolute;
-  top:0;
-  left:0;
-}
-#fr9{
-  position: absolute;
-  top:0;
-  left:0;
-}
+
 /*END OF MENU ------------------------ */
 
 
