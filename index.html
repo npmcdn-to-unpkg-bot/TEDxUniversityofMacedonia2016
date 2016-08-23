@@ -789,10 +789,15 @@
         
  <script>    
   $(document).ready(function(){
-    $("#stable").one("click", function(){
+    $("#clickMe").one("click", function(){
         $("#tabs").fadeOut();
         $("#stable").removeClass("zIndex2");
+        $("clickMe").removeClass("zIndex2");
         $(".fr").addClass("zIndex2");
+
+        $("#clickMe").animate({
+          opacity: 0
+        },2000);
 
         /*RIGHT SIDE*/
         $("#fr7").animate({
@@ -863,6 +868,14 @@
     <div class="container-fluid brain">
 
      <img id="stable" class="zIndex2" src="menu/stable.svg">
+     <script>
+    window.setInterval(function(){
+        $("#clickMe").fadeTo(600);
+        $("#clickMe").fadeTo(600);        
+      }, 1200);
+
+     </script>
+     <img id="clickMe" class="zIndex2" src="menu/clickME.svg">
 
      <a href="#contact"><img id="fr7" class="fr" src="menu/fr7.svg"></a><!--Contact -->
      <a href="http://blog.tedxuniversityofmacedonia.com" target="_blank"><img id="fr6" class="fr" src="menu/fr6.svg"></a><!--Blog -->

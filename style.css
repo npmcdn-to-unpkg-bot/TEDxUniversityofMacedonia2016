@@ -354,6 +354,16 @@ body span{
   height: auto;
   opacity: 0;
 }
+#clickMe{
+  width: 10%;
+  height: auto;
+  position: absolute;
+  left:40%;
+  top:25%;
+  opacity: 1;
+  background-color:transparent;
+}
+
 
 /*END OF MENU ------------------------ */
 
