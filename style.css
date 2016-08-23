@@ -344,7 +344,7 @@ body span{
 }
 #stable{
   position: absolute;
-  top:0;
+  top:-15vh;
   left:0;
 }
 .fr{
@@ -432,6 +432,7 @@ body span{
 .counter{
     height:30vh;
     position:absolute;
+    top: 60vh;
 }
 .vh{
     height: 100vh;
