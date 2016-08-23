@@ -356,8 +356,8 @@ body span{
   opacity: 0;
 }
 #clickMe{
-  width: 7%;
-  height: auto;
+  width: 12%;
+  height: 12%;
   position: absolute;
   left:42.5%;
   top:25%;
