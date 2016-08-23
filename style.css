@@ -424,11 +424,14 @@ body span{
 .brain{
     height:60vh;
 }
+.brain #stable{
+  height: 100%;
+  width: 100%;
+}
+
 .counter{
     height:30vh;
     position:absolute;
-    
-    
 }
 .vh{
     height: 100vh;
