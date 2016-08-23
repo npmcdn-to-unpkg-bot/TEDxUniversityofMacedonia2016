@@ -27,11 +27,16 @@ body span{
 /*make the first div be as large as is the viewport of the visitor*/
 #home-m{
   height: 100vh;
-  background-color: #f2f2f2;
 }
 #home-m img{
-  height:65vh;
-  padding-top: 3%;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top:0vh;
+}
+#home-m h4{
+  position: relative;
+  top:-10%;  
 }
 
 /*About mobile*/
@@ -39,29 +44,17 @@ body span{
   position: relative;
 }
 #bg{/*all images as a background, such as about.png to be full width*/
-  width: 100vw;
-}
-#more-about{
-  height: auto;
-  position: absolute;
-  top: 60%;
-  left: 80%;
+  width: 100%;
 }
 
 /*Theme mobile*/
 #theme-m{
   position: relative;
 }
-#more-theme{
-  height: auto;
-  position: absolute;
-  top: 60%;
-  left: 80%;
-}
 
 /*Speakers mobile*/
-#speakers-m{
-  background-color: #f2f2f2;
+#hidden-speakers{
+  position: relative;
 }
 
 /*performers mobile*/
@@ -75,12 +68,6 @@ body span{
 #venue-m{
   position: relative;
 }
-#more-venue{
-  height: auto;
-  position: absolute;
-  top: 60%;
-  left: 80%;
-}
 #hidden-venue h3{
    text-align:center;
 }
@@ -93,12 +80,7 @@ body span{
 #partners-m{
   position: relative;
 }
-#more-partners{
-  height: auto;
-  position: absolute;
-  top: 60%;
-  left: 80%;
-}
+
 #hidden-partners h3{
    text-align:center;
 }
@@ -107,18 +89,7 @@ body span{
 #team-m{
  position: relative;
 }/*
-#team-m img{
-  width: auto;
-  max-width: 100%;
-  height: 370px;
-  position: relative;
-}*/
-#more-team{
-  height: auto;
-  position: absolute;
-  top: 70%;
-  left: 70%;
-}
+
 /*TO THE OTHER FILE. CSS/STYLE.CSS */
 #cd-team {
   background-color: transparent;
@@ -151,14 +122,6 @@ body span{
 #aboutsm{
     position: relative;
 }
-#more-aboutsm{
- height: auto;
-  position: absolute;
-  top: 80%;
-  left: 80%;
-    
-}
-
 
 
 /*Contact mobile*/
@@ -351,7 +314,7 @@ body span{
   position: absolute;
   top:30%;
   left:45%;
-  width: 10%;
+  width: 12%;
   height: auto;
   opacity: 0;
 }
@@ -441,11 +404,8 @@ body span{
 
 .footer{
     background-color: rgb(85, 94, 91);
- height:250px;
-    position: relative;
-    
-    
-    
+    height:250px;
+    position: relative;    
 }
 .aboutTED{
     height:50vh;
