@@ -9,7 +9,6 @@ html{
 }
 body {
   min-height: 100%;
-     
   background-image: url(images/clean-white-polygon-backgrounds-1.png);
 }
 body p{
@@ -498,4 +497,8 @@ map-container {
 }
 .map-container iframe.clicked{
 	pointer-events: auto;
+}
+
+.row{
+  margin: 0;
 }
