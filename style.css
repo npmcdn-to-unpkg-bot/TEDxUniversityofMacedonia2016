@@ -9,6 +9,8 @@ html{
 }
 body {
   min-height: 100%;
+     
+  background-image: url(images/clean-white-polygon-backgrounds-1.png);
 }
 body p{
   color:#000000;
