@@ -870,14 +870,15 @@
     <div class="container-fluid brain">
 
      <img id="stable" class="zIndex2" src="menu/stable.svg">
-     <script>
+
+     <img id="clickMe" class="zIndex2" src="menu/clickME.svg">
+          <script>
     window.setInterval(function(){
-        $("#clickMe").fadeTo(600);
-        $("#clickMe").fadeTo(600);        
-      }, 1200);
+        $("#clickMe").fadeOut(1000);
+        $("#clickMe").fadeIn(1000);
+      }, 2000);
 
      </script>
-     <img id="clickMe" class="zIndex2" src="menu/clickME.svg">
 
      <a href="#contact"><img id="fr7" class="fr" src="menu/fr7.svg"></a><!--Contact -->
      <a href="http://blog.tedxuniversityofmacedonia.com" target="_blank"><img id="fr6" class="fr" src="menu/fr6.svg"></a><!--Blog -->
@@ -896,8 +897,6 @@
      
 <!--------Countdown -------------------------------->
        <div class="wrap counter" >  
-  <h2>TEDx <strong>UniversityofMacedonia</strong></h2>
-  <h4><strong>Gravity of Thoughts</strong></h4>
   <h4> Saturday, 5th of November 2016 at NOESIS </h4>
 
   <div class="countdown">
@@ -1049,10 +1048,21 @@
         
         <div class="row aboutTED" id="TEDXuom" >
             
-            <img src="images/tedxuom.svg" class="img-responsive">
-            
-            </div>
-             <section id="cd-timeline" class="cd-container">
+            <a href="javascript:hiddenTEDxUoM();"><img src="images/tedxuom.svg" class="img-responsive alt="TEDxUniversityofMacedonia"></a>
+            <!--use the image as a button to appear the hidden div-->
+            <script type="text/javascript">
+              function hiddenTEDxUoM() {
+               if (document.getElementById("hidden-TEDxUoM").style.display=="none"){
+                document.getElementById("hidden-TEDxUoM").style.display = "";
+                }
+                else{
+                  document.getElementById("hidden-TEDxUoM").style.display = "none";
+                }
+              }
+            </script>
+        </div>
+        <div id="hidden-TEDxUoM" style="display:none;">
+            <section id="cd-timeline" class="cd-container">
    
 
     
@@ -1105,6 +1115,7 @@
       </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block -->
   </section> <!-- cd-timeline -->
+  </div><!-- / #hidden-TEDxUoM -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
