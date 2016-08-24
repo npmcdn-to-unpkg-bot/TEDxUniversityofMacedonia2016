@@ -386,6 +386,12 @@ body span{
 }
 .brain{
     height:60vh;
+   background-image: url(images/test.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    margin: -15px;
        
 }
 .brain #stable{
@@ -473,12 +479,12 @@ map-container {
 }
 #prwto{
     
-    background-image: url(images/prwto.svg);
+    /* background-image: url(images/test.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    margin: -15px;
+    margin: -15px;    */
 }
 .speakk{
    margin:0 ! important;
