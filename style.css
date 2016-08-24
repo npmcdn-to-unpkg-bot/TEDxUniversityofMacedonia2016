@@ -386,12 +386,12 @@ body span{
 }
 .brain{
     height:60vh;
-   background-image: url(images/test.jpg);
+  /* background-image: url(images/test.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    margin: -15px;
+    margin: -15px;*/
        
 }
 .brain #stable{
@@ -479,12 +479,16 @@ map-container {
 }
 #prwto{
     
-    /* background-image: url(images/test.jpg);
+     background-image: url(images/new_bg-01.svg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    margin: -15px;    */
+  -webkit-background-position: center;
+  -moz-background-position: center;
+  -o-background-position: center;
+  background-position: center;
+    margin: -15px;    
 }
 .speakk{
    margin:0 ! important;
