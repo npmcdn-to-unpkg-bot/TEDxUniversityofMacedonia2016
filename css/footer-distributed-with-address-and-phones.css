@@ -5,12 +5,13 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-    background-image: url(prwto.svg);
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url(congruent_outline.png);
     
+   
+    background-repeat: repeat-y;
+     background-repeat: repeat-x;
+    position: relative;
+    overflow-x: auto;
 padding: 55px 50px;
 	margin-top: 80px;
 }

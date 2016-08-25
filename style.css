@@ -431,11 +431,14 @@ body span{
     display:block;
 }
 .TEDXuom{
-        background-image: url(images/deutero.svg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+        background-image: url(images/2144-%5BConverted%5D2.png);
+ 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+    
+   
 }
    #TED{
     height: 30vh;
@@ -478,8 +481,8 @@ map-container {
   margin: 0;
 }
 #prwto{
-    
-     background-image: url(images/new_bg-01.svg);
+    position: relative;
+     background-image: url(images/2144-%5BConverted%5D.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -489,14 +492,27 @@ map-container {
   -o-background-position: center;
   background-position: center;
     margin: -15px;    
+    margin: -15px;    
+   -webkit-box-shadow: 0px 15px 300px -34px rgba(198,217,122,1);
+-moz-box-shadow: 0px 15px 300px -34px rgba(198,217,122,1);
+box-shadow: 0px 15px 300px -34px rgba(198,217,122,1);
+    z-index: auto;
 }
 .speakk{
    margin:0 ! important;
 padding:0 ! important;
-    
-     background-image: url(images/trito.svg);
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+     background-image: url(images/2144-%5BConverted%5D3.png);
     background-repeat: repeat-y;
+    
  background-size: contain;
+   -webkit-box-shadow: 0px -20px 23px 3px rgba(177,169,232,0.46);
+-moz-box-shadow: 0px -20px 23px 3px rgba(177,169,232,0.46);
+box-shadow: 0px -20px 23px 3px rgba(177,169,232,0.46);
     
     
 }
@@ -504,7 +520,35 @@ padding:0 ! important;
     font-size: 300%;
     color:azure ;
  text-align: center;
+    
+}
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color:rgba(250,250,250,0.9);
 }
 
+/*Polygon intro */
+.polylion {
+  max-width: 100%;
+}
 
+.polylion polygon {
+  opacity: 0;
+}
+.no-js .polylion polygon {
+  opacity: 1;
+}
 
+.polylion {
+  height: 800px;
+}
+.no-cssanimations .polylion > polygon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
