@@ -156,14 +156,17 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.dare-picture {
+  background: #ede0dc;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.ithacas-picture {
+  background: #d62247;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+.cd-timeline-img.blindspot-picture {
+  background: #5d2d7a;
+}
+.cd-timeline-img.gravityofthoughts-picture {
+  background: #00a79d;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-img {

@@ -32,7 +32,6 @@
 
 .button:hover {
   background-color: #00a79d;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
   color: #222;
 }
 .button.Gold{
@@ -47,19 +46,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
   background: -moz-linear-gradient(top, rgba(206,220,231,0.95) 9%, rgba(206,220,231,0.74) 21%, rgba(206,220,231,0.74) 22%, rgba(89,106,114,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(206,220,231,0.95) 9%,rgba(206,220,231,0.74) 21%,rgba(206,220,231,0.74) 22%,rgba(89,106,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(206,220,231,0.95) 9%,rgba(206,220,231,0.74) 21%,rgba(206,220,231,0.74) 22%,rgba(89,106,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
-copy
-  
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */  
 }
 
 .button:active,
 .button.is-checked {
-  background-color: #eee;
+  background-color: #5d2d7a ;
+  text-shadow: none;
 }
 
 .button.is-checked {
-  color: #222;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  color: #fff;
 }
 
 .button:active {
