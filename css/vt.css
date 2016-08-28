@@ -101,8 +101,8 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   #cd-timeline::before {
     left: 50%;
@@ -148,13 +148,11 @@ header h1 {
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin: 0 auto;
+  top:25%;
 }
 .cd-timeline-img.dare-picture {
   background: #ede0dc;
@@ -252,7 +250,7 @@ header h1 {
   background: transparent;
   border-radius: 0.25em;
   padding: 0em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0;
 }
 .cd-timeline-content:after {
   content: "";
@@ -306,7 +304,7 @@ header h1 {
 @media only screen and (min-width: 768px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: 0.2em;
     width: 45%;
   }
   .cd-timeline-content::before {

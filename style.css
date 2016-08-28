@@ -319,8 +319,8 @@ body span{
   opacity: 0;
 }
 #clickMe{
-  width: 12%;
-  height: 12%;
+  width: 10%;
+  height: 10%;
   position: absolute;
   left:42.5%;
   top:25%;
@@ -416,7 +416,6 @@ body span{
 }
 .aboutTED{
     height:50vh;
-    padding-top: 15%;
 }
 #ver1{
     padding-left: 31%;
