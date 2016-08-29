@@ -87,9 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', e
 
 /* ---- isotope ---- */
 
-.grid {
-  border: 1px solid #333;
-}
+
 
 /* clear fix */
 .grid:after {
@@ -101,16 +99,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', e
 /* ---- .element-item ---- */
 
 .element-item {
-  position: relative;
+    
+  padding-left: 2%;
   width: 300px;
   height: 300px; /*Fixed me tis diastaseis twn logo */
   margin: 0.5%;
-  padding: 10px;
+  
 }
 .element-item img{
+    
+    
   text-align: center;
-  position: absolute;
-  left:0;
+  
+  
   top: 0;
 
 }
