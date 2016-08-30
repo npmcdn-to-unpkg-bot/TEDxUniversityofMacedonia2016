@@ -868,11 +868,11 @@
     </div><!--last </div> for mobile-->
 
 
-    <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up ---------------------------------------------------------------------------------------->
+    <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up      -->
       <script src="js/loading.js"></script> 
 
 <div class="hidden-xs hidden-lg" >
-    <!------ Menu---------------------->
+    <!--  Menu -->
     <nav class="fixed outOfSight scrolled">
     <div class="nav-bar">
         <div class="module left">
@@ -932,23 +932,17 @@
 	                    <a target="_blank" href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274/?fref=ts"><i class="fa fa-facebook f15 p-r-5"></i></a>
 	                    <a target="_blank" href="https://twitter.com/tedx_patras"><i class="fa fa-twitter f15 p-r-5"></i></a>
 	                    <a target="_blank" href="http://instagram.com/tedxpatras"><i class="fa fa-instagram f15 p-r-5"></i></a>
-	                    <a target="_blank" href="https://www.flickr.com/photos/tedxpatras/albums"><i class="fa fa-flickr f15 p-r-5"></i></a>
 	                    <a target="_blank" href="https://www.youtube.com/channel/UCQGQTzvOwRp98a7jYxG7tlQ"><i class="fa fa-youtube f15 p-r-5"></i></a>
 	                    <a target="_blank" href="http://linkedin.com/company/tedxpatras"><i class="fa fa-linkedin f15 p-r-5"></i></a>
 	                    <a class="" href="mailto:info@tedxpatras.com" target="_top"><i class="fa fa-envelope f15 p-r-5"></i></a>
     				</li>                               
                 </ul>
             </div>
-            <!--Menu end------------------>                        
+            <!--Menu end   -->                        
             <div class="module widget-handle language left">
                 <ul class="menu">
-                    <li class="has-dropdown">
-                        <a href="#">Gr</a>
-                        <ul>
-                            <li>
-                                <a href="/en">Eng</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="#">En</a>
                     </li>
                 </ul>
             </div>
@@ -1571,8 +1565,63 @@
 <script src='http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script>
 <script src="js/partners.js"></script>
 
+         </div>    <!--closing row-->
+
+  <div id="contact" class="row">
+    <h2>Contact </h2>
+
+    <!--Contact form -->
+    <div class="col-sm-6">
+        <form id="contact-form" method="post" action="contact.php" role="form">
+         <div class="messages"></div>
+          <div class="controls">
+           <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="g-recaptcha" data-sitekey="6LeLFycTAAAAAIIG3lmLuz4gq0hyEcCuNExkA-vO"></div>
+                <input id="send" type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+          </div>
+         <div class="row">
+            <div class="col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
          </div>
-    <!--closing container-->
+       </div>
+      </form>
+    </div>
+
+    <!--Feed -->
+    <div class="col-sm-6">
+
+    </div>
+
+
+  </div>
    
         <!-- FOOTER -->
         
