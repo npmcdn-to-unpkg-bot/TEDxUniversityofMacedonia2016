@@ -439,22 +439,26 @@ body span{
     */
    
 }
+#xinfo{
+  padding-left: 1%;
+  padding-right: 1%;
+}
    #TED{
     height: 30vh;
     position: relative;
      
-    padding-top: 6%;
+    padding-top: 2%;
 }
 #TEDx{
     height: 30vh;
     position: relative;
     
-    padding-top: 7%;
+    padding-top: 2%;
 }
 #TEDXuom1{
     
    height: 30vh;
-    padding-top: 10%;
+    padding-top: 2%;
 }
 .map {
 	width:100%;
