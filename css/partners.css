@@ -4,24 +4,16 @@
 #fix{
   font-size: 0.9em;  
 }
-#koko{
-  text-align:center;
-  font-size:400%;
-  font-weight:bold;
-  background: -webkit-linear-gradient(#9966ff,#ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .button {
   display: inline-block; 
   position: relative;
   left: 1%;
   padding: 0.5em 1.0em;
-  background: #EEE;
+  background: transparent;
   border: none;
   border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
   color: #222;
   font-family: sans-serif;
   font-size: 16px;
@@ -31,27 +23,22 @@
 }
 
 .button:hover {
-  background-color: #00a79d;
-  color: #222;
+  background-color: #008F9C;
+  color: #fff;
+  text-shadow: none;
 }
-.button.Gold{
-  background: rgb(254,252,234); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(254,252,234,1) 12%, rgba(241,218,54,1) 98%, rgba(241,218,54,1) 98%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(254,252,234,1) 12%,rgba(241,218,54,1) 98%,rgba(241,218,54,1) 98%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(254,252,234,1) 12%,rgba(241,218,54,1) 98%,rgba(241,218,54,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+.button.Gold:hover{
+  background-color: #DAA520;
+
 }
 
-.button.Silver{
-  background: -moz-linear-gradient(top, rgba(206,220,231,0.95) 9%, rgba(206,220,231,0.74) 21%, rgba(206,220,231,0.74) 22%, rgba(89,106,114,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(206,220,231,0.95) 9%,rgba(206,220,231,0.74) 21%,rgba(206,220,231,0.74) 22%,rgba(89,106,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(206,220,231,0.95) 9%,rgba(206,220,231,0.74) 21%,rgba(206,220,231,0.74) 22%,rgba(89,106,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */  
+.button.Silver:hover{
+  background-color: #c0c0c0;
 }
 
 .button:active,
 .button.is-checked {
-  background-color: #5d2d7a ;
+  background-color: #008F9C;
   text-shadow: none;
 }
 
@@ -90,28 +77,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cedce7', e
 
 
 /* clear fix */
-.grid:after {
+.grid:after {/*
   content: '';
   display: block;
-  clear: both;
+  clear: both;*/
 }
 
 /* ---- .element-item ---- */
 
 .element-item {
-    
+  /*
   padding-left: 2%;
   width: 300px;
-  height: 300px; /*Fixed me tis diastaseis twn logo */
+  height: 300px; 
   margin: 0.5%;
-  
+  */
 }
 .element-item img{
-    
-    
+  /*
   text-align: center;
-  
-  
-  top: 0;
-
+  top: 0;*/
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0;
 }
