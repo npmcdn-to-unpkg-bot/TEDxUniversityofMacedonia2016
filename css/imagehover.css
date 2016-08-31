@@ -54,7 +54,7 @@
 [class^='imghvr-'] figcaption h6,
 [class*=' imghvr-'] figcaption h6 {
   color: #ffffff;
-}
+}/*
 [class^='imghvr-'] a,
 [class*=' imghvr-'] a {
   position: absolute;
@@ -63,7 +63,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-}
+}*/
 [class^='imghvr-'],
 [class*=' imghvr-'],
 [class^='imghvr-']:before,

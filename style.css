@@ -11,7 +11,7 @@ html{
 }
 body {
   min-height: 100%;
-  
+  font-family: 'Open Sans', sans-serif;
 }
 body p{
   color:#000000;
@@ -316,10 +316,29 @@ body span{
   position: absolute;
   top:30%;
   left:45%;
-  width: 12%;
+  width: 9%;
   height: auto;
   opacity: 0;
 }
+.extra{
+  position: absolute;
+  top:30%;
+  left:45%;
+  opacity: 0;
+}
+.medium.extra  {
+  width: 5%;
+  height: auto;
+}
+.small.extra  {
+  width: 2%;
+  height: auto;
+}
+.big.extra  {
+  width: 8%;
+  height: auto;
+}
+/*
 #clickMe{
   width: 10%;
   height: 10%;
@@ -327,8 +346,65 @@ body span{
   left:42.5%;
   top:25%;
   opacity: 1;
+  z-index: 2;
+}*/
+
+.loading-icon,
+.loading-icon::before,
+.loading-icon::after {
+  vertical-align: middle;
+  background: #00a79d;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left:42.5%;
+  top:25%;
+  padding-top: 1.2%;
+  opacity: 1;
+  z-index: 2;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  font-color:#00a79d;
 }
 
+.loading-icon::before {
+  content: "menu";
+  animation: bounce 1.5s infinite;
+  background: #fff;
+}
+.loading-icon::after {
+  content: "";
+  animation: bounce 1.5s -0.4s infinite;
+  background:#fff;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    -webkit-transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+}
 
 /*END OF MENU ------------------------ */
 
@@ -1006,7 +1082,7 @@ nav .cart-overview a {
     transform: none !important;
   }
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 768px) {
   nav.fixed {
     position: absolute !important;
     opacity: 1 !important;
@@ -1333,8 +1409,8 @@ ul
 <-------- Text fonts specificationzzz -------->
  p.gr{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-     font-weight: 400;
+    font-size: 0.9em;
+     font-weight: 500;
      
 } 
 p.grspan{
@@ -1356,4 +1432,9 @@ h1.title{
     text-align:center ;
     color: black;
     
+}
+
+.ted{
+  color: #e62b1e;
+  font-weight: bold;
 }

@@ -113,6 +113,9 @@ header h1 {
 .cd-timeline-block {
   position: relative;
   margin: 0 0;
+    font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
 }
 .cd-timeline-block:after {
   content: "";
