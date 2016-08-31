@@ -98,9 +98,9 @@
     <![endif]-->
   </head>
   
-  <body>
+  <body data-spy="scroll"  data-target=".nav-bar" data-offset="50">
 
-    <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -------------------------------------------------------------------------------------------->
+    <!--MOBILE VERSION. XS CLASS ONLY!!  less than 768px -->
     <div class="hidden-sm hidden-md hidden-lg">
        <div id="wrapper">
         <div class="overlay"></div>
@@ -113,53 +113,56 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#home-m"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="#home-m"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#about-m"><i class="fa fa-fw fa-times"></i> About</a>
+                    <a href="#about-m"><i class="fa fa-fw fa-times" aria-hidden="true"></i> About</a>
                 </li>
                 <li>
-                    <a href="#theme-m"><i class="fa fa-fw fa-cloud"></i> Theme</a>
+                    <a href="#theme-m"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Theme</a>
                 </li>
                 <li>
-                    <a href="#speakers-m"><i class="fa fa-fw fa-microphone"></i> Speakers</a>
+                    <a href="#speakers-m"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i> Speakers</a>
                 </li>
                 <li>
-                    <a href="#performers-m"><i class="fa fa-fw fa-fire"></i> Performers</a>
+                    <a href="#performers-m"><i class="fa fa-fw fa-fire" aria-hidden="true"></i> Performers</a>
                 </li>
                 <li>
-                    <a href="#venue-m"><i class="fa fa-fw fa-map-marker"></i> Venue</a>
+                    <a href="#workshops-m"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Workshops</a>
                 </li>
                 <li>
-                    <a href="#partners-m"><i class="fa fa-fw fa-life-ring"></i> Partners</a>
+                    <a href="#venue-m"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Venue</a>
+                </li>
+                <li>
+                    <a href="#partners-m"><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i> Partners</a>
                 </li>                
                 <li>
-                    <a href="#team-m"><i class="fa fa-fw fa-users"></i> Team</a>
+                    <a href="#team-m"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Team</a>
                 </li>
                 <li>
-                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-lightbulb-o"></i> Blog</a>
+                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-lightbulb-o" aria-hidden="true"></i> Blog</a>
                 </li>
                 <li>
-                    <a href="#contact-m"><i class="fa fa-fw fa-envelope-o"></i> Contact</a>
+                    <a href="#contact-m"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> Contact</a>
                 </li>
                 <!--Social Icons-->
                 <li class="social">
-                    <a href="face"><i class="fa fa-fw fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="insta"><i class="fa fa-fw fa-instagram"></i></a>
+                    <a href="https://twitter.com/TEDxUoMacedonia"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/tedxuniversityofmacedonia/"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/tedxuniversityofmacedonia"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="#"><i class="fa fa-fw fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg"><i class="fa fa-fw fa-youtube" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="#"><i class="fa-stack">en/gr</i></a>
+                    <a href="en/index.html"><i class="fa-stack" aria-hidden="true">en/gr</i></a>
                 </li>
             </ul>
         </nav>
@@ -871,7 +874,7 @@
     <!--TABLET AND DESKTOP VERSION. SM AND MD CLASS ONLY!! 768px and up   -->
       <script src="js/loading.js"></script> 
 
-<div class="hidden-xs hidden-lg" >
+<div class="hidden-xs" >
     
     
     <!--  Menu -->
@@ -891,34 +894,8 @@
             <div class="module left">
                 <ul class="menu">
                     <li class="">
-                        <a class="inner-link" href="#Theme">
-                            Theme
-                        </a>
-                    </li>
-                     <li class="">
-                        <a class="inner-link" href="#About">
-                            About
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="inner-link" href="#Venue">
-                           Venue
-                        </a>
-                    </li> 
-                    <li class="">
-                        <a class="inner-link" href="#Partners">
-                            Partners
-                        </a>
-                    </li> 
-                    <li class="">
-                        <a class="inner-link" href="#Τeam">
-                            Team
-                        </a>
-                        
-                    </li> 
-                    <li class="">
-                        <a class="inner-link" href="#Workshops">
-                            Workshops
+                        <a class="inner-link" href="#">
+                            Home
                         </a>
                     </li>
                     <li class="">
@@ -926,26 +903,65 @@
                             About
                         </a>
                     </li>
+                     <li class="">
+                        <a class="inner-link" href="#theme">
+                            Theme
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="inner-link" href="#speakers">
+                           Speakers
+                        </a>
+                    </li> 
+                    <li class="">
+                        <a class="inner-link" href="#performers">
+                            Performers
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="inner-link" href="#workshops">
+                            Workshops
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="inner-link" href="#venue">
+                            Venue
+                        </a>
+                    </li> 
+                    <li class="">
+                        <a class="inner-link" href="#partners">
+                            Partners
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="inner-link" href="#team">
+                            Team
+                        </a>
+                    </li>
                     <li class="">
                         <a href="http://blog.tedxuniversityofmacedonia.com" target="_blank">
                             Blog
                         </a>
                     </li>
+                    <li class="">
+                        <a class="inner-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
                     <li id="header-social-media-icons">
-	                    <a target="_blank" href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274/?fref=ts"><i class="fa fa-facebook f15 p-r-5"></i></a>
-	                    <a target="_blank" href="https://twitter.com/tedx_patras"><i class="fa fa-twitter f15 p-r-5"></i></a>
-	                    <a target="_blank" href="http://instagram.com/tedxpatras"><i class="fa fa-instagram f15 p-r-5"></i></a>
-	                    <a target="_blank" href="https://www.youtube.com/channel/UCQGQTzvOwRp98a7jYxG7tlQ"><i class="fa fa-youtube f15 p-r-5"></i></a>
-	                    <a target="_blank" href="http://linkedin.com/company/tedxpatras"><i class="fa fa-linkedin f15 p-r-5"></i></a>
-	                    <a class="" href="mailto:info@tedxpatras.com" target="_top"><i class="fa fa-envelope f15 p-r-5"></i></a>
-    				</li>                               
+	                    <a target="_blank" href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274"><i class="fa fa-facebook f15 p-r-5"></i></a>
+	                    <a target="_blank" href="https://twitter.com/TEDxUoMacedonia"><i class="fa fa-twitter f15 p-r-5"></i></a>
+	                    <a target="_blank" href="https://www.instagram.com/tedxuniversityofmacedonia/"><i class="fa fa-instagram f15 p-r-5"></i></a>
+	                    <a target="_blank" href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg"><i class="fa fa-youtube f15 p-r-5"></i></a>
+	                    <a target="_blank" href="https://www.linkedin.com/company/tedxuniversityofmacedonia"><i class="fa fa-linkedin f15 p-r-5"></i></a>
+    				        </li>                               
                 </ul>
             </div>
             <!--Menu end   -->                        
             <div class="module widget-handle language left">
                 <ul class="menu">
                     <li>
-                        <a href="#">En</a>
+                        <a href="en/index.html">En</a>
                     </li>
                 </ul>
             </div>
