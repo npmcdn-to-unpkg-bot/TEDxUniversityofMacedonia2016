@@ -29,11 +29,20 @@
 }
 .button.Gold:hover{
   background-color: #DAA520;
-
+}
+.button.Gold:active,
+.button.Gold.is-checked {
+  background-color: #DAA520;
+  text-shadow: none;
 }
 
 .button.Silver:hover{
   background-color: #c0c0c0;
+}
+.button.Silver:active,
+.button.Silver.is-checked {
+  background-color: #c0c0c0;
+  text-shadow: none;
 }
 
 .button:active,
