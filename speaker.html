@@ -98,10 +98,27 @@
     <![endif]-->
   </head>
   <body>
-
+    <style>
+          @media (max-width: 1309px){
+            .hamburger.is-closed.animated.fadeInLeft{
+              display: block;
+            }
+            .nav-bar{
+              display: none;
+            }
+          }
+          @media (min-width: 1310px){
+            .hamburger.is-closed.animated.fadeInLeft{
+              display: none;
+            }
+            .nav-bar{
+              display: block;
+            }
+          }
+    </style>
 
       <nav class="fixed outOfSight scrolled" id="out">
-    <div class="nav-bar" style="display:block">
+    <div class="nav-bar">
         <div class="module left">
             <a class="inner-link" href="#top">
                 <img class="logo logo-light" alt="TEDxUoM" src="images/tedxuom.jpg">
@@ -259,11 +276,12 @@
 
     <div id="page-content-wrapper">
      
-          <button type="button" class="hamburger is-closed animated fadeInLeft hidden-sm hidden-md hidden-lg" data-toggle="offcanvas">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
           </button>
+          
 
       <div class="container-fluid" style="background:url(images/x.png) repeat; min-height:100vh;">
        <div class="row">
