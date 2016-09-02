@@ -155,27 +155,15 @@ body span{
 /*Edw allazei to xrwma apo to hamburger*/
 .hamburger.is-closed .hamb-top {
   /*background-color: rgba(255, 255, 255, 0.7);*/
-  background-color: #25b3c7;
+  background-color: #5d2d7a;
 }
 .hamburger.is-closed .hamb-middle {
   /*background-color: rgba(255, 255, 255, 0.7);*/
-  background-color: #25b3c7;
+  background-color: #d62247;
 }
 .hamburger.is-closed .hamb-bottom {
   /*background-color: rgba(255, 255, 255, 0.7);*/
-  background-color: #25b3c7;
-}
-/*footer*/
-#love{
-  color: #fff;
-  font-size: 15px;
-  display: block;
-  bottom: 10px;
-  position: relative;
-  width: 100%;
-  left: 0;
-  top: 0;
-  text-align: center;
+  background-color: #00a79d;
 }
 
 /*hover for speakers*/
@@ -673,7 +661,8 @@ nav ul {
 }
 .module {
   display: inline-block;
-  padding: 0 32px;
+  padding: 0;  
+  padding-left: 32px;
 }
 .module-group {
   display: inline-block;
@@ -723,7 +712,7 @@ nav .btn,
 }
 nav.nav-centered .logo {
   max-height: 64px;
-  margin: 64px 0 40px 0;
+  margin: 0px 0 30px 0;
 }
 nav.bg-dark .logo-light {
   display: inline;
@@ -772,7 +761,7 @@ nav.bg-dark .logo-dark {
   opacity: 1 !important;
 }
 .menu > li {
-  margin-right: 32px;
+  margin-right: 12px;
   float: left;
   position: relative;
   transition: all 0.3s ease;

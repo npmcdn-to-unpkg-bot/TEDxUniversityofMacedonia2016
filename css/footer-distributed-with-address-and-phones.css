@@ -151,6 +151,16 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+@media (max-width: 768px){
+	.footer-distributed .footer-icons a{
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+	.footer-distributed{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
