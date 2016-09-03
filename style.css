@@ -1459,11 +1459,10 @@ h1.title{
 }
 
 /* Theme div ----------------------- */
-.Theme{
-    height: 450px;
-padding: 0px;
-   background-color: rgb(255, 0, 0);
-  
+#Theme{
+  height: 100%;
+  padding: 0px;
+  background-color: #e62b1e;
 }
 h2.theme{
     font-family: 'Open Sans', sans-serif;
@@ -1471,7 +1470,7 @@ h2.theme{
     font-weight: 300;
     text-align: left;
     color: azure;
-    background-color: rgb(255, 0, 0);
+    background-color: transparent;
 }
 #themeb{
     position: absolute;
