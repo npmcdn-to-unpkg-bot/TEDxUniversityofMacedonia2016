@@ -663,7 +663,7 @@ nav ul {
 .module {
   display: inline-block;
   padding: 0;  
-  padding-left: 32px;
+  padding-left: 22px;
 }
 .module-group {
   display: inline-block;
@@ -714,7 +714,7 @@ nav .btn,
 }
 nav.nav-centered .logo {
   max-height: 64px;
-  margin: 0px 0 30px 0;
+  margin: 0px 0 10px 0;
 }
 nav.bg-dark .logo-light {
   display: inline;
@@ -764,13 +764,28 @@ nav.bg-dark .logo-dark {
   opacity: 1 !important;
 }
 .menu > li {
-  margin-right: 12px;
+  margin-right: 25px;
   float: left;
   position: relative;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: 1;
+}
+@media (max-width: 1049px){
+  .menu > li{
+    margin-right: 20px;
+  }
+}
+@media (max-width: 994px){
+  .menu > li{
+    margin-right: 15px;
+  }
+}
+@media (max-width: 939px){
+  .menu > li{
+    margin-right: 11px;
+  }
 }
 .menu > li:last-child {
   margin-right: 0;
@@ -784,7 +799,7 @@ nav.bg-dark .logo-dark {
 }
 .menu > li ul {
   width: 200px;
-  padding: 8px 0;
+  padding: 20px 0;
   background: #292929;
   position: absolute;
   z-index: 99;
@@ -1007,11 +1022,6 @@ nav .cart-overview a {
 }
 .nav-open .mobile-toggle {
   border-bottom: 1px solid #ccc;
-}
-@media all and (max-width: 1120px) {
-  .menu > li {
-    margin-right: 24px;
-  }
 }
 .has-offscreen-nav .main-container {
   transition: all 0.4s ease;
@@ -1395,8 +1405,6 @@ ul
 {
     list-style-type: none;
 }
-
-
 
 <------- Contact Face Twitter Style ---->
 .cont{
