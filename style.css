@@ -364,16 +364,17 @@ body span{
 }
 
 .loading-icon::before {
-  content: "menu";
+  content: "";
   animation: bounce 1.5s infinite;
-  background: #fff;
+  background: #00a79d;
   left: 0%;
   top: 0%;
+  padding-top: 18%;
 }
 .loading-icon::after {
   content: "";
   animation: bounce 1.5s -0.4s infinite;
-  background:#fff;
+  background:#00a79d;
   padding-left: 50%;
   left: 0%;
   top: 0%;
