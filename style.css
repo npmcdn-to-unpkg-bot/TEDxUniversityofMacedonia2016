@@ -1449,7 +1449,6 @@ h1.title{
   position: relative;
 }
 
-
 /* Theme div ----------------------- */
 #Theme{
     height: 450px;
@@ -1459,7 +1458,17 @@ h1.title{
 h2.theme{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
     color: azure;
+    background-color: rgb(255, 0, 0);
+}
+#themeb{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    font-weight: 300;
+    background-color: aliceblue;
+    left:300px;
+    top:300px;
 }
