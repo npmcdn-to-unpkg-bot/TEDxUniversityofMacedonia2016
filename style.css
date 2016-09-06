@@ -1485,3 +1485,28 @@ h2.theme{
     text-align: right;
     padding-top: 50px;
 }
+
+#hidden-team{
+     /* The image used */
+    background-image: url("images/DSC_0762.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 30% 55%;
+    background-repeat: no-repeat;
+    
+    
+}
+h1.teamgr{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    padding-bottom: 2%;
+    
+}
