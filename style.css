@@ -436,7 +436,6 @@ body span{
 }
 .theme{ /*Theme div*/
   background-color: #e62b1e;
-  padding-top: 5%;
 }
 
 .speakers{/*speakers div*/
@@ -486,14 +485,15 @@ body span{
        
 }
 .brain #stable{
-  height: 100%;
-  width: 100%;
+  padding-top: 2%;
+  padding-left: 4%;
+  height: 92%;
+  width: 92%;
 }
-
 .counter{
-    height:40vh;
-    position:absolute;
-    top: 60vh;
+  height:40vh;
+  position:absolute;
+  top: 60vh;
 }
 .vh{
     height: 100vh;
@@ -707,7 +707,7 @@ nav .btn,
   height: 55px;
 }
 .logo {
-  max-height: 60%;
+  max-height: 100%;
 }
 .logo-light {
   display: none;
@@ -742,7 +742,6 @@ nav.bg-dark .logo-dark {
   width: 100%;
   height: 55px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
 }
 .menu.inline-block {
   width: auto;
@@ -1466,11 +1465,12 @@ h1.title{
 }
 h2.theme{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 0.9em;
+    font-weight: 400;
     text-align: left;
     color: azure;
     background-color: transparent;
+    padding-bottom: 2%;
 }
 #themeb{
     position: absolute;
@@ -1482,5 +1482,16 @@ h2.theme{
     top:300px;
 }
 #leftTheme{
-    text-align: right;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+#rightTheme{
+  position: relative;
+  float: right;
+}
+#Theme {
+  position: relative;
 }
