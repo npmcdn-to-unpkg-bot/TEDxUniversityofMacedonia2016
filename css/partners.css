@@ -119,6 +119,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
   display: block;
   clear: both;*/
 }
+.grid{
+  padding-bottom: 2%;
+}
 
 /* ---- .element-item ---- */
 
@@ -129,6 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
   height: 300px; 
   margin: 0.5%;
   */
+  padding: 1%;
 }
 .element-item img{
   /*
