@@ -1482,16 +1482,6 @@ h2.theme{
     top:300px;
 }
 #leftTheme{
-  text-align: right;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 100%;
-}
-#rightTheme{
-  position: relative;
-  float: right;
-}
-#Theme {
-  position: relative;
+    text-align: right;
+    padding-top: 50px;
 }
