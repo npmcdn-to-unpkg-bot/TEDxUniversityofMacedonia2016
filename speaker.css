@@ -13,3 +13,11 @@
 	height: 100px;
 	position: relative;
 }
+.name{
+	padding-top: 2%;
+	font-size: 3em;
+	text-align: center;
+}
+.speaker-icon{
+	width: 100%;
+}

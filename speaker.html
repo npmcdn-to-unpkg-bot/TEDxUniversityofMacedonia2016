@@ -98,81 +98,81 @@
     <![endif]-->
   </head>
   <body>
-    <style>
-          @media (max-width: 1309px){
-            .hamburger.is-closed.animated.fadeInLeft{
-              display: block;
-            }
-            .nav-bar{
-              display: none;
-            }
-          }
-          @media (min-width: 1310px){
-            .hamburger.is-closed.animated.fadeInLeft{
-              display: none;
-            }
-            .nav-bar{
-              display: block;
-            }
-          }
+    <style>/*Change the mobile and desktop menu in specific pixels */
+      @media (max-width: 907px){
+        .hamburger.is-closed.animated.fadeInLeft{
+          display: block;
+        }
+        #out{
+          display: none;
+        }
+      }
+      @media (min-width: 908px){
+        .hamburger.is-closed.animated.fadeInLeft{
+          display: none;
+        }
+        #οut{
+          display: block;
+        }
+      }
     </style>
 
-      <nav class="fixed outOfSight scrolled" id="out">
-    <div class="nav-bar">
+    <nav class="fixed outOfSight scrolled" id="out">
+      <div class="nav-bar">
         <div class="module left">
             <a class="inner-link" href="#top">
-                <img class="logo logo-light" alt="TEDxUoM" src="images/tedxuom.jpg">
-                <img class="logo logo-dark" alt="TEDxUoM" src="images/tedxuom.jpg">
+                <img class="logo logo-light" alt="TEDxUoM" src="images/logo.png">
+                <img class="logo logo-dark" alt="TEDxUoM" src="images/logo.png">
             </a>
         </div>
         <div class="module widget-handle mobile-toggle right visible-xs">
             <i class="ti-menu"></i>
         </div>
         <div class="module-group right">
-            <div class="module left">
+            <div class="module left">            
                 <ul class="menu">
-                    <li class="">
-                        <a class="inner-link" href="#">
+                    <li class="active">
+                        <a class="inner-link" href="./index.html#">
                             Home
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#about">
+                        <a class="inner-link" href="./index.html#about">
                             About
                         </a>
                     </li>
                      <li class="">
-                        <a class="inner-link" href="#theme">
+                        <a class="inner-link" href="./index.html#theme">
                             Theme
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#speakers">
+                        <a class="inner-link" href="./index.html#speakers">
                            Speakers
                         </a>
                     </li> 
                     <li class="">
-                        <a class="inner-link" href="#performers">
+                        <a class="inner-link" href="./index.html#performers">
                             Performers
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#workshops">
+                        <a class="inner-link" href="./index.html#workshops">
                             Workshops
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#venue">
+                        <a class="inner-link" href="./index.html#venue">
                             Venue
                         </a>
                     </li> 
                     <li class="">
-                        <a class="inner-link" href="#partners">
+                        <a class="inner-link" href="./index.html#partners">
                             Partners
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#team">
+                        <a class="inner-link" href="./index.html#team">
                             Team
                         </a>
                     </li>
@@ -182,17 +182,17 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#contact">
+                        <a class="inner-link" href="./index.html#contact">
                             Contact
                         </a>
                     </li>
                     <li id="header-social-media-icons">
-                      <a target="_blank" href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274"><i class="fa fa-facebook f15 p-r-5"></i></a>
-                      <a target="_blank" href="https://twitter.com/TEDxUoMacedonia"><i class="fa fa-twitter f15 p-r-5"></i></a>
-                      <a target="_blank" href="https://www.instagram.com/tedxuniversityofmacedonia/"><i class="fa fa-instagram f15 p-r-5"></i></a>
-                      <a target="_blank" href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg"><i class="fa fa-youtube f15 p-r-5"></i></a>
-                      <a target="_blank" href="https://www.linkedin.com/company/tedxuniversityofmacedonia"><i class="fa fa-linkedin f15 p-r-5"></i></a>
-                    </li>                               
+                      <a target="_blank" href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274" id="fb"><i class="fa fa-facebook f15 p-r-5"></i></a>
+                      <a target="_blank" href="https://twitter.com/TEDxUoMacedonia" id="tw"><i class="fa fa-twitter f15 p-r-5"></i></a>
+                      <a target="_blank" href="https://www.instagram.com/tedxuniversityofmacedonia/" id="ins"><i class="fa fa-instagram f15 p-r-5"></i></a>
+                      <a target="_blank" href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg" id="yt"><i class="fa fa-youtube f15 p-r-5"></i></a>
+                      <a target="_blank" href="https://www.linkedin.com/company/tedxuniversityofmacedonia" id="yt"><i class="fa fa-linkedin f15 p-r-5"></i></a>
+                    </li>
                 </ul>
             </div>
             <!--Menu end   -->                        
@@ -203,11 +203,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <!--end of module group-->
+      </div>
+                  
+      <!--end of module group-->
     </div>
-</nav>
-
+  </nav>
     <div id="wrapper">
         <div class="overlay"></div>
         <!-- Sidebar -->
@@ -219,148 +219,171 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#home-m"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
+                    <a href="./index.html#"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#about-m"><i class="fa fa-fw fa-times" aria-hidden="true"></i> About</a>
+                    <a href="./index.html#about"><i class="fa fa-fw fa-times" aria-hidden="true"></i> About</a>
                 </li>
                 <li>
-                    <a href="#theme-m"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Theme</a>
+                    <a href="./index.html#theme"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Theme</a>
                 </li>
                 <li>
-                    <a href="#speakers-m"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i> Speakers</a>
+                    <a href="./index.html#speakers"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i> Speakers</a>
                 </li>
                 <li>
-                    <a href="#performers-m"><i class="fa fa-fw fa-fire" aria-hidden="true"></i> Performers</a>
+                    <a href="./index.html#performers"><i class="fa fa-fw fa-fire" aria-hidden="true"></i> Performers</a>
                 </li>
                 <li>
-                    <a href="#workshops-m"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Workshops</a>
+                    <a href="./index.html#workshops"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Workshops</a>
                 </li>
                 <li>
-                    <a href="#venue-m"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Venue</a>
+                    <a href="./index.html#venue"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Venue</a>
                 </li>
                 <li>
-                    <a href="#partners-m"><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i> Partners</a>
+                    <a href="./index.html#partners"><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i> Partners</a>
                 </li>                
                 <li>
-                    <a href="#team-m"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Team</a>
+                    <a href="./index.html#team"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Team</a>
                 </li>
                 <li>
-                    <a href="http://blog.tedxuniversityofmacedonia.com"><i class="fa fa-fw fa-lightbulb-o" aria-hidden="true"></i> Blog</a>
+                    <a href="http://blog.tedxuniversityofmacedonia.com" id="dif"><i class="fa fa-fw fa-lightbulb-o" aria-hidden="true"></i> Blog</a>
                 </li>
                 <li>
-                    <a href="#contact-m"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> Contact</a>
+                    <a href="./index.html#contact" class="diff" id="dif"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> Contact</a>
                 </li>
                 <!--Social Icons-->
                 <li class="social">
-                    <a href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274" id="fb"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="https://twitter.com/TEDxUoMacedonia"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/TEDxUoMacedonia" id="tw"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="https://www.instagram.com/tedxuniversityofmacedonia/"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/tedxuniversityofmacedonia/" id="ins"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="https://www.linkedin.com/company/tedxuniversityofmacedonia"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/tedxuniversityofmacedonia" id="li"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg"><i class="fa fa-fw fa-youtube" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg" id="yt"><i class="fa fa-fw fa-youtube" aria-hidden="true"></i></a>
                 </li>
                 <li class="social">
-                    <a href="en/index.html"><i class="fa-stack" aria-hidden="true">en/gr</i></a>
+                    <a href="en/speaker.html"><i class="fa-stack" aria-hidden="true">en/gr</i></a>
                 </li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
 
-    <div id="page-content-wrapper">
+        <div id="page-content-wrapper">
      
           <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-            <span class="hamb-top"></span>
+            <!--<span class="hamb-top"></span>
             <span class="hamb-middle"></span>
-            <span class="hamb-bottom"></span>
+            <span class="hamb-bottom"></span>-->
+            <img src="images/logo.png" style="width:165%;height:165%;">
           </button>
           
 
-      <div class="container-fluid" style="background:url(images/x.png) repeat; min-height:100vh;">
+      <div class="container-fluid">
        <div class="row">
-       <div class="col-xs-12">
-         <img src="images/tedxuom.jpg" class="img-responsive block-center" id="head-img">
-         </div>
          <div class="col-xs-12">
-          <h1>Name Surname</h1>
+          <h1 class="name">Tania Oramas</h1>
          </div>
         </div>
         <div class="row">
          <div class="col-xs-12 col-sm-4">
-           <img src="images/borat.jpg" class="center-block img-responsive img-rounded speaker-image">
+          <div class="row">
+            <div class="col-xs-12">
+           <img src="images/speakers/ProfilePicture_TaniaOramas.jpg" class="center-block img-responsive img-rounded speaker-image">
+           </div>
+           <div class="row">
+            <div class="col-xs-2">
+              <img src="https://cdn1.iconfinder.com/data/icons/social-signature/512/Facebook_Color-128.png" class="img-responsive center-block  speaker-icon">
+            </div>
+            <div class="col-xs-2">
+              <img src="https://cdn1.iconfinder.com/data/icons/social-signature/512/Facebook_Color-128.png" class="img-responsive center-block  speaker-icon">
+            </div>
+            <div class="col-xs-2">
+              <img src="https://cdn1.iconfinder.com/data/icons/social-signature/512/Facebook_Color-128.png" class="img-responsive center-block  speaker-icon">
+            </div>
+           </div>
          </div>
-         <div class="col-xs-12 col-sm-8">
-           <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eget neque ac porttitor. Integer accumsan, metus dignissim mollis elementum, odio nunc porttitor eros, non vestibulum ligula elit a risus. Donec justo nulla, ultrices vitae lobortis id, facilisis nec est. Mauris at tincidunt neque. Mauris dapibus nibh non posuere tristique. Morbi at commodo quam, vitae commodo turpis. Mauris a fringilla enim. Ut at tempus neque, semper porta lorem.
+        </div>
 
-           Nam eu odio leo. Maecenas vitae risus tincidunt dolor porttitor aliquam id eget mauris. Sed non tortor facilisis, iaculis tortor nec, convallis elit. Donec et ligula ut nisi feugiat venenatis. Aliquam a felis felis. Nunc blandit turpis et turpis facilisis, a fringilla nisi faucibus. Nulla at tellus mattis, mollis augue id, pretium tortor. Curabitur eu nunc aliquet, finibus libero non, sollicitudin leo. </p>
+         <div class="col-xs-12 col-sm-8">
+           <p>We don’t believe in the transmission of knowledge. We believe in a creative, transformative and collaborative generation of knowledge. By designing and building a small school in a tiny rural community in Nicaragua, a group of architects, volunteers and a whole community have been giving shape to this idea. The idea is underpinned by two key concepts: LEARNING IN and LEARNING FROM the building. 27 kids and their families will LEARN IN a school where open and flexible spaces will support collaborative and experimental learning experiences. 27 kids and their families will LEARN FROM a school by making it, by learning how to use new materials and construction techniques. 
+           <br><br>
+           In Nicaragua we LEARN IN and FROM a building… but look around you, you could start LEARNING IN this place; you could start LEARNING FROM everything that surrounds you… just understand, appropriate, redefine…<br>
+           <br>Tania Oramas is a practitioner architect and researcher, co-founder of the international collective of architects ‘knitknot architecture’.
+           <br><br>
+           Knitknot is established in 2013 by a group of architects, urban planners, artist and educators with the aim to explore new ways to approach the architectural practice in a more open and critical way. They defend that the aim of architecture goes beyond the built project, and different itineraries such as research, critical writing or development of projects that address social, cultural and economic issues is required to re-conceptualize the role of the architect as social agent.
+           <br><br>
+           Their work expand from different research projects in leading academic institutions such as The Bartlett (London), Columbia University (New York) or The Technical School of Architecture of Madrid (Spain); to their involvement in international architectural competitions or collaborations in non-profit projects. Examples are their award-winning project ‘Osurbia’, first prize in the Europan 13 for the municipality of Os (Norway); and ‘El Jicarito’, an innovative school in Nicaragua built in collaboration with the NGO ‘Seeds of Learning’.
+           </p>
          </div>
        </div>
-       <div class="push"></div>
+           </div><!-- /.page-content-wrapper-->
+    </div><!-- /.wrapper-->
 
-      </div>
-        <!-- FOOTER -->
-        
-        
-                    <footer class="footer-distributed">
-
+       <!-- FOOTER -->
+    <!-- FOOTER FOR SM MD LG-->
+    <footer class="footer-distributed hidden-xs">
       <div class="footer-left">
-
         <img src="images/TEDx.svg" >
-
-        
-
-        <p class="footer-company-name">TEDxUniversityofMacedonia &copy; 2016</p>
+        <p class="footer-company-name">TEDxUniversityofMacedonia &copy; 2016<br> This independent TEDx event is operated under license from TED</p>
       </div>
 
       <div class="footer-center">
-
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>Πανεπιστήμιο Μακεδονίας</span> Θεσσαλονίκη</p>
-        </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>12414231</p>
+          <p><span style="color:#fff">Πανεπιστήμιο Μακεδονίας</span> Θεσσαλονίκη</p>
         </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:">tziakaz@gmail.com</a></p>
+          <p><a href="mailto:info.tedxuom@gmail.com">info.tedxuom@gmail.com</a></p>
         </div>
-
       </div>
 
       <div class="footer-right">
-
         <p class="footer-company-about">
           <span id="love" >Made with <i class="fa fa-heart pulse" style="color:#e62b1e;"></i> for TEDxUoM2016 </span>
-          Βαλαμε καλοκαιριατικα πολυ αγαπη για να βγει.
         </p>
-
         <div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-
+          <a href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274" id="fb"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/TEDxUoMacedonia" id="tw"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/tedxuniversityofmacedonia" id="li"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/tedxuniversityofmacedonia/" id="ins"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg" id="yt"><i class="fa fa-youtube"></i></a>
         </div>
-
       </div>
+    </footer>   
+    <!--FOOTER FOR XS -->
+    <footer class="hidden-sm hidden-md hidden-lg">
 
-    </footer>
+    <div class="footer-distributed"
+
+  <p style="text-align:center;"><span style="color:#e62b1e;">TEDx</span>UniversityofMacedonia &copy; 2016<br> This independent TEDx event is operated under license from <a href="http://www.ted.com"><span style="color:#e62b1e;">TED</span></a></p>
+
+
+    <div class="footer-right">
+        
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/TEDxUniversityofMacedonia-159246810897274" id="fb"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/TEDxUoMacedonia" id="tw"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/tedxuniversityofmacedonia" id="li"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/tedxuniversityofmacedonia/" id="ins"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCbAZ0PT5sbBgL6Ebn7vq2qg" id="yt"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+      <p class="footer-company-about">
+        <span id="love" style="margin-bottom:2px;">Made with <i class="fa fa-heart pulse" style="color:#e62b1e;"></i> for TEDxUoM2016 </span>
+      </p>
+      </div>
+      </footer>
       
 
-    </div><!-- /.page-content-wrapper-->
-    </div><!-- /.wrapper-->
+
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
