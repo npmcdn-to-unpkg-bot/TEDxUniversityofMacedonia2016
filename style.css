@@ -1530,6 +1530,7 @@ h1.teamz{
 .thumb{
     visibility: visible !important;
     max-width: 500px;
+    position: relative;
 }
 #page-1{
   position: relative;
@@ -1546,3 +1547,17 @@ h1.teamz{
 #page-2::-webkit-scrollbar { 
     display: none; 
 }
+.teamfig{
+    height: 35%;
+    width: 90.4%;
+     position: absolute;
+    bottom: 6.5%;
+    left: 5%;
+    background-color: rgba(250,250,250,0.95);
+    
+}
+p.nteam{
+   font-size: 0.6em;
+    
+}
+
