@@ -1366,7 +1366,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           <button class="button is-checked" data-filter="*">All</button>
           <button class="button Gold " data-filter=".gold"> Golden</button>
           <button class="button Silver" data-filter=".silver"> Silver</button>
-          <button class="button Trans " data-filter=".transportation"><i class="fa fa-taxi " id="fix" aria-hidden="true"></i> Transporation</button>
+          <!--<button class="button Trans " data-filter=".transportation"><i class="fa fa-taxi " id="fix" aria-hidden="true"></i> Transporation</button>-->
           <button class="button" data-filter=".hospitality"> <i class="fa fa-home" aria-hidden="true"></i> Hospitality</button>
           <button class="button" data-filter=".printing"><i class="fa fa-print" aria-hidden="true"></i> Printing</button>
           <button class="button" data-filter=".food"><i class="fa fa-cutlery" aria-hidden="true"></i> Food & Drinks</button>
@@ -1404,7 +1404,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           </div>
 
           <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
-            <a href=""><img src="images/sponsors/04.Hospitality/macedoniapalace.png"></a>
+            <a href="http://www.makedoniapalace.com/"><img src="images/sponsors/04.Hospitality/macedoniapalace.png"></a>
           </div>
 
           <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
@@ -1413,7 +1413,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
           <!--PRINTING PARTNERS-->
           <div class="element-item printing col-xs-4 col-sm-4 col-md-3 col-lg-2">
-            <a href="http://www.kethea.gr/"><img src="images/sponsors/05.Printing/KETHEA_SXIMA-XROMA.png"></a>
+            <a href="http://www.kethea-print.gr/"><img src="images/sponsors/05.Printing/KETHEA_SXIMA-XROMA.png"></a>
           </div>
 
           <div class="element-item printing col-xs-4 col-sm-4 col-md-3 col-lg-2">
@@ -1421,7 +1421,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           </div>
 
           <div class="element-item printing col-xs-4 col-sm-4 col-md-3 col-lg-2">
-            <a href=""><img src="images/sponsors/05.Printing/access.png"></a>
+            <a href="http://www.accessfashion.gr/"><img src="images/sponsors/05.Printing/access.png"></a>
           </div>
 
           <!--FOOD AND DRINKS PARTNERS-->
@@ -1631,33 +1631,40 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <button type="button" class="btn btn-secondary " id="themeb">Γνώρισε την ομάδα του TEDxUniversityofMacedonia</button></a>
             </div>
         </div>
-     
+    <script>
+      function disableMenu() {
+        if ($("#page-2").hasClass("show")){
+          $(".nav-bar").removeClass("scrolled");
+        }
+        }
+     </script>
       <div class="container team" id="page-2">
         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
           <h1 class="title hidden-xs">Team</h1>
         </div>
         <script src="js/scrollreveal.js"></script>
+        <a class="pageload-link" href="#page-1"><button class="btn-fixed" id="fixedbutton"><i class="fa fa-arrow-left" aria-hidden="true"></i></button></a>
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-offset-2 col-sm-offset-0 col-xs-8 thumb">
-            <a class="thumbnail" href="#">
+            <a class="thumbnail">
               <img class="img-responsive center-block" src="images/team/rafailia.png" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-offset-2 col-sm-offset-0 col-xs-8 thumb">
-            <a class="thumbnail" href="#">
+            <a class="thumbnail">
               <img class="img-responsive center-block" src="images/team/amallia.png" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-offset-2 col-sm-offset-0 col-xs-8 thumb">
-            <a class="thumbnail" href="#">
+            <a class="thumbnail">
              <img class="img-responsive center-block" src="images/team/sofia.png" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-offset-2 col-sm-offset-0 col-xs-8 thumb">
-            <a class="thumbnail" href="#">
+            <a class="thumbnail">
              <img class="img-responsive center-block" src="images/team/sotiris.png" alt="">
            </a>
           </div>
@@ -1734,7 +1741,6 @@ TweenLite.to("#_x31_", 2, {y:200});
             </a>
           </div>
         </div>
-        <p><a class="pageload-link" href="#page-1">nowwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</a></p>
       </div>
 
       <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">

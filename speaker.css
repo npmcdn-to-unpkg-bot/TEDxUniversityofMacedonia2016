@@ -21,3 +21,9 @@
 .speaker-icon{
 	width: 100%;
 }
+.nav-tabs a:hover{
+	color:#e62b1e;
+}
+.nav-tabs > li.active{
+	border-bottom: 1px solid #e62b1e;
+}
