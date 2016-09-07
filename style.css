@@ -1503,7 +1503,7 @@ h2.theme{
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 30% 55%;
+    background-position: 50% 0%;
     background-repeat: repeat-y;
     max-width: 100%;
     width: 100%;    
@@ -1548,16 +1548,43 @@ h1.teamz{
     display: none; 
 }
 .teamfig{
-    height: 35%;
-    width: 90.4%;
-     position: absolute;
-    bottom: 6.5%;
-    left: 5%;
-    background-color: rgba(250,250,250,0.95);
-    
+  height: 35%;
+  width: 91%;
+  position: absolute;
+  bottom: 6.5%;
+  left: 5%;
+  background-color: rgba(250,250,250,0.90);
 }
-p.nteam{
-   font-size: 0.6em;
-    
+.name{
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #000;
+  float:left;
+  margin:0;
+  padding:0;
+}
+.surname{
+  font-weight:bold;
+  font-size: 0.9em;
+  color: #000;
+  float:left;
+  margin:0;
+  padding:0;
+}
+.full{
+  white-space: nowrap;
+  margin:0;
+  padding:0;
+}
+.job{
+  font-size: 0.75em;
+  color: #000;
+  float:left;
+  font-style: italic;
+  margin:0;
+  padding-left:2%;
+}
+.social-team{
+  background-color: red;
 }
 
