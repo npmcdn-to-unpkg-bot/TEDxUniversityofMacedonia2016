@@ -5,7 +5,7 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-    background-image: url(congruent_outline.png);
+    background-image: url(images/congruent_outline.png);
     
    
     background-repeat: repeat-y;
@@ -103,9 +103,14 @@
 }
 
 .footer-distributed .footer-center p a{
-	color:  #5383d3;
+	color:  #fff;
 	text-decoration: none;;
 }
+.footer-distributed .footer-center p a:hover{
+	color:  #5d2d7a;
+}
+
+
 
 
 /* Footer Right */
