@@ -594,16 +594,29 @@ map-container {
     color:azure ;
  text-align: center;
     
-}
-.se-pre-con {
+}/*
+.loading {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  display:block;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   z-index: 9999;
   background-color:rgba(250,250,250,0.9);
+}*/
+.loading {
+z-index: 9999;
+position: absolute;
+background-color:rgba(250,250,250,0.9);
+width: 100%;
+height: 100%;
 }
+.loading embed{
+  position: absolute;
+  top:37%;
+  left:42%;
+}
+
 
 /*Polygon intro */
 .polylion {
