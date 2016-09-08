@@ -587,23 +587,16 @@ map-container {
 .speakk{
    margin:0 ! important;
   padding:0 ! important;  
-  background-color: #fff;    
+  background-color: #fff;  
+  margin-left: 10px;
+  margin-right: 10px;    
 }
 #speakh1{
     font-size: 300%;
     color:azure ;
  text-align: center;
     
-}/*
-.loading {
-  position: fixed;
-  display:block;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color:rgba(250,250,250,0.9);
-}*/
+}
 .loading {
 z-index: 9999;
 position: absolute;
@@ -1665,3 +1658,10 @@ h1.teamz{
   left:44.5%;
   position: relative;
 }
+
+.thumb {
+    margin-bottom: 30px;
+   /* visibility: hidden;*/
+}
+
+
