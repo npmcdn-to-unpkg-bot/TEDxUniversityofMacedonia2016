@@ -10,7 +10,7 @@
 [class^='imghvr-'],
 [class*=' imghvr-'] {
   position: relative;
-  margin: 0px;
+  /*margin: 0px;*/
   max-width: 100%;
   background-color: transparent;
   color: #fff;
@@ -20,6 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  margin-bottom: 20px;
 }
 [class^='imghvr-'] > img,
 [class*=' imghvr-'] > img {
