@@ -79,7 +79,8 @@ h4 strong {
 .countdown .count-title {
   display: block;
   margin-bottom: 15px;
-  font: normal 0.94em "Lato";
+  font: normal 0.1em;
+  font-family: 'Open Sans', sans-serif;
   color: #1a1a1a;
   text-transform: uppercase;
 }
@@ -105,7 +106,7 @@ h4 strong {
   margin: auto;
   font: normal 5.94em/107px "Lato";
   font-weight: 700;
-  color: #de4848;
+  color:#d62247;
 }
 .countdown .figure .top:after, .countdown .figure .bottom-back:after {
   content: "";
@@ -158,6 +159,7 @@ h4 strong {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
+  color:#d62247;
 }
 .countdown .figure .bottom-back span {
   position: absolute;
@@ -189,6 +191,7 @@ h4 strong {
   -moz-border-radius-bottomright: 10px;
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  color:#d62247;
 }
 .countdown .figure .top-back span {
   position: absolute;

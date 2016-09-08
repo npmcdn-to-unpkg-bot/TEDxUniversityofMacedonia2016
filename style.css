@@ -26,6 +26,14 @@ body h3{
   text-align:center;
   color:#6e3e8f;
 }
+body h4{
+  color:#5d2d7a;
+  font-family: 'Lato', sans-serif ;
+  letter-spacing: 1px;
+}
+a:hover{
+  color:#5d2d7a;
+}
 /*
 body span{
   color:#6e3e8f;
@@ -453,7 +461,6 @@ body span{
   position: relative;
 }
 
-
 .team img{
   margin: 0 auto; /*to bring the image in the center */
 }
@@ -519,14 +526,7 @@ body span{
     display:block;
 }
 .TEDXuom{
-        /*background-image: url(images/2144-%5BConverted%5D2.png);
- 
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-    */
-   
+  background-color: #ede0dc;
 }
 #xinfo{
   padding-left: 1%;
@@ -580,24 +580,14 @@ map-container {
   -moz-background-position: center;
   -o-background-position: center;
   background-position: center;*/
+  background-color: #D3D3D3;
     
     z-index: auto;
 }
 .speakk{
    margin:0 ! important;
-padding:0 ! important;
-     /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-     background-image: url(images/2144-%5BConverted%5D3.png);
-    background-repeat: repeat-y;
-    
- background-size: contain;*/
-   
-    
-    
+  padding:0 ! important;  
+  background-color: #fff;    
 }
 #speakh1{
     font-size: 300%;
@@ -640,6 +630,7 @@ padding:0 ! important;
 .title{
   width:20%;
   height: 100%;
+  text-align: center;
 }
 
 
@@ -1440,8 +1431,9 @@ h1.title{
     font-family: 'Lato', sans-serif ;
     font-size: 2.1em;
     font-weight: 300;
-    padding-left: 42%;
-    text-align:center ;
+    position: relative;
+    left: 40%;
+    text-align:center;
     color: black;
     
 }
@@ -1650,4 +1642,13 @@ h1.teamz{
 .moreinfo:hover{
   color:#000;
   background-color:transparent;
+}
+
+.tba{
+  text-align: center;
+  font-size:1em;
+  font-style: italic;
+  font-weight: bold;
+  left:44.5%;
+  position: relative;
 }
