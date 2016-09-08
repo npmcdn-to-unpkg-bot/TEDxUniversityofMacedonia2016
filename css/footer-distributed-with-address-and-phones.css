@@ -103,8 +103,12 @@
 }
 
 .footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+	color:  #fff;
+	text-decoration: none;
+}
+.footer-distributed .footer-center p a:hover{
+	color:  #5d2d7a;
+	text-decoration: none;
 }
 
 
