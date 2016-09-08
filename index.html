@@ -12,12 +12,15 @@
 
     <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
 
+    <!--CDN BOOTSTRAP -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     <link href="css/XmpMEp.less.css" rel="stylesheet">
     <link href="css/XmpMEp.css" rel="stylesheet">
     <link href="css/fd.css" rel="stylesheet">
-    <link href="scss/speakerdiag.scss" rel="stylesheet">
     <link href="css/speaker.css" rel="stylesheet">
     <link href="css/socialfooter.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -36,7 +39,6 @@
      
     <!--scripts for smooth scrolling-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/smooth_scroll.js"></script>
     <script src="js/snap.svg-min.js"></script>
       <link rel="stylesheet" href="css/component.css">
       <link rel="stylesheet" href="css/normalize.css">
@@ -499,12 +501,7 @@
             <!--use the button to appear the hidden div-->
             <script type="text/javascript">
             function hiddenTheme() {
-              if (document.getElementById("hidden-theme").style.display=="none"){
-                document.getElementById("hidden-theme").style.display = "block";
-              }
-              else{
-               document.getElementById("hidden-theme").style.display = "none";
-              }
+              $("#hidden-theme").toggle();
             }
             </script>
             <a href="javascript:hiddenTheme();">
@@ -977,12 +974,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           <!--use the image as a button to appear the hidden div-->
           <script type="text/javascript">
           function hiddenAbout() {
-           if (document.getElementById("hidden-about").style.display=="none"){
-             document.getElementById("hidden-about").style.display = "block";
-           }
-           else{
-             document.getElementById("hidden-about").style.display = "none";
-           }
+            $("#hidden-about").toggle();
           }
         </script>
         <a href="javascript:hiddenAbout();">
@@ -1030,12 +1022,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           <!--- use the image as a button to appear the hidden div -->
           <script type="text/javascript">
             function hiddenTEDxUoM() {
-              if (document.getElementById("hidden-TEDxUoM").style.display=="none"){
-                document.getElementById("hidden-TEDxUoM").style.display = "block";
-              }
-              else{
-                document.getElementById("hidden-TEDxUoM").style.display = "none";
-              }
+              $("#hidden-TEDxUoM").toggle();
             }
           </script>
         </div>
@@ -1090,12 +1077,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
     <script type="text/javascript">
       function hiddenSpeakers() {
-        if (document.getElementById("hidden-speakers").style.display=="none"){
-          document.getElementById("hidden-speakers").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-speakers").style.display = "none";
-        }
+        $("#hidden-speakers").toggle();
       }
     </script>
     <a href="javascript:hiddenSpeakers();">
@@ -1248,12 +1230,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the button to appear the hidden div-->
     <script type="text/javascript">
     function hiddenPerformers() {
-      if (document.getElementById("hidden-performers").style.display=="none"){
-        document.getElementById("hidden-performers").style.display = "block";
-      }
-      else{
-        document.getElementById("hidden-performers").style.display = "none";
-      }
+      $("#hidden-performers").toggle();
     }
     </script>
     <a href="javascript:hiddenPerformers();">
@@ -1283,12 +1260,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the button to appear the hidden div-->
     <script type="text/javascript">
       function hiddenWorkshops() {
-        if (document.getElementById("hidden-workshops").style.display=="none"){
-          document.getElementById("hidden-workshops").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-workshops").style.display = "none";
-        }
+        $("#hidden-workshops").toggle();
       }
     </script>
     <a href="javascript:hiddenWorkshops();">
@@ -1315,12 +1287,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
       <script type="text/javascript">
       function hiddenVenue() {
-        if (document.getElementById("hidden-venue").style.display=="none"){
-          document.getElementById("hidden-venue").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-venue").style.display = "none";
-        }
+        $("#hidden-venue").toggle();
       }
       </script>
       <a href="javascript:hiddenVenue();">
@@ -1375,12 +1342,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the image as a button to appear the hidden div-->
     <script type="text/javascript">
       function hiddenPartners() {
-        if (document.getElementById("hidden-partners").style.display=="none"){
-          document.getElementById("hidden-partners").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-partners").style.display = "none";
-        }
+        $("#hidden-partners").toggle();
       }
     </script>
     <a href="javascript:hiddenPartners();">
@@ -1527,6 +1489,11 @@ TweenLite.to("#_x31_", 2, {y:200});
             <a href="http://www.skywalker.gr/"><img src="images/sponsors/08.Media/skywalker.png"></a>
           </div>
 
+          <div class="element-item col-xs-4 col-sm-4 col-md-3 col-lg-2">
+            <a><img src="images/blank.png"></a>
+          </div>
+
+
         </div> <!-- closing grid -->
         <script src='http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script>
         <script src="js/partners.js"></script>
@@ -1543,12 +1510,7 @@ TweenLite.to("#_x31_", 2, {y:200});
       <!--use the image as a button to appear the hidden div-->
       <script type="text/javascript">
         function hiddenTeam() {
-          if (document.getElementById("hidden-team").style.display=="none"){
-            document.getElementById("hidden-team").style.display = "block";
-          }
-          else{
-            document.getElementById("hidden-team").style.display = "none";
-          }
+          $("#hidden-team").toggle();
         }
       </script> 
       <a href="javascript:hiddenTeam();">
@@ -2648,12 +2610,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the image as a button to appear the hidden div-->
     <script type="text/javascript">
     function hiddenContact() {
-      if (document.getElementById("hidden-contact").style.display=="none"){
-        document.getElementById("hidden-contact").style.display = "block";
-      }
-      else{
-        document.getElementById("hidden-contact").style.display = "none";
-      }
+      $("#hidden-contact").toggle();
     }
     </script> 
     <a href="javascript:hiddenContact();">
@@ -2810,7 +2767,10 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!-- Latest compiled and minified JavaScript -->    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
      <!-- to reload and go to top -->
   <!--   <script>
