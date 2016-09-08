@@ -124,13 +124,13 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="inner-link" href="#about">
-                            About
-                        </a>
-                    </li>
-                     <li class="">
                         <a class="inner-link" href="#theme">
                             Theme
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="inner-link" href="#about">
+                            About
                         </a>
                     </li>
                     <li class="">
@@ -225,10 +225,10 @@
                     <a href="#"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#about"><i class="fa fa-fw fa-times" aria-hidden="true"></i> About</a>
+                    <a href="#theme"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Theme</a>
                 </li>
                 <li>
-                    <a href="#theme"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Theme</a>
+                    <a href="#about"><i class="fa fa-fw fa-times" aria-hidden="true"></i> About</a>
                 </li>
                 <li>
                     <a href="#speakers"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i> Speakers</a>
@@ -507,12 +507,7 @@
             <!--use the button to appear the hidden div-->
             <script type="text/javascript">
             function hiddenTheme() {
-              if (document.getElementById("hidden-theme").style.display=="none"){
-                document.getElementById("hidden-theme").style.display = "block";
-              }
-              else{
-               document.getElementById("hidden-theme").style.display = "none";
-              }
+              $("#hidden-theme").toggle();
             }
             </script>
             <a href="javascript:hiddenTheme();">
@@ -535,7 +530,7 @@
                 </a>
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
-                  <a href="javascript:hiddenDare()"><h2>Dare</h2></a>
+                  <a href="javascript:hiddenDare()"><h1 class="titlemob">Dare</h1></a>
                   <div  id="hidden-dare" style="display:none;">
                     <p>Τολμάω, σημαίνει κάνω κάτι, επομένως ενεργώ. Σε όλες τις ιστορικές καταγραφές, τολμηρός είναι αυτός που ενήργησε προς μια κατεύθυνση, χωρίς να αναφέρεται αν το πέτυχε ή όχι, γιατί η αξία της τόλμης κρύβεται πρωτίστως στη δράση, και σε δεύτερη μοίρα στο αποτέλεσμα.<br>Επομένως, τόλμησε… τι ; είναι δικό σου θέμα.</p>
                  </div>
@@ -554,7 +549,7 @@
                   </a>
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
-                  <a href="javascript:hiddenIthacas()"><h2>Ithacas</h2></a>
+                  <a href="javascript:hiddenIthacas()"><h1 class="titlemob">Ithacas</h1></a>
                   <div  id="hidden-ithacas" style="display:none;">
                     <p>The main theme of TEDxUniversityofMacedonia 2014 is Ithacas. Inspired by Ithaca by C.P. Cavafis we call our generation to wonder about their own Ithacas. Our journey starts from the first time that we face the world. We explore the universe that spreads around us. We connect with people that we meet. We try to innovate and make the difference. We believe in a better world. We aim to set a goal and to achieve it. Our goal is our destination. Every new goal is the beginning of a journey.</p>
                   </div>
@@ -573,9 +568,9 @@
                 </a>
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
-                  <a href="javascript:hiddenBlindSpot()"><h2>Blind Spot</h2></a>
+                  <a href="javascript:hiddenBlindSpot()"><h1 class="titlemob">Blind Spot</h1></a>
                   <div  id="hidden-blindspot" style="display:none;">
-                    <p>Το θέμα του <span class="ted">TEDx</span>UniversityofMacedonia 2015 είναι το «Blind Spot» και εστιάζει στις διαφορετικές οπτικές γωνίες που μπορεί να ανακαλύψει κάποιος αν κοιτάξει προσεκτικά κάθετί γύρω του, αν κοιτάξει πίσω από καταστάσεις, αντικείμενα και συμπεριφορές. Όλα στον κόσμο γύρω δεν έχουν μόνο μια διάσταση ή μόνο μία όψη, αλλά κρύβουν πίσω τους περισσότερα από όσα φαίνονται με την πρώτη ματιά.</p>
+                    <p>Το θέμα του <span class="ted">TEDx</span>UniversityofMacedonia 2015 ήταν το «Blind Spot» και εστιάζει στις διαφορετικές οπτικές γωνίες που μπορεί να ανακαλύψει κάποιος αν κοιτάξει προσεκτικά κάθετί γύρω του, αν κοιτάξει πίσω από καταστάσεις, αντικείμενα και συμπεριφορές. Όλα στον κόσμο γύρω δεν έχουν μόνο μια διάσταση ή μόνο μία όψη, αλλά κρύβουν πίσω τους περισσότερα από όσα φαίνονται με την πρώτη ματιά.</p>
                   </div>
                 </div> <!-- cd-timeline-content -->
               </div> <!-- cd-timeline-block -->
@@ -585,7 +580,7 @@
                   <img src="images/gravity_of_thoughts.svg" alt="Gravity of Thoughts">
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
-                  <h2>Gravity of Thoughts</h2>
+                  <h1 class="titlemob">Gravity of Thoughts</h1>
                     <p>Το θέμα του <span style="color:#e62b1e;font-weight:bold;">TEDx</span><span style="font-weight:600;color:#000">UniversityofMacedonia</span> 2016 είναι το “Gravity of thoughts”. Η βαρύτητα, η κοινή περιοριστική αρχή που μας επηρεάζει όλους, και οι σκέψεις που συνθέτουν την μοναδική και αυθεντική προσωπικότητά του καθενός. Ο συνδυασμός αυτός που μας αφήνει να παραμείνουμε εμείς, ενώ ζούμε αρμονικά σε ένα σύνολο. 
                     <br><br>
                     Κάθε σκέψη έχει πάντοτε ξεχωριστό χαρακτήρα. Διαφορετική οπτική, διαφορετικό υπόβαθρο, διαφορετική χροιά. Με αυτή τη μοναδική ταυτότητα, αποκτάει την δική της ισχύ, τόσο για εμάς, όσο και για τους υπολοίπους. Η βαρύτητα, όμως, είναι αυτή που καθορίζει το περιβάλλον, που επιβάλλει τις συνθήκες, που δημιουργεί τους λόγους που κάνουν τις σκέψεις και τις ιδέες μας να χάνονται και να σβήνουν, ή τις κάνουν να ανθίζουν, να αναπτύσσονται και εν τέλει να πραγματοποιούνται. Έτσι γεννιέται το gravity of thoughts. Είναι η βαρύτητα που μας επηρεάζει. Η βαρύτητα που μας κάνει ότι πραγματικά είμαστε. 
@@ -985,12 +980,7 @@ TweenLite.to("#_x31_", 2, {y:200});
           <!--use the image as a button to appear the hidden div-->
           <script type="text/javascript">
           function hiddenAbout() {
-           if (document.getElementById("hidden-about").style.display=="none"){
-             document.getElementById("hidden-about").style.display = "block";
-           }
-           else{
-             document.getElementById("hidden-about").style.display = "none";
-           }
+           $("#hidden-about").toggle();
           }
         </script>
         <a href="javascript:hiddenAbout();">
@@ -1080,7 +1070,7 @@ TweenLite.to("#_x31_", 2, {y:200});
             </div> <!-- cd-timeline-img -->
           <div class="cd-timeline-content">
             <a href="http://2015.tedxuniversityofmacedonia.com"><h1 class="title">BlindSpot</h1></a>
-            <p class="grspan">Το θέμα του <span class="ted">TEDx</span>UniversityofMacedonia 2015 είναι το «Blind Spot» και εστιάζει στις διαφορετικές οπτικές γωνίες που μπορεί να ανακαλύψει κάποιος αν κοιτάξει προσεκτικά κάθετί γύρω του, αν κοιτάξει πίσω από καταστάσεις, αντικείμενα και συμπεριφορές. Όλα στον κόσμο γύρω δεν έχουν μόνο μια διάσταση ή μόνο μία όψη, αλλά κρύβουν πίσω τους περισσότερα από όσα φαίνονται με την πρώτη ματιά.</p>
+            <p class="grspan">Το θέμα του <span class="ted">TEDx</span>UniversityofMacedonia 2015 ήταν το «Blind Spot» και εστιάζει στις διαφορετικές οπτικές γωνίες που μπορεί να ανακαλύψει κάποιος αν κοιτάξει προσεκτικά κάθετί γύρω του, αν κοιτάξει πίσω από καταστάσεις, αντικείμενα και συμπεριφορές. Όλα στον κόσμο γύρω δεν έχουν μόνο μια διάσταση ή μόνο μία όψη, αλλά κρύβουν πίσω τους περισσότερα από όσα φαίνονται με την πρώτη ματιά.</p>
             <span class="cd-date">2015</span>
           </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
@@ -1098,12 +1088,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
     <script type="text/javascript">
       function hiddenSpeakers() {
-        if (document.getElementById("hidden-speakers").style.display=="none"){
-          document.getElementById("hidden-speakers").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-speakers").style.display = "none";
-        }
+        $("#hidden-speakers").toggle();
       }
     </script>
     <a href="javascript:hiddenSpeakers();">
@@ -1256,12 +1241,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the button to appear the hidden div-->
     <script type="text/javascript">
     function hiddenPerformers() {
-      if (document.getElementById("hidden-performers").style.display=="none"){
-        document.getElementById("hidden-performers").style.display = "block";
-      }
-      else{
-        document.getElementById("hidden-performers").style.display = "none";
-      }
+      $("#hidden-performers").toggle();
     }
     </script>
     <a href="javascript:hiddenPerformers();">
@@ -1291,12 +1271,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the button to appear the hidden div-->
     <script type="text/javascript">
       function hiddenWorkshops() {
-        if (document.getElementById("hidden-workshops").style.display=="none"){
-          document.getElementById("hidden-workshops").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-workshops").style.display = "none";
-        }
+        $("#hidden-workshops").toggle();
       }
     </script>
     <a href="javascript:hiddenWorkshops();">
@@ -1323,12 +1298,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
       <script type="text/javascript">
       function hiddenVenue() {
-        if (document.getElementById("hidden-venue").style.display=="none"){
-          document.getElementById("hidden-venue").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-venue").style.display = "none";
-        }
+        $("#hidden-venue").toggle();
       }
       </script>
       <a href="javascript:hiddenVenue();">
@@ -1383,12 +1353,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the image as a button to appear the hidden div-->
     <script type="text/javascript">
       function hiddenPartners() {
-        if (document.getElementById("hidden-partners").style.display=="none"){
-          document.getElementById("hidden-partners").style.display = "block";
-        }
-        else{
-          document.getElementById("hidden-partners").style.display = "none";
-        }
+        $("#hidden-partners").toggle();
       }
     </script>
     <a href="javascript:hiddenPartners();">
@@ -1555,12 +1520,7 @@ TweenLite.to("#_x31_", 2, {y:200});
       <!--use the image as a button to appear the hidden div-->
       <script type="text/javascript">
         function hiddenTeam() {
-          if (document.getElementById("hidden-team").style.display=="none"){
-            document.getElementById("hidden-team").style.display = "block";
-          }
-          else{
-            document.getElementById("hidden-team").style.display = "none";
-          }
+          $("#hidden-team").toggle();
         }
       </script> 
       <a href="javascript:hiddenTeam();">
@@ -2660,12 +2620,7 @@ TweenLite.to("#_x31_", 2, {y:200});
     <!--use the image as a button to appear the hidden div-->
     <script type="text/javascript">
     function hiddenContact() {
-      if (document.getElementById("hidden-contact").style.display=="none"){
-        document.getElementById("hidden-contact").style.display = "block";
-      }
-      else{
-        document.getElementById("hidden-contact").style.display = "none";
-      }
+      $("#hidden-contact").toggle();      
     }
     </script> 
     <a href="javascript:hiddenContact();">

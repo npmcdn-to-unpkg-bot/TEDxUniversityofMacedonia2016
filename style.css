@@ -39,116 +39,6 @@ body span{
   color:#6e3e8f;
   font-weight: bold;
 }*/
-/*Mobile customization*/
-/*Home mobile*/
-/*make the first div be as large as is the viewport of the visitor*/
-#home-m{
-  height: 100vh;
-}
-#home-m img{
-  width: 80%;
-  height: 80%;
-  position: relative;
-  top:0vh;
-}
-#home-m h4{
-  position: relative;
-  top:-10%;  
-}
-
-/*About mobile*/
-#about-m{
-  position: relative;
-}
-#bg{/*all images as a background, such as about.png to be full width*/
-  width: 100%;
-}
-
-/*Theme mobile*/
-#theme-m{
-  position: relative;
-}
-
-/*Speakers mobile*/
-#hidden-speakers{
-  position: relative;
-}
-
-/*performers mobile*/
-#performers-m{
-  max-width: 100vw;
-  position: relative;
-  text-align: center;
-}
-
-/*venue mobile*/
-#venue-m{
-  position: relative;
-}
-#hidden-venue h3{
-   text-align:center;
-}
-#map{
-  text-align: center;
-  width: 100%;
-}
-
-/*partners mobile*/
-#partners-m{
-  position: relative;
-}
-
-#hidden-partners h3{
-   text-align:center;
-}
-
-/*Team mobile*/
-#team-m{
- position: relative;
-}/*
-
-/*TO THE OTHER FILE. CSS/STYLE.CSS */
-#cd-team {
-  background-color: transparent;
-}
-
-#cd-team .cd-member-info {
-  background: #ffffff;
-}
-
-#cd-team .cd-img-overlay { /*change the hover color */
-  background: #000;
-  height: 50%;
-}
-
-#cd-team .cd-img-overlay .ted-team{
-  position: absolute;
-  width: 30%;
-  height: 80%;
-  bottom: 0;
-  left: 0;
-}
-#cd-team .cd-img-overlay .linkedin-team{
-  position: absolute;
-  width: 30%;
-  height: 80%;
-  bottom: 0;
-  right: 0;
-} 
-
-#aboutsm{
-    position: relative;
-}
-
-
-/*Contact mobile*/
-#send{
-  background-color: #25b3c7;
-}
-#contact-m{
-  position: relative;
-}
-
 
 
 /*Social icons in the menu */
@@ -181,131 +71,6 @@ body span{
   background-color: #00a79d;
 }
 
-/*hover for speakers*/
-.view {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    float: left;
-   /*border: 10px solid #fff;*/
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    /*box-shadow: 1px 1px 2px #e6e6e6;*/
-    cursor: default;
-    background: #fff no-repeat center center;
-}
-.view .mask, .view {
-    width: 330px;
-    height: 300px;
-    position: absolute;
-    overflow: hidden;
-    max-width: 100%;
-}
-.mask{
-  position: relative;
-  top:0;
-  left:inherit;
-}
-.view img {
-  max-width: 100%;
-  max-height: 100%;
-  position: relative;
-  top:50%;
-  left:0%;
-
-}
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0;
-    border-radius:5px; 
-}
-.view p {
-    /*font-family: Georgia, serif;*/
-    font-style: italic;
-    font-size: 15px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center;
-}
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    border-radius:25px; 
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-}
-.view a.info:hover {
-    box-shadow: 0 0 5px #000; 
-}
-
-.view-first img { 
-    transition: all 0.2s linear;
-}
-.view-first .mask {
-    opacity: 0;
-    background-color: rgba(110,62,143, 0.7); 
-    transition: all 0.4s ease-in-out;
-}
-.view-first h2 {
-    transform: translateY(-100px);
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-.view-first p { 
-    transform: translateY(100px);
-    opacity: 0;
-  transition: all 0.2s linear;
-}
-.view-first a.info{
-    opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-.view-first:hover img { 
-  transform: scale(1.1);
-} 
-.view-first:hover .mask { 
-  opacity: 1;
-}
-.view-first:hover h2,
-.view-first:hover p,
-.view-first:hover a.info {
-    opacity: 1;
-    transform: translateY(0px);
-}
-.view-first:hover p {
-    transition-delay: 0.1s;
-}
-.view-first:hover a.info {
-    transition-delay: 0.2s;
-}
-/*this class makes the mask always in the center, as is also the image */
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-/*End of hover for speakers*/
-
-
-/*SM MD CUSTOMIZATION*/
-#aboutsm{
-  position: relative;
-}
 /*MENU ANIMATION   --------------------------- */
 .zIndex2{
   z-index: 2;
@@ -638,6 +403,7 @@ height: 100%;
   height: 100%;
   text-align: center;
 }
+
 
 
 
@@ -1441,9 +1207,14 @@ h1.title{
     left: 40%;
     text-align:center;
     color: black;
-    
 }
-
+h1.titlemob{
+  font-family: 'Lato', sans-serif ;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align:center;
+    color: black;
+}
 .ted{
   color: #e62b1e;
   font-weight: bold;
