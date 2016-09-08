@@ -645,7 +645,7 @@
 }
 .imghvr-shutter-in-out-horiz:hover:after,
 .imghvr-shutter-in-out-horiz:hover:before {
-  width: 100%;
+  width: 90%;
   opacity: 0.75;
 }
 /* imghvr-shutter-in-out-vert
@@ -1060,11 +1060,11 @@
   opacity: 0;
 }
 .imghvr-blur:hover > img {
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(0.6px);
+  filter: blur(0.6px);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  opacity: 0;
+  opacity: 0.9;
 }
 .imghvr-blur:hover figcaption {
   opacity: 1;
