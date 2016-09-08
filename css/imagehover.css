@@ -1060,8 +1060,8 @@
   opacity: 0;
 }
 .imghvr-blur:hover > img {
-  -webkit-filter: blur(0.6px);
-  filter: blur(0.6px);
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   opacity: 0.9;
