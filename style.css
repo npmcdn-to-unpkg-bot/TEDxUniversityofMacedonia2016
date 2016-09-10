@@ -209,7 +209,8 @@ body span{
   padding-top: 5%;
 }
 .theme{ /*Theme div*/
-  background-color: #e62b1e;
+   background-color: #e62b1e;
+    margin-bottom: 6%;
 }
 
 .speakers{/*speakers div*/
@@ -291,7 +292,14 @@ body span{
     display:block;
 }
 .TEDXuom{
-  background-color: #ede0dc;
+  background: rgba(242,246,248,1);
+background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 28%, rgba(181,198,208,1) 53%, rgba(224,239,249,1) 85%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(28%, rgba(216,225,231,1)), color-stop(53%, rgba(181,198,208,1)), color-stop(85%, rgba(224,239,249,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 28%, rgba(181,198,208,1) 53%, rgba(224,239,249,1) 85%, rgba(224,239,249,1) 100%);
+background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 28%, rgba(181,198,208,1) 53%, rgba(224,239,249,1) 85%, rgba(224,239,249,1) 100%);
+background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 28%, rgba(181,198,208,1) 53%, rgba(224,239,249,1) 85%, rgba(224,239,249,1) 100%);
+background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 28%, rgba(181,198,208,1) 53%, rgba(224,239,249,1) 85%, rgba(224,239,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
 }
 #xinfo{
   padding-left: 1%;
@@ -1272,7 +1280,7 @@ h2.theme{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 50% 0%;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     max-width: 100%;
     width: 100%;    
 }
@@ -1357,10 +1365,13 @@ h1.teamz{
   margin-top:2%;
 }
 .ted-text{
-  margin-top: .3em;
-  background-color:#1a1a1a;
+    left: -0.2em;
+  padding-bottom: 0.2em;
+ height: 1.8em;
+  margin-top: .36em;
+  background-color:rgba(0,0,0,0.85);
   color:#fff;
-  border-radius:8px;
+  border-radius:4px;
   font-family: 'Helvetica';
   font-weight: bold;
 }
@@ -1387,16 +1398,20 @@ h1.teamz{
 .speakfig{
   height: auto;
   width: 100%;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+font-weight: 400;
   position: absolute;
   bottom: 0;
   left: 0%;
-  background-color: rgba(250,250,250,0.80);
+  background-color: rgba(250,250,250,0.85);
   min-height: 25%;
 }
 .speakfig:hover{
 }
 .speakname{
-  font-size: 1em;
+  font-size: 1.16em;
+    font-family: 'Open Sans', sans-serif; 
   font-weight: 600;
   color: #000;
   text-align: center;
@@ -1461,12 +1476,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
 p.venue{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    
+    font-size: 1.2em;
     font-weight: 300;
     text-align: center;
     color: #000;
     background-color: transparent;
     padding-bottom: 2%;
+    padding-bottom: 3%;
+    margin-top: 6%;
     
     
 }

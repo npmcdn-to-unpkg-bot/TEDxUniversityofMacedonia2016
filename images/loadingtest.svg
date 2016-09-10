@@ -1,5 +1,5 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+	 width="300px" height="300px" viewBox="0 0 300 400" enable-background="new 0 0 300 300" xml:space="preserve">
 <g>
 	<defs>
 		<path id="SVGID_1_" d="M54.74,121.404c-15.738,4.349-27.297,18.764-27.297,35.885c0,20.563,16.671,37.235,37.237,37.235
@@ -115,10 +115,10 @@
 <animate attributeName="r" from="0" to="12.53" dur="1s" repeatCount="indefinite"/>
   </circle>
 	<circle fill="#D52147" cx="134.78" cy="119.72" r="12.78">
-<animate attributeName="r" from="0" to="12.78" dur="1s" repeatCount="indefinite">
+<animate attributeName="r" from="0" to="12.78" dur="1s" repeatCount="indefinite"/>
   </circle>
 	<circle fill="#D52147" cx="214.78" cy="142.72" r="12.78">
-<animate attributeName="r" from="0" to="12.78" dur="1s" repeatCount="indefinite">
+<animate attributeName="r" from="0" to="12.78" dur="1s" repeatCount="indefinite"/>
   </circle>
 	<circle id="ante" fill="#ECE0DB" cx="210.28" cy="118.22" r="13.28">
 <animate attributeName="r" from="0" to="13.28" repeatCount="indefinite"  dur="1.5s"/>
