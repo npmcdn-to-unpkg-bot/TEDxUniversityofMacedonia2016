@@ -1494,3 +1494,26 @@ p.venue{
     }
   }
 }
+
+
+
+.polylion {
+  max-width: 500px;
+  max-height:200px;
+}
+
+.polylion polygon {
+  opacity: 0;
+}
+.no-js .polylion polygon {
+  opacity: 1;
+}
+
+.polylion {
+  height: auto;
+}
+.no-cssanimations .polylion > polygon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
