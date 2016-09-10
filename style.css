@@ -1316,6 +1316,15 @@ h1.teamz{
     max-width: 500px;
     position: relative;
 }
+.thumb:hover{
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  filter: grayscale(70%);
+  -webkit-filter: brightness(0.80);
+  -moz-filter: brightness(0.80);
+  filter: brightness(0.80);}
+}
+
 #page-1{
   position: relative;
 }
@@ -1391,7 +1400,7 @@ h1.teamz{
   position: fixed;
   z-index: 10;
   left:0;
-  bottom: 0;
+  top: 0;
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
   border-radius: 60px;

@@ -1431,7 +1431,7 @@ TweenLite.to("#_x31_", 2, {y:200});
         <script src="js/scrollreveal.js"></script>
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-offset-2 col-sm-offset-0 col-xs-8 thumb imghvr-blur">
-            <img class="img-responsive center-block img-rounded" src="speakers/filothei_matsigkou.png" alt="Filothei Matsigkou">
+            <img class="img-responsive center-block img-rounded speaker-img" src="speakers/filothei_matsigkou.png" alt="Filothei Matsigkou">
             <figcaption>
 
               <div class="speakfig">
@@ -1703,8 +1703,9 @@ TweenLite.to("#_x31_", 2, {y:200});
         </div>
 
         <div id="filters" class="button-group">
-          
-          <button class="button is-checked Gold" data-filter=".gold"> Golden</button>
+
+          <button class="button is-checked" data-filter="*">All</button>         
+          <button class="button Gold" data-filter=".gold"> Golden</button>
           <button class="button Silver" data-filter=".silver"> Silver</button>
           <!--<button class="button Trans " data-filter=".transportation"><i class="fa fa-taxi " id="fix" aria-hidden="true"></i> Transporation</button>-->
           <button class="button" data-filter=".hospitality"> <i class="fa fa-home" aria-hidden="true"></i> Hospitality</button>
@@ -1712,13 +1713,13 @@ TweenLite.to("#_x31_", 2, {y:200});
           <button class="button" data-filter=".food"><i class="fa fa-cutlery" aria-hidden="true"></i> Food & Drinks</button>
           <button class="button" data-filter=".supporters"><i class="fa fa-plus" aria-hidden="true"></i> Supporters</button>
           <button class="button" data-filter=".media"><i class="fa fa-camera" aria-hidden="true"></i> Media Partners</button>
-          <button class="button" data-filter="*">All</button>
+          
         </div>
 
         <div class="grid">
 
           <!--GOLD PARTNERS -->
-          <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2 col-md-offset-1 col-lg-offset-3">
             <a href="http://www.helpe.gr"><img src="images/partners/Gold/elpe.png"></a>
           </div>
 
@@ -1729,9 +1730,12 @@ TweenLite.to("#_x31_", 2, {y:200});
           <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2">
             <a href="http://www.uom.gr/"><img src="images/partners/Gold/uom_logo_scanner.png"></a>
           </div>
+<!--
+          <div class="element-item hidden-xs hidden-sm col-md-1 col-lg-3" style="height:250px;">
+          </div>          -->
 
           <!--SILVER PARTNERS -->
-          <div class="element-item silver col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item silver col-xs-4 col-sm-4 col-md-3 col-lg-2 col-md-offset-4 col-lg-offset-4">
             <a href="http://www.speak.edu.gr/"><img src="images/partners/Silver/speak.png"></a>
           </div>
 
@@ -1739,8 +1743,9 @@ TweenLite.to("#_x31_", 2, {y:200});
             <a href=""><img src="images/partners/Silver/access.png"></a>
           </div>
 
+
           <!--HOSPITALITY PARTNERS -->
-          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2 col-lg-offset-2">
             <a href="http://www.hithessaloniki.gr/"><img src="images/partners/Hospitality/holidayinn.png"></a>
           </div>
 
@@ -2256,7 +2261,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                     <span class="job">Υπεύθυνος Ατζέντας</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
-                    <a href="">
+                    <a href="https://www.ted.com/profiles/6009904">
                       <span class="fa-stack ted-text">TED</span>
                     </a>
                   </div>
@@ -2778,7 +2783,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                     <span class="job">Υπεύθυνος Ατζέντας</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
-                    <a href="">
+                    <a href="https://www.ted.com/profiles/6009904">
                       <span class="fa-stack ted-text">TED</span>
                     </a>
                   </div>
