@@ -6,7 +6,7 @@
   right: 0;
   margin: auto;
   /*height: 100%;*/
-  padding-top: 1%;
+  padding-top: 2%;
 }
 #countdownmob{
   float: center;
@@ -78,7 +78,7 @@ h4 strong {
 }
 .countdown .count-title {
   display: block;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font: normal 0.1em;
   font-family: 'Open Sans', sans-serif;
   color: #1a1a1a;

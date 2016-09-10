@@ -4,4 +4,8 @@
  $(window).load(function() {
     // Animate loader off screen
     $(".loading").fadeOut(2000);
+    $('html, body').css({
+    'overflow': 'auto',
+    'height': 'auto'
+});
   });

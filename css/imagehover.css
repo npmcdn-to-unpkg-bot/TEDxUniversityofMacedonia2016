@@ -1060,10 +1060,10 @@
   opacity: 0;
 }
 .imghvr-blur:hover > img {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-transform: scale(1);
+  transform: scale(1);
   opacity: 0.9;
 }
 .imghvr-blur:hover figcaption {
