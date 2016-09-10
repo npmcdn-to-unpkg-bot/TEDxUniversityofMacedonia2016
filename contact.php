@@ -1,42 +1,38 @@
 <?php
 
-// configure
-$from = 'Contact form <info@tedxuniversityofmacedonia.com>';
-$sendTo = 'Contact form <info.tedxuom@gmail.com>';
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
-$okMessage = 'Contact form successfully submitted. Thank you for contacting TEDxUniversityofMacedonia.';
-$errorMessage = 'There was an error while submitting the form. Please try again.';
+$name - $_REQUEST['name'] ;
+$email = $_REQUEST['email'] ;
+$message = $_REQUEST['message'] ;
 
-// let's do the sending
 
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
+require 'phpmailer/PHPMailerAutoload.php';
 
-    foreach ($_POST as $key => $value) {
+$mail = new PHPMailer;
 
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
-    }
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'server13.cretaforce.gr';				// Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'info@tedxuniversityofmacedonia.com';                 // SMTP username
+$mail->Password = 'TEDxinfo';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
 
-    mail($sendTo, $subject, $emailText, "From: " . $from);
+$mail->From = $email;
+$mail->FromName = $name;	
+$mail->addAddress("info.tedxuom@gmail.com");
+$mail->AddBCC("kosmastsk@gmail.com", "ContactForm");
 
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
+$mail->Subject = "New contact form response!";
+$mail->Body    = $message;
+$mail->AltBody = $message;
+
+
+if(!$mail->send()) {
+	echo "error";
+} else {
+	echo "sent";
+	header( "Location " . $pfw_redirect );
+	$pfw_redirect='index.html';
 }
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
 
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-    
-    header('Content-Type: application/json');
-    
-    echo $encoded;
-}
-else {
-    echo $responseArray['message'];
-}
+?>
