@@ -112,7 +112,7 @@ main.slide-out .cd-overlay {
     font-size: 1.125rem;
   }
 }
-
+/*
 header {
   background: #f2ecbd;
 }
@@ -129,7 +129,7 @@ header p {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #93861d;
-}
+}*/
 
 .cd-placeholder-1 {
   background: #f25f5c;
@@ -173,16 +173,19 @@ header p {
 }
 #cd-team .cd-img-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 20%;
   /*background: rgba(92, 75, 81, 0.8);*/ /*CHANGE THE OPACITY OF SOCIAL */
   opacity: 0;
   border-radius: .25em .25em 0 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+#cd-team .cd-img-overlay:hover{
+  opacity: 1;
 }
 #cd-team .cd-img-overlay span {
   position: absolute;
