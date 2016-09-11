@@ -229,11 +229,11 @@ body span{
 
 .team img{
   margin: 0 auto; /*to bring the image in the center */
-}
+}/*
 .noesis{
     height: 100%;
     margin: 0;
-}
+}*/
 .koko{
     width: 35vw;
     height: 400px;
@@ -1359,7 +1359,7 @@ h1.teamz{
   width: 100%;
 }
 .job{
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin:0 auto;
   font-weight: 550;
   text-align: center;
@@ -1473,10 +1473,25 @@ height: 50vh;
     
 }
 #rnoe{
-    height: 50vh;
-    
-   
-    
+    height: 50vh;   
+}
+@media(max-width: 670px){
+  #rnoe{
+    padding-top: 10%;
+    height: 100%;
+  }
+}
+@media(max-width: 768px){
+  #rnoe{
+    padding-top: 15%;
+    height: 100%;
+  }
+}
+@media(max-width: 600px){
+  #rnoe{
+    padding-top: 0;
+    height: 100%;
+  }
 }
 
 p.venue{
@@ -1533,4 +1548,10 @@ background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 
 background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 13%, rgba(254,254,254,1) 94%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
 background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 13%, rgba(254,254,254,1) 94%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+}
+
+@media (min-width: 768px){
+  .contact{
+    background-color:#ededed;
+  }
 }
