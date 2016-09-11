@@ -1734,6 +1734,10 @@ TweenLite.to("#_x31_", 2, {y:200});
   </div> <!-- / #venue -->
 
   <!-- PARTNERS SECTION ################################################ -->
+      <script>
+    if (true){
+  $('#allbtn').trigger('click');
+}</script>
   <div id="partners">
 
     <!--use the image as a button to appear the hidden div-->
@@ -1763,7 +1767,7 @@ TweenLite.to("#_x31_", 2, {y:200});
 
         <div id="filters" class="button-group">
 
-          <button class="button is-checked" data-filter="*">All</button>         
+          <button class="button is-active" data-filter="*" id="allbtn">All</button>         
           <button class="button Gold" data-filter=".gold"> Golden</button>
           <button class="button Silver" data-filter=".silver"> Silver</button>
           <!--<button class="button Trans " data-filter=".transportation"><i class="fa fa-taxi " id="fix" aria-hidden="true"></i> Transporation</button>-->
@@ -1778,125 +1782,139 @@ TweenLite.to("#_x31_", 2, {y:200});
         <div class="grid">
 
           <!--GOLD PARTNERS -->
-          <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2 col-md-offset-1 col-lg-offset-3">
+          <div class="row">
+          <div class="element-item gold col-xs-2 col-xs-offset-3">
             <a href="http://www.helpe.gr"><img src="images/partners/Gold/elpe.png"></a>
           </div>
 
-          <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item gold col-xs-2">
             <a href="http://www.vivechrom.gr/"><img src="images/partners/Gold/vivechrom.png"></a>
           </div>
 
-          <div class="element-item gold col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item gold col-xs-2">
             <a href="http://www.uom.gr/"><img src="images/partners/Gold/uom_logo_scanner.png"></a>
           </div>
-<!--
-          <div class="element-item hidden-xs hidden-sm col-md-1 col-lg-3" style="height:250px;">
-          </div>          -->
+          </div>
 
           <!--SILVER PARTNERS -->
-          <div class="element-item silver col-xs-4 col-sm-4 col-md-3 col-lg-2 col-md-offset-3 col-lg-offset-3">
+          <div class="row">
+          <div class="element-item silver  col-xs-2 col-xs-offset-3">
             <a href="http://www.speak.edu.gr/"><img src="images/partners/Silver/speak.png"></a>
           </div>
 
-          <div class="element-item silver col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item silver col-xs-2">
             <a href="http://www.accessfashion.gr/"><img src="images/partners/Silver/access.png"></a>
           </div>
 
-          <div class="element-item silver col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item silver col-xs-2">
             <a href="https://www.nbg.gr/el/i-bank"><img src="images/partners/Silver/ethniki.png"></a>
           </div>
-
+          </div>
 
           <!--HOSPITALITY PARTNERS -->
-          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1">
+          <div class="row">
+          <div class="element-item hospitality col-xs-2 col-xs-offset-2">
             <a href="http://www.hithessaloniki.gr/"><img src="images/partners/Hospitality/holidayinn.png"></a>
           </div>
 
-          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item hospitality col-xs-2">
             <a href="http://www.capsishotels.gr/en/thessaloniki"><img src="images/partners/Hospitality/capsis.png"></a>
           </div>
 
-          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item hospitality col-xs-2">
             <a href="http://www.makedoniapalace.com/"><img src="images/partners/Hospitality/macedoniapalace.png"></a>
           </div>
 
-          <div class="element-item hospitality col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item hospitality col-xs-2">
             <a href="http://www.portopalace.gr/index.php?lang=2"><img src="images/partners/Hospitality/NEW LOGO PPHT-1.png"></a>
+          </div>
           </div>
 
           <!--PRINTING PARTNERS-->
-          <div class="element-item printing col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="row">
+          <div class="element-item printing col-xs-2 col-xs-offset-5">
             <a href="http://www.kethea.gr/"><img src="images/partners/Printing/KETHEA_SXIMA-XROMA.png"></a>
+          </div>
           </div>
 
           <!--FOOD AND DRINKS PARTNERS-->
-          <div class="element-item food col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="row">
+          <div class="element-item col-xs-offset-4">
+          </div>
+          <div class="element-item food col-xs-2">
             <a href="http://www.vikoswater.gr/"><img src="images/partners/FoodDrinks/ΛΟΓΟΤΥΠΟ ΒΙΚΟΣ.png"></a>
           </div>
 
-          <div class="element-item food col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item food col-xs-2">
             <a href="https://www.facebook.com/VikosCola/?fref=ts"><img src="images/partners/FoodDrinks/vikos cola.png"></a>
           </div>
 
-          <div class="element-item food col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item food col-xs-2">
             <a href="www.afs.edu.gr"><img src="images/partners/FoodDrinks/amerikaniki-el.png"></a>
           </div>
 
-          <div class="element-item food col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item food col-xs-2">
             <a href="www.afs.edu.gr"><img src="images/partners/FoodDrinks/Perrotis Logo.png"></a>
           </div>
 
-          <div class="element-item food col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item food col-xs-2">
             <a href=""><img src="images/partners/FoodDrinks/elenidis.png"></a>
+          </div>
           </div>
 
           <!-- SUPPORTERS -->
-          <div class="element-item supporters col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="row">
+          <div class="element-item col-xs-offset-1">
+          </div>
+          <div class="element-item supporters col-xs-2">
             <a href="http://www.3venizelou.gr/index.php/en/"><img src="images/partners/Supporters/VENIZELOU3logo.png"></a>
           </div>
 
-           <div class="element-item supporters col-xs-4 col-sm-4 col-md-3 col-lg-2">
+           <div class="element-item supporters col-xs-2">
             <a href="http://www.salko.gr"><img src="images/partners/Supporters/SALKOPAPER_Logo.png"></a>
+          </div>
           </div>
 
           <!--MEDIA PARTNERS -->
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="row">
+          <div class="element-item media col-xs-2">
             <a href="http://aiesec.gr/"><img src="images/partners/Media/aiesec.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://beater.gr/"><img src="images/partners/Media/beater.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://www.culturenow.gr/"><img src="images/partners/Media/culture_npw.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://uom.esngreece.gr/"><img src="images/partners/Media/esn_uom.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://frapress.gr/"><img src="images/partners/Media/frapress.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://www.neolaia.gr/"><img src="images/partners/Media/neolaia.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://radionw.gr/"><img src="images/partners/Media/nowhere.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://www.parallaximag.gr/"><img src="images/partners/Media/paralaxi.png"></a>
           </div>
 
-          <div class="element-item media col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item media col-xs-2">
             <a href="http://www.skywalker.gr/"><img src="images/partners/Media/skywalker.png"></a>
           </div>
+          </div>
 
-          <div class="element-item col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="element-item col-xs-2">
             <a><img src="images/blank.png"></a>
           </div>
 
@@ -1939,7 +1957,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Ραφαηλία Αμπλά</span><br>
-                    <span class="job">Curator</span>
+                    <span class="teampos">Curator</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/4941624">
@@ -1968,7 +1986,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Σοφία Βήνα</span><br>
-                    <span class="job">Υπεύθυνη Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνη Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/4927013">
@@ -1997,7 +2015,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <span class="name">Βίκυ Τάνη</span><br>
-                    <span class="job">Υπεύθυνη Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνη Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/6308512">
@@ -2031,7 +2049,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Σωτήρης Σάββας</span><br>
-                    <span class="job">Υπεύθυνος Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνος Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/2739685">
@@ -2060,7 +2078,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Αμαλία Δελή</span><br>
-                    <span class="job">Υπεύθυνη Διαχείρισης Οικονομικών και Νομικών Ζητημάτων</span>
+                    <span class="teampos">Υπεύθυνη Διαχείρισης Οικονομικών και Νομικών Ζητημάτων</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="">
@@ -2089,7 +2107,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Φίλιππος Κολεονίδης</span><br>
-                    <span class="job">Υπεύθυνος Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνος Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/6392672">
@@ -2118,7 +2136,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Φωτεινή Μουντούρη</span><br>
-                    <span class="job">Υπεύθυνη Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνη Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/6315778">
@@ -2147,7 +2165,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Χρήστος Γκαντρής</span><br>
-                    <span class="job">Υπεύθυνος Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνος Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/6353707">
@@ -2176,7 +2194,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Έντι Ματεοσιάν</span><br>
-                    <span class="job">Υπεύθυνος Παραγωγής</span>
+                    <span class="teampos">Υπεύθυνος Παραγωγής</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.nbg.gr/el/i-bank">
@@ -2205,7 +2223,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Βασιλική Σουλτάνη</span><br>
-                    <span class="job">Υπεύθυνη Εθελοντών</span>
+                    <span class="teampos">Υπεύθυνη Εθελοντών</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/3647330">
@@ -2234,7 +2252,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Έλενα Τερέζα Βασιλείου</span><br>
-                    <span class="job">Υπεύθυνη Marketing</span>
+                    <span class="teampos">Υπεύθυνη Marketing</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/2159498">
@@ -2246,11 +2264,6 @@ TweenLite.to("#_x31_", 2, {y:200});
                       <i id="li" class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
                   </div>
-                  <div class="col-xs-1 social-team">
-                    <a href="https://www.facebook.com/elena.tereza.v?fref=ts">
-                      <i id="fb" class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                  </div> 
                 </div>
               </div>
             </figcaption>
@@ -2263,7 +2276,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Γεώργιος Μιχάλης Παπαδόπουλος</span><br>
-                    <span class="job">Υπεύθυνος Blog</span>
+                    <span class="teampos">Υπεύθυνος Blog</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/5976867">
@@ -2292,7 +2305,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Ελένη Θωμλούδη</span><br>
-                    <span class="job">Υπεύθυνη Δημοσίων Σχέσεων</span>
+                    <span class="teampos">Υπεύθυνη Δημοσίων Σχέσεων</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/4346734">
@@ -2321,7 +2334,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Χατσίκ Κασαπιάν</span><br>
-                    <span class="job">Υπεύθυνος Ατζέντας</span>
+                    <span class="teampos">Υπεύθυνος Ατζέντας</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="https://www.ted.com/profiles/6009904">
@@ -2350,7 +2363,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Κώστας Αλέξογλου</span><br>
-                    <span class="job">Web Developer</span>
+                    <span class="teampos">Web Developer</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/6352070">
@@ -2379,7 +2392,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Κοσμάς Τσιάκας</span><br>
-                    <span class="job">Web Developer</span>
+                    <span class="teampos">Web Developer</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="http://www.ted.com/profiles/5883347">
@@ -2408,7 +2421,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <span class="name">Νικόλας Κουλτούκης</span><br>
-                    <span class="job">Designer</span>
+                    <span class="teampo"s>Designer</span>
                   </div> 
                   <div class="col-xs-1 col-xs-offset-4 social-team-ted">
                     <a href="">
@@ -2461,7 +2474,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Ραφαηλία Αμπλά</span><br>
-                    <span class="job">Curator</span>
+                    <span class="teampos">Curator</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/4941624">
@@ -2490,7 +2503,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Σοφία Βήνα</span><br>
-                    <span class="job">Υπεύθυνη Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνη Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/4927013">
@@ -2519,7 +2532,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <span class="name">Βίκυ Τάνη</span><br>
-                    <span class="job">Υπεύθυνη Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνη Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/6308512">
@@ -2553,7 +2566,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Σωτήρης Σάββας</span><br>
-                    <span class="job">Υπεύθυνος Ομιλητών</span>
+                    <span class="teampos">Υπεύθυνος Ομιλητών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/2739685">
@@ -2582,7 +2595,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Αμαλία Δελή</span><br>
-                    <span class="job">Υπεύθυνη Διαχείρισης Οικονομικών και Νομικών Ζητημάτων</span>
+                    <span class="teampos">Υπεύθυνη Διαχείρισης Οικονομικών και Νομικών Ζητημάτων</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="">
@@ -2611,7 +2624,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Φίλιππος Κολεονίδης</span><br>
-                    <span class="job">Υπεύθυνος Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνος Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/6392672">
@@ -2640,7 +2653,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Φωτεινή Μουντούρη</span><br>
-                    <span class="job">Υπεύθυνη Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνη Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/6315778">
@@ -2669,7 +2682,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Χρήστος Γκαντρής</span><br>
-                    <span class="job">Υπεύθυνος Χορηγιών</span>
+                    <span class="teampos">Υπεύθυνος Χορηγιών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/6353707">
@@ -2698,7 +2711,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Έντι Ματεοσιάν</span><br>
-                    <span class="job">Υπεύθυνος Παραγωγής</span>
+                    <span class="teampos">Υπεύθυνος Παραγωγής</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/6434720">
@@ -2727,7 +2740,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Βασιλική Σουλτάνη</span><br>
-                    <span class="job">Υπεύθυνη Εθελοντών</span>
+                    <span class="teampos">Υπεύθυνη Εθελοντών</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/3647330">
@@ -2756,7 +2769,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Έλενα Τερέζα Βασιλείου</span><br>
-                    <span class="job">Υπεύθυνη Marketing</span>
+                    <span class="teampos">Υπεύθυνη Marketing</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/2159498">
@@ -2768,11 +2781,6 @@ TweenLite.to("#_x31_", 2, {y:200});
                       <i id="li" class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
                   </div>
-                  <div class="col-xs-1 social-team">
-                    <a href="https://www.facebook.com/elena.tereza.v?fref=ts">
-                      <i id="fb" class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                  </div> 
                 </div>
               </div>
             </figcaption>
@@ -2785,7 +2793,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Γεώργιος Μιχάλης Παπαδόπουλος</span><br>
-                    <span class="job">Υπεύθυνος Blog</span>
+                    <span class="teampos">Υπεύθυνος Blog</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/5976867">
@@ -2814,7 +2822,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Ελένη Θωμλούδη</span><br>
-                    <span class="job">Υπεύθυνη Δημοσίων Σχέσεων</span>
+                    <span class="teampos">Υπεύθυνη Δημοσίων Σχέσεων</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/4346734">
@@ -2843,7 +2851,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Χατσίκ Κασαπιάν</span><br>
-                    <span class="job">Υπεύθυνος Ατζέντας</span>
+                    <span class="teampos">Υπεύθυνος Ατζέντας</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="https://www.ted.com/profiles/6009904">
@@ -2872,7 +2880,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Κώστας Αλέξογλου</span><br>
-                    <span class="job">Web Developer</span>
+                    <span class="teampos">Web Developer</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/6352070">
@@ -2901,7 +2909,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-7">
                     <span class="name">Κοσμάς Τσιάκας</span><br>
-                    <span class="job">Web Developer</span>
+                    <span class="teampos">Web Developer</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="http://www.ted.com/profiles/5883347">
@@ -2930,7 +2938,7 @@ TweenLite.to("#_x31_", 2, {y:200});
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <span class="name">Νικόλας Κουλτούκης</span><br>
-                    <span class="job">Designer</span>
+                    <span class="teampos">Designer</span>
                   </div> 
                   <div class="col-xs-1 social-team-ted">
                     <a href="">

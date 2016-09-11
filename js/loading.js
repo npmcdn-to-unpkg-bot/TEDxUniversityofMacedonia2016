@@ -8,4 +8,5 @@
     'overflow': 'auto',
     'height': 'auto'
 });
+    $('#allbtn').trigger('click');
   });
