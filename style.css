@@ -292,14 +292,8 @@ body span{
     display:block;
 }
 .TEDXuom{
-  background: rgba(240,72,100,1);
-background: -moz-linear-gradient(top, rgba(240,72,100,1) 0%, rgba(240,144,144,1) 11%, rgba(245,186,186,1) 22%, rgba(224,239,249,1) 80%, rgba(224,239,249,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,72,100,1)), color-stop(11%, rgba(240,144,144,1)), color-stop(22%, rgba(245,186,186,1)), color-stop(80%, rgba(224,239,249,1)), color-stop(100%, rgba(224,239,249,1)));
-background: -webkit-linear-gradient(top, rgba(240,72,100,1) 0%, rgba(240,144,144,1) 11%, rgba(245,186,186,1) 22%, rgba(224,239,249,1) 80%, rgba(224,239,249,1) 100%);
-background: -o-linear-gradient(top, rgba(240,72,100,1) 0%, rgba(240,144,144,1) 11%, rgba(245,186,186,1) 22%, rgba(224,239,249,1) 80%, rgba(224,239,249,1) 100%);
-background: -ms-linear-gradient(top, rgba(240,72,100,1) 0%, rgba(240,144,144,1) 11%, rgba(245,186,186,1) 22%, rgba(224,239,249,1) 80%, rgba(224,239,249,1) 100%);
-background: linear-gradient(to bottom, rgba(240,72,100,1) 0%, rgba(240,144,144,1) 11%, rgba(245,186,186,1) 22%, rgba(224,239,249,1) 80%, rgba(224,239,249,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f04864', endColorstr='#e0eff9', GradientType=0 );
+  
+  
 }
 #xinfo{
   padding-left: 1%;
@@ -311,13 +305,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f04864', end
   padding: 2%;
 }
 #TEDx{
-  height: 35vh;
+  height: 20vh;
   position: relative;
   padding: 2%;
 }
 #TEDXuom1{
-  height: 100%;
-  padding-top: 2%;
+  height: 35vh;
+  padding-top: 5%;
+    overflow-y: hidden;
 }
 .map {
 	width:100%;
