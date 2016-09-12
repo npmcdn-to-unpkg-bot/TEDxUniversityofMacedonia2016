@@ -1368,14 +1368,17 @@ h1.teamz{
   padding:0;
   width: 100%;
 }
+@media (min-width: 1800px){
 .job{
-  font-size: 0.75em;
+  
   margin:0 auto;
-  font-weight: 550;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.1em;
+  font-weight: 300;
   text-align: center;
   color: #fff;
   height: 100%;
-  padding-top: 5%;
+  padding-top: 22%;
   word-wrap: break-word; 
   position: absolute;
   top: 50%;
@@ -1383,6 +1386,49 @@ h1.teamz{
   /* bring your own prefixes */
  transform: translate(-50%, -50%);
 }
+}
+@media (min-width: 1200px){
+    .job{
+        margin:0 auto;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  padding-top: 18%;
+  word-wrap: break-word; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+ transform: translate(-50%, -50%);
+    }
+  }
+@media (max-width:1200px){
+    .job{
+        margin:0 auto;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.4vw;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  padding-top: 22%;
+  word-wrap: break-word; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+ transform: translate(-50%, -50%);
+    }
+  }
+
+
+
+
+
+
 .social-team{
   background-color: transparent;
   color: #000;
