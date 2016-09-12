@@ -1181,13 +1181,24 @@ ul
 }
 .fafee{
     padding-top: 10px;
-    padding-left: 10%;
+    padding-left: 0%;
 
 }
+@media (min-width:1200px){
+    .fafee{
+    padding-top: 10px;
+    padding-left: 13%;s
+
+}
+  }
+
+
+
 .twitter{
    
     position:relative;
-    padding-left: 4%;
+    
+    
 }
 
 
@@ -1286,11 +1297,32 @@ h2.theme{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 50% 0%;
+    background-repeat:no-repeat;
+    max-width: 100%;
+    width: 100%;   
+   
+}
+@media (min-width: 1200px){
+   .team{
+     /* The image used */
+    background-image: url("images/DSC_0762.jpg");
+
+    /* Set a specific height */
+    height: 450px;
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 0%;
     background-repeat:round;
     max-width: 100%;
     width: 100%;   
    
 }
+  }
+
+
+
 h1.teamgr{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
