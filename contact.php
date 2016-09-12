@@ -28,11 +28,11 @@ $mail->AltBody = $message;
 
 
 if(!$mail->send()) {
-	echo "error";
+	$fail = "Something went wrong. Please try again!";
+	echo "<script type='text/javascript'>alert('$fail');window.location = 'http://www.tedxuniversityofmacedonia.com';</script>";
 } else {
-	echo "sent";
-	header( "Location " . $pfw_redirect );
-	$pfw_redirect='index.html';
+	$success = "Thank you for contacting TEDxUniversityofMacedonia!";
+	echo "<script type='text/javascript'>alert('$success');window.location = 'http://www.tedxuniversityofmacedonia.com';</script>";
 }
 
 ?>

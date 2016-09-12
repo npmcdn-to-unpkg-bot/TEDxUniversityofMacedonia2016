@@ -1618,3 +1618,13 @@ font-size: 0.75em;
   margin:0;
   padding-left:2%;
 }
+
+.btn-send{
+  background-color:#5d2d7a;
+  color: #fff;
+  margin-bottom: 1%;
+}
+.btn-send:hover{
+  color:#5d2d7a;
+  background-color: #fff;
+}
