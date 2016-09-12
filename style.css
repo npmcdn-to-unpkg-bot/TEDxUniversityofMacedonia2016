@@ -1181,11 +1181,13 @@ ul
 }
 .fafee{
     padding-top: 10px;
+    padding-left: 10%;
 
 }
 .twitter{
    
     position:relative;
+    padding-left: 4%;
 }
 
 
@@ -1279,13 +1281,15 @@ h2.theme{
 
     /* Set a specific height */
     height: 450px;
+    
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 50% 0%;
-    background-repeat: no-repeat;
+    background-repeat:round;
     max-width: 100%;
-    width: 100%;    
+    width: 100%;   
+   
 }
 h1.teamgr{
     font-family: 'Open Sans', sans-serif;
